@@ -1,0 +1,79 @@
+/*reset default margin and padding*/
+*{
+    margin: 3px;
+    padding: 0px;
+}
+
+header
+{
+    text-align:center;
+}
+
+header h1 { margin: 0px}
+
+nav
+{
+    text-align:center;
+}
+
+nav ul { margin: 5px; }
+
+ul li
+{
+    display: inline;
+    padding-left:5px;
+    padding-right:5px;
+    text-align:left;
+    font-size:12px;
+    font-weight:bold;
+}
+
+ul {
+
+}
+
+nav ul li a:hover {
+    color: dodgerblue;
+    text-decoration: overline;
+}
+
+nav ul li.selected a {
+    color: dodgerblue;
+    text-decoration: overline;
+}
+
+aside
+{
+    margin-top:5px;
+    background-color:#f0eaea;
+    padding:5px;
+    text-align:center;
+    font-style:italic;
+    float: right;
+    width: 120px;
+    display:table-cell;
+}
+
+article
+{
+    padding:5px;
+    border:dotted 1px lightblue;;
+    margin-top:5px;
+    display:table-cell;
+}
+
+section
+{
+    padding:5px;
+    border:dashed 1px lightgrey;
+    margin-top:5px;
+}
+
+footer
+{
+    padding:5px;
+    text-align:center;
+    font-weight:bold;
+    clear: both;
+}
+
