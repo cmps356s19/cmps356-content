@@ -5,6 +5,88 @@ body{
     margin-right: auto;
 }
 
+h1 {
+    text-align: center;
+}
+
+nav {
+    background-color: #263238;
+    color: #ffffff;
+
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+nav li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    background-color: aqua;
+    text-decoration: underline;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+div#wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+header {
+    grid-column: 1/5;
+}
+
+footer{
+    background-color: #263238;
+    color: white;
+}
+aside{
+    background-color: green;
+    grid-column: 1/2;
+    grid-row: 2/span 3;
+}
+main{
+    background-color: red;
+    grid-column: 2/span 3;
+    grid-row: 2/span 3;
+}
+footer{
+    grid-row: 5;
+    grid-column: 1/ span 4;
+    align-self: start;
+}
+
+@media(min-width: 660px){
+    body{
+        background-color: black;
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
