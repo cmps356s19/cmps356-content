@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <style>
+        form {
+            display: grid;
+            padding: 1em;
+            background: #f9f9f9;
+            border: 1px solid lightgrey;
+            margin: 2em auto 0 auto;
+            max-width: 500px;
+            padding: 1em;
+        }
+        form input {
+            background: #fff;
+            border: 1px solid #9c9c9c;
+        }
+        form button {
+            background: lightgrey;
+            padding: 0.7em;
+            width: 100%;
+            border: 0;
+        }
+        form button:hover {
+            background: gold;
+        }
+
+        label {
+            padding: 0.5em 0.5em 0.5em 0;
+        }
+
+        input {
+            padding: 0.7em;
+            margin-bottom: 0.5rem;
+        }
+        input:focus {
+            outline: 3px solid gold;
+        }
+
+        @media (min-width: 700px) {
+            form {
+                grid-template-columns: auto 1fr;
+                grid-gap: 16px;
+            }
+
+            /*
+            label {
+                text-align: right;
+                grid-column: 1 / 2;
+            }
+
+            input, */
+            button {
+                grid-column: 2 / 3;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<form class="contactForm" action="">
+    <label for="firstName" class="first-name">First Name</label>
+    <input id="firstName" type="text">
+
+    <label for="lastName" class="last-name">Last Name</label>
+    <input id="lastName" type="text">
+
+    <label for="job">Job</label>
+    <input id="job" type="text">
+
+    <label for="age">Age</label>
+    <input id="age" type="text">
+
+    <label for="email">Email</label>
+    <input id="email" type="email">
+
+    <button>Submit</button>
+</form>
+</body>
+</html>
