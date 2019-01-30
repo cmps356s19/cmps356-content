@@ -6,48 +6,63 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-
     <style>
-        p::before{
-            content: "[ ";
-        }
 
-        li::after{
-            content: "] ";
+        html {
+            box-sizing: border-box;
+            width: 100%;
+            height: 100%;
         }
-
-        a:hover,a:before{
+        *{
+            box-sizing: inherit;
+        }
+        body {
+            height: inherit;
+        }
+        div#wrapper {
+            width: 80%;
+            height: 100%;
+            border: solid 3px black;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #598bff;
+            display: grid;
+            grid-template-rows: 4;
+        }
+        header {
+            background-color: blue;
+            color: white;
+        }
+        aside{
+            background-color: gold;
+        }
+         footer{
             background-color: tomato;
-        }
-
-        a[href~="https://"]::before{
-            content: 'hello';
         }
     </style>
 </head>
-
 <body>
-
 <div id="wrapper">
     <header id="header">
         <h1 class="red">The title of the page</h1>
         <nav>
             <ul>
                 <li><a href="https://">Home</a></li>
-                <li><a href="">Contact</a></li><li><a href="">Home</a></li>
-                <li><a href="">Contact</a></li><li><a href="">Home</a></li>
-                <li><a href="">Contact</a></li><li><a href="">Home</a></li>
-                <li><a href="">Contact</a></li>
+                <li><a href="">Profile</a></li>
+                <li><a href="">Contact Us</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repudiandae, soluta! Doloremque fugit incidunt
+    <main id="main-content">
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repudiandae, soluta!
+            Doloremque fugit incidunt
             minima tempore velit! Ab, necessitatibus soluta!</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repudiandae, soluta! Doloremque fugit incidunt
+        <p class="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repudiandae, soluta!
+            Doloremque fugit incidunt
             minima tempore velit! Ab, necessitatibus soluta!</p>
 
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repudiandae, soluta! Doloremque fugit incidunt
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, repudiandae, soluta! Doloremque fugit
+            incidunt
             minima tempore velit! Ab, necessitatibus soluta!</p>
     </main>
     <aside>
@@ -57,12 +72,12 @@
                 <li>Sub Menu2</li>
                 <li>Sub Menu3</li>
             </ul>
+
         </menu>
     </aside>
     <footer>
         <p>This is a footer text</p>
     </footer>
-
 </div>
 </body>
 </html>
