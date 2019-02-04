@@ -8,9 +8,9 @@
             display: grid;
             width: 100%;
             height: 250px;
-            grid-template-areas:  "head head"
-                                  "nav  main"
-                                  "nav  foot";
+            grid-template-areas:  "head head head"
+                                  "nav  main sidebar"
+                                  "nav  foot foot";
             grid-template-rows: 50px 1fr 30px;
             grid-template-columns: 150px 1fr;
         }
@@ -34,6 +34,11 @@
             grid-area: foot;
             background-color: #8cffa0;
         }
+
+        #page > aside {
+            grid-area: sidebar;
+            background-color: tomato;
+        }
     </style>
 </head>
 <body>
@@ -42,6 +47,7 @@
         <nav>Navigation</nav>
         <main>Main area</main>
         <footer>Footer</footer>
+        <aside>Side bar</aside>
     </section>
 </body>
 </html>

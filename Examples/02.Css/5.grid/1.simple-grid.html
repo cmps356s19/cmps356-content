@@ -8,10 +8,11 @@
             color: #6F0505;
             font-weight: bold;
         }
-        .container{
+       .container{
             display: grid;
             grid-template-columns: 1fr 1fr;
             /*
+                Rows are implicit: the browser will define them
                 You can sepecify the number of rows using
                 grid-template-rows
                 grid-auto-rows: 100px;
@@ -27,11 +28,18 @@
             padding: 20px;
         }
 
-        @media screen and (min-width: 700px){
+      @media screen and (min-width: 600px){
+            .container {
+                grid-template-columns: 1fr 1fr ;
+            }
+        }
+
+        @media screen and (min-width: 900px){
             .container {
                 grid-template-columns: 1fr 1fr 1fr;
             }
         }
+
     </style>
 </head>
 <body>
