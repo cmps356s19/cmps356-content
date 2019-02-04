@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book Donation</title>
+</head>
+<body>
+<form action="thankyou.html">
+    <header>
+        <img src="img/book-donations.png" alt="">
+        <h2>For being Awesome & Generous. These books will surely help a student that needs them</h2>
+        <p>Please fill this necessary information required for the donation!</p>
+    </header>
+    <fieldset>
+        <legend>Personal Info</legend>
+
+
+        <label for="firstName">First Name*</label>
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" required><br>
+
+
+        <label for="lastName">Last Name*</label>
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" required><br>
+
+
+        <label for="email">Email*</label>
+        <input type="email" name="email" id="email" placeholder="Email" required><br>
+
+
+        <label for="phoneNumber">Phone Number*</label>
+
+        <select name="phoneNumber" required><br>
+            <option value="+974">+974</option>
+            <option value="+10">+10</option>
+            <option value="+970">+970</option>
+            <option value="+973">+973</option>
+            <option value="+483">+483</option>
+        </select>
+        <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="##-###-###" required><br>
+
+
+    </fieldset>
+
+
+    <fieldset>
+        <legend>Address Info</legend>
+
+
+        <label for="address">Address</label>
+        <input type="text" name="address" placeholder="Street Address" id="address"><br>
+
+
+        <label for="country">Country</label>
+        <select name="country" id="country">
+            <option value=""></option>
+            <option value="Qatar">Qatar</option>
+            <option value="Palestine">Palestine</option>
+            <option value="Syria">Syria</option>
+            <option value="Sudan">Sudan</option>
+            <option value="Iraq">Iraq</option>
+        </select><br>
+
+        <label for="city">City</label>
+        <select type="text" list="countriesDataList" id="city" name="city">
+            <option value=""></option>
+            <optgroup label="Qatar">
+                <option value="Doha">Doha</option>
+                <option value="Khor">Khor</option>
+                <option value="Dokhan">Dokhan</option>
+                <option value="Al-Zubara">Al-Zubara</option>
+                <option value="Sealine">Sealine</option>
+            </optgroup>
+            <optgroup label="Palestine">
+                <option value="Jerusalem">Jerusalem</option>
+                <option value="Hebron">Hebron</option>
+                <option value="Yafa">Yafa</option>
+                <option value="Jericho">Jericho</option>
+            </optgroup>
+            <optgroup label="Syria">
+                <option value="Damascus">Damascus</option>
+                <option value="Hama">Hama</option>
+                <option value="Homs">Homs</option>
+            </optgroup>
+            <optgroup label="Sudan">
+                <option value="Khartoum">Khartoum</option>
+                <option value="Port Sudan">Port Sudan</option>
+                <option value="Omdurman">Omdurman</option>
+                <option value="Kassala">Kassala</option>
+            </optgroup>
+            <optgroup label="Iraq">
+                <option value="Baghdad">Baghdad</option>
+                <option value="Mosul">Mosul</option>
+                <option value="Basra">Basra</option>
+                <option value="Najaf">Najaf</option>
+            </optgroup>
+        </select><br>
+
+    </fieldset>
+
+    <fieldset>
+        <legend>Book Info</legend>
+
+        <label for="bookTitle">Book Title*</label>
+        <input type="text" id="bookTitle" name="bookTitle" required><br>
+
+        <label for="authorName">Author Name*</label>
+        <input type="text" id="authorName" name="authorName" required><br>
+
+        <label for="edition">Edition*</label>
+        <input type="text" id="edition" name="edition" required><br>
+
+        <label for="uploadedImage">Upload Book Picture*</label>
+        <input type="file" id="uploadedImage" name="uploadedImage" required><br>
+
+
+        <input type="checkbox" id="agree" name="agree" required>
+        <label for="agree">I agree to donate this book</label>
+    </fieldset>
+    <input type="submit" value="Submit">
+</form>
+
+<footer>
+    <label>Copyright @2019 QBook Donation </label>
+</footer>
+
+</body>
+</html>
