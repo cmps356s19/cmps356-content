@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+
+    <style>
+        nav img{
+            height: 20vw;
+            width: 20vw;
+        }
+
+        img{
+            height: 400px;
+            width: 100%;
+        }
+        .container{
+            flex-grow: 5;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        footer{
+            flex: 1;
+            flex-grow: 5;
+            background: black;
+            color: aliceblue;
+            text-align: center;
+        }
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: coral 1px solid;
+            flex: 1;
+        }
+        nav {
+            display: flex;
+            list-style: none;
+        }
+        button {
+            box-shadow: aqua;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        li:hover{
+            background: aqua;
+            font-size: larger;
+
+        }
+        nav ul {
+            display: flex;
+            align-items: center;
+        }
+        li {
+            margin-left: 10px;
+        }
+
+        .wrapper{
+            background: coral;
+            display: flex;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            flex-basis: 30% ;
+            flex: 1;
+        }
+
+        .main{
+            margin-right: 5px;
+            border: gold 1px solid;
+            flex: 0.5;
+            flex-basis: 65%;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <header>
+        <nav>
+            <img src="img/logo3.png" alt="">
+            <ul>
+                <li>Home</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+        <button>Login</button>
+    </header>
+    <div class="wrapper">
+        <aside class="sidebar">
+            <h3>Recent Post</h3>
+            <ul>
+                <li>One two three</li>
+                <li>One two three</li>
+                <li>One two three</li>
+                <li>One two three</li>
+            </ul>
+        </aside>
+        <section class="main">
+            <img src="img/activity.jpg" alt="">
+            <h2>Flexbox Layout</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque enim ex labore minima nobis. Ab
+                atque debitis deleniti doloremque error non placeat recusandae repudiandae saepe ullam. Consequatur
+                maiores nobis quas.</p>
+        </section>
+    </div><!-- /wrapper -->
+    <footer>
+        <h3>Flexbox Example</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, voluptatem?</p>
+    </footer>
+</div>
+<! -- /container -->
+</body>
+</html>
