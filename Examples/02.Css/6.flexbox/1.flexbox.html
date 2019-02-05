@@ -3,15 +3,17 @@
 <head>
     <style>
         .flex-container {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+           display: flex;
+           flex-wrap: wrap;
+            /*flex-direction: row;*/
+            /*justify-content: space-between;*/
+            /*align-items: flex-end;*/
             background-color: DodgerBlue;
+            justify-content: flex-end;
         }
-
         .flex-container > div {
             background-color: #f1f1f1;
-            width: 100px;
+            min-width: 100px;
             margin: 20px;
             text-align: center;
             line-height: 50px;
@@ -27,7 +29,7 @@
 </p>
 
 <div class="flex-container">
-    <div>1</div>
+    <div class="box1">1</div>
     <div>2</div>
     <div>3</div>
     <div>4</div>

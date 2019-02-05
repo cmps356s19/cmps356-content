@@ -1,7 +1,6 @@
 <!--
 This example was adapted from
 https://codepen.io/trooperandz/pen/YRpKjo
-
 -->
 
 <!DOCTYPE html>
@@ -29,7 +28,7 @@ https://codepen.io/trooperandz/pen/YRpKjo
                     'footer';
         }
 
-        .navbar-toggle {
+        .sidenav-toggle {
             position: fixed; /* Needs to stay visible for all mobile scrolling */
             display: flex;
             top: 5px;
@@ -52,7 +51,7 @@ https://codepen.io/trooperandz/pen/YRpKjo
         }
 
         /* Make room for the menu icon on mobile */
-        .header__search {
+        .header-search {
             margin-left: 42px;
         }
 
@@ -71,11 +70,7 @@ https://codepen.io/trooperandz/pen/YRpKjo
             background-color: #394263;
         }
 
-        .side-nav.active {
-            transform: translateX(0);
-        }
-
-        .sidenav__close-icon {
+        .sidenav-close-icon {
             position: absolute;
             visibility: visible;
             top: 8px;
@@ -181,7 +176,7 @@ https://codepen.io/trooperandz/pen/YRpKjo
         }
 
         .active {
-            display: block;
+            transform: translateX(0);
         }
 
         /* Non-mobile styles, 750px breakpoint */
@@ -195,7 +190,7 @@ https://codepen.io/trooperandz/pen/YRpKjo
                         "sidenav footer";
             }
 
-            .header__search {
+            .header-search {
                 margin-left: 0;
             }
 
@@ -204,7 +199,7 @@ https://codepen.io/trooperandz/pen/YRpKjo
                 transform: translateX(0);
             }
 
-            .sidenav__close-icon {
+            .sidenav-close-icon {
                 visibility: hidden;
             }
         }
@@ -220,13 +215,15 @@ https://codepen.io/trooperandz/pen/YRpKjo
 
     <script type="text/javascript">
         document.addEventListener("DOMContentLoaded", function () {
-            let sideNav = document.querySelector(".side-nav");
-            let navBarToggle = document.querySelector(".navbar-toggle");
-            const sidenavCloseBtn =  document.querySelector('.sidenav__close-icon');
-            navBarToggle.addEventListener("click", function() {
+            const sideNav = document.querySelector(".side-nav");
+            const sideNavCloseBtn =  document.querySelector('.sidenav-close-icon');
+            const sideNavToggle = document.querySelector(".sidenav-toggle");
+            
+            sideNavToggle.addEventListener("click", function() {
                 sideNav.classList.toggle("active");
             });
-            sidenavCloseBtn.addEventListener("click", function() {
+            
+            sideNavCloseBtn.addEventListener("click", function() {
                 sideNav.classList.toggle("active");
             });
         });
@@ -234,17 +231,17 @@ https://codepen.io/trooperandz/pen/YRpKjo
 </head>
 <body>
 <div class="grid-container">
-    <span class="navbar-toggle">
+    <span class="sidenav-toggle">
          <i class="fas fa-bars"></i>
     </span>
 
     <header class="header">
-        <div class="header__search">Search...</div>
-        <div class="header__avatar">Your face</div>
+        <div class="header-search">Search...</div>
+        <div>Your face</div>
     </header>
 
     <aside class="side-nav">
-        <div class="sidenav__close-icon">
+        <div class="sidenav-close-icon">
             <i class="fas fa-times"></i>
         </div>
         <ul>

@@ -63,39 +63,39 @@
             padding: 1.5em;
         }
 
-        /* Buckets section */
-        .buckets {
+        /* Listing section */
+        .listing {
             padding: 2em 1em 1em;
             background: #3E454C;
         }
 
-        .buckets ul {
+        .listing ul {
             margin: 0;
             padding: 0;
         }
 
-        .buckets li {
+        .listing li {
             margin-bottom: 1em;
             background: white;
             list-style-type: none;
         }
 
-        .bucket {
+        .listing div {
             padding: 1.5em;
         }
 
-        /* Twins section */
-        .twin {
+        /* Cards section */
+        .card {
             padding: 2em;
             background: #2185C5;
             color: white;
         }
 
-        .twin:last-of-type {
+        .card:last-of-type {
             background: #FF7F66;
         }
 
-        /* Colophon section */
+        /* Footer section */
         .footer {
             padding: 2em;
             background: hsl(0, 0%, 10%);
@@ -112,48 +112,42 @@
             border-bottom: 1px solid lightgoldenrodyellow;
         }
 
-        /*--------------------------------------------------------------
-        CSS Grid layout for wider screens, when browser supports grid:
-        --------------------------------------------------------------*/
+        /*---------------------------------
+        CSS Grid layout for wider screens:
+        ------------------------------------*/
         @media screen and (min-width: 600px) {
-            /* Four-column layout. Two center columns have a total max width of 50em: */
             .page {
                 display: grid;
                 grid-template-areas:  "head"
                                       "splah"
-                                      "buckets"
-                                      "twins"
+                                      "listing"
+                                      "cards"
                                       "footer";
-                /*grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;*/
-                /*grid-template-rows: repeat(6, auto);*/
-                /*grid-template-rows: minmax(1em, auto) 1fr auto minmax(1em, auto);*/
             }
 
-            /* Center items by placing them in the two center columns: */
-            .page-header {
+            header {
                 grid-area: head;
             }
-/*            .splash {
-                grid-area: splash;
-            }*/ /* not sure why this does not work */
-            .buckets {
-                grid-area: buckets;
+
+            .listing {
+                grid-area: listing;
             }
 
-            .twins {
+            .cards {
                 display: flex;
-                grid-area: twins;
+                grid-area: cards;
             }
+
             .footer {
                 grid-area: footer;
             }
 
-            .buckets ul {
+            .listing ul {
                 display: flex;
                 justify-content: space-around;
             }
 
-            .buckets li {
+            .listing li {
                 width: 31%;
             }
         }
@@ -171,54 +165,54 @@
 
     <section class="splash">
         <div class="splash-content">
-            <h2 class="content-title">Full Bleed CSS Grid</h2>
-            <div class="splash-text">
+            <h2>Full Bleed CSS Grid</h2>
+            <div>
                 <p>CSS Grid provides a trivial solution to a complex problem: How to display full-bleed content mixed with center-aligned width-constrained content. This solution elimiates the need for auto-margins and floats while allowing the developer to change the grid globally and see those changes apply to each element individually.</p>
-            </div><!-- .splash-text -->
-        </div><!-- .splash-content -->
-    </section><!-- .splash -->
+            </div>
+        </div>
+    </section>
 
-    <section class="buckets">
+    <section class="listing">
         <ul>
             <li>
                 <img src="https://www.cruisemapper.com/images/ports/1305-large-8c5d1a6af5dcd3e28466d12a9a5f5528.jpg" alt="">
-                <div class="bucket">
-                    <h3 class="bucket-title">Grid is great</h3>
+                <div>
+                    <h3>Grid is great</h3>
                     <p>CSS Grid is a two-dimensional layout tool. It is great for layout out content in a grid, and for laying out content in two dimensions.</p>
-                </div><!-- .bucket -->
+                </div>
             </li>
             <li>
                 <img src="http://static.qatarliving.com/post/2015/10/01/fanar01.jpg"
                      alt="Fanar Mosque">
-                <div class="bucket">
-                    <h3 class="bucket-title">Flex is great too</h3>
+                <div>
+                    <h3>Flex is great too</h3>
                     <p>That said, Grid is not always the right option for layouts.
                        If for example you need to lay out a series of identical boxes like those you see here,
                        Flex may be a better option.
                     </p>
-                </div><!-- .bucket -->
+                </div>
             </li>
             <li>
                 <img src="http://static.qatarliving.com/post/2015/10/01/grand%20mosque.jpg"
                      alt="The State Mosque">
-                <div class="bucket">
-                    <h3 class="bucket-title">Know what tool to use</h3>
+                <div>
+                    <h3>Know what tool to use</h3>
                     <p>In some cases Grid and Flex are interchangeable. In other cases one is definitely better than the other. The choice usually comes down to whether you are laying out a list of items (Flex) or creating a more nuanced layout (Grid).</p>
-                </div><!-- .bucket -->
+                </div>
             </li>
         </ul>
-    </section><!-- .buckets -->
+    </section><!-- .listing -->
 
-   <section class="twins">
-        <section class="twin">
-            <h2 class="content-title">Grid lets you do unusual things</h2>
+   <section class="cards">
+        <section class="card">
+            <h2>Grid lets you do unusual things</h2>
             <p>Creating this layout, where two items share the total available viewport width evenly alongside full-width and centered content, is suprisingly complex if you don't have CSS Grid available.</p>
         </section>
-        <section class="twin">
-            <h2 class="content-title">Grid requires a rethink</h2>
+        <section class="card">
+            <h2>Grid requires a rethink</h2>
             <p>Seeing this layout you may still think it's better to just use old methods with auto-margins and max-widths. And you <em>can</em>, but looking at the CSS you'll see the Grid approach is both cleaner and easier to understand.</p>
         </section>
-    </section><!-- .twins -->
+    </section>
 
     <footer class="footer">
         Design based on

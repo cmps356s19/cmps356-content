@@ -4,45 +4,47 @@
     <meta charset="UTF-8">
     <title>Page Layout</title>
     <style>
-        #page {
+        .container {
             display: grid;
             width: 100%;
             height: 250px;
             grid-template-areas:  "head head head"
                                   "nav  main sidebar"
                                   "nav  foot foot";
-            grid-template-rows: 50px 1fr 30px;
-            grid-template-columns: 150px 1fr;
+            grid-template-rows: 50px 1fr 40px;
+            /* minmax(100px, auto): min width is 100px
+            and maximum is enough space to fit the grid item content */
+            grid-template-columns: minmax(100px, auto) 1fr minmax(80px, auto);
         }
 
-        #page > header {
+        .container > header {
             grid-area: head;
             background-color: #8ca0ff;
         }
 
-        #page > nav {
+        .container > nav {
             grid-area: nav;
             background-color: #ffa08c;
         }
 
-        #page > main {
+        .container > main {
             grid-area: main;
             background-color: #ffff64;
         }
 
-        #page > footer {
+        .container > footer {
             grid-area: foot;
             background-color: #8cffa0;
         }
 
-        #page > aside {
+        .container > aside {
             grid-area: sidebar;
-            background-color: tomato;
+            background-color: darkorange;
         }
     </style>
 </head>
 <body>
-    <section id="page">
+    <section class="container">
         <header>Header</header>
         <nav>Navigation</nav>
         <main>Main area</main>
