@@ -1,0 +1,47 @@
+.logo{
+    width: 20vh;
+    height: 20vh;
+}
+
+
+
+.navbar {
+    display: flex;
+    background: cyan;
+    justify-content: flex-start;
+}
+
+.main-nav{
+    background: red;
+    flex: 1;
+    order: 3;
+    flex-basis: 200px;
+}
+
+.img-border{
+    flex: 1;
+    order: 1;
+    flex-basis: 200px;
+}
+
+button{
+    flex: 1;
+    order: 2;
+    flex-basis: 200px;
+}
+
+.sample {
+    border: black 1px solid;
+    height: 400px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 600px ) {
+    .navbar{
+        flex-direction: column;
+    }
+}
+
