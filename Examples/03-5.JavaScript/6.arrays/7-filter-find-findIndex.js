@@ -13,18 +13,18 @@ let students = [
     },
 ];
 
-let cmps151Students = students.filter( student => student.course !== "CMPS 251");
+let cmps151Students = students.filter( s => s.course !== "CMPS 251");
 
 //use filter to find all
-let cmps151Students = students.filter( student => student.course === "CMPS 151");
+let cmps151Students = students.filter( s => s.course === "CMPS 151");
 console.log( "cmps151Students:", cmps151Students );
 
 //First CMPS 151 student
-let firstStudent = students.find((student) => student.course === "CMPS 151");
+let firstStudent = students.find((s) => s.course === "CMPS 151");
 console.log( "firstStudent found:", firstStudent );
 
 //Index of First CMPS 151 student
-let studentIndex = students.findIndex((student) => student.course === "CMPS 151");
+let studentIndex = students.findIndex((s) => s.course === "CMPS 151");
 console.log( "studentIndex:", studentIndex );
 
 students.splice(studentIndex, 1);

@@ -51,7 +51,9 @@ let movie1 = {
 };
 
 //We clone movie 1 and override the episode property
-let movie2 = Object.assign({}, movie1, { episode: 8, rating: 5});
+let movie2 = {...movie1, episode: 8, rating: 5 };
+//Another way of doing the same using Object.assign
+//let movie2 = Object.assign({}, movie1, { episode: 8, rating: 5});
 
 console.log('\n');
 console.log(movie1.name, "movie1.episode: ", movie1.episode, " - Rating: ", movie1.rating); // writes 7
