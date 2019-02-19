@@ -15,7 +15,7 @@ class Student {
 
 // Add a method to a class (this can be done at runtime)
 Student.prototype.toUpper = function() {
-    return String.toUpper(this.name);
+    return this.name.toUpperCase();
 }
  
 let juha = new Student("Juha Nasreddin", 22);

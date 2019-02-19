@@ -1,9 +1,4 @@
-const  greeting = require('./greeting');
-const circle = require('./circle');
+const heroRepository = require('./heroRepository');
 
-let text = greeting.yahala();
-console.log(text);
-
-let r = 4;
-console.log(`The area of radius ${r}: ${circle.area(r)}
-and its circumference is: ${circle.circumference(r)}`);
+console.log("Hero #1:\n", heroRepository.getHero(1));
+console.log("\nAll Heroes:\n", heroRepository.heroes);

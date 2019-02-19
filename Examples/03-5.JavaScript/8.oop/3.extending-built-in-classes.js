@@ -13,8 +13,8 @@ Array.prototype.sum = function() {
     return sum;
 }
 
-let numbers = [9, 1, 11, 3, 4];
-let max = numbers.getMax();
+numbers = [9, 1, 11, 3, 4];
+max = numbers.getMax();
 console.log(`[${numbers.join(', ')}].getMax() = ${max}`);
 
 console.log(`[${numbers.join(', ')}].sum() = ${numbers.sum()}`);
