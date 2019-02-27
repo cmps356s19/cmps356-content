@@ -1,0 +1,4358 @@
+[
+  {
+    "countryCode": "AFG",
+    "country": "Afghanistan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 38.16
+  },
+  {
+    "countryCode": "AFG",
+    "country": "Afghanistan",
+    "indicator": "Female Literacy Rate",
+    "rate": 24.15
+  },
+  {
+    "countryCode": "AFG",
+    "country": "Afghanistan",
+    "indicator": "Male Literacy Rate",
+    "rate": 51.99
+  },
+  {
+    "countryCode": "ALB",
+    "country": "Albania",
+    "indicator": "Adult Literacy Rate",
+    "rate": 97.62
+  },
+  {
+    "countryCode": "ALB",
+    "country": "Albania",
+    "indicator": "Female Literacy Rate",
+    "rate": 96.88
+  },
+  {
+    "countryCode": "ALB",
+    "country": "Albania",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.38
+  },
+  {
+    "countryCode": "DZA",
+    "country": "Algeria",
+    "indicator": "Adult Literacy Rate",
+    "rate": 80.2
+  },
+  {
+    "countryCode": "DZA",
+    "country": "Algeria",
+    "indicator": "Female Literacy Rate",
+    "rate": 73.13
+  },
+  {
+    "countryCode": "DZA",
+    "country": "Algeria",
+    "indicator": "Male Literacy Rate",
+    "rate": 87.17
+  },
+  {
+    "countryCode": "ASM",
+    "country": "American Samoa",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ASM",
+    "country": "American Samoa",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ASM",
+    "country": "American Samoa",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ADO",
+    "country": "Andorra",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ADO",
+    "country": "Andorra",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ADO",
+    "country": "Andorra",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "AGO",
+    "country": "Angola",
+    "indicator": "Adult Literacy Rate",
+    "rate": 71.14
+  },
+  {
+    "countryCode": "AGO",
+    "country": "Angola",
+    "indicator": "Female Literacy Rate",
+    "rate": 60.69
+  },
+  {
+    "countryCode": "AGO",
+    "country": "Angola",
+    "indicator": "Male Literacy Rate",
+    "rate": 81.98
+  },
+  {
+    "countryCode": "ATG",
+    "country": "Antigua and Barbuda",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ATG",
+    "country": "Antigua and Barbuda",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ATG",
+    "country": "Antigua and Barbuda",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ARB",
+    "country": "Arab World",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ARB",
+    "country": "Arab World",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ARB",
+    "country": "Arab World",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ARG",
+    "country": "Argentina",
+    "indicator": "Adult Literacy Rate",
+    "rate": 98.09
+  },
+  {
+    "countryCode": "ARG",
+    "country": "Argentina",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.13
+  },
+  {
+    "countryCode": "ARG",
+    "country": "Argentina",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.04
+  },
+  {
+    "countryCode": "ARM",
+    "country": "Armenia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.77
+  },
+  {
+    "countryCode": "ARM",
+    "country": "Armenia",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.72
+  },
+  {
+    "countryCode": "ARM",
+    "country": "Armenia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.81
+  },
+  {
+    "countryCode": "ABW",
+    "country": "Aruba",
+    "indicator": "Adult Literacy Rate",
+    "rate": 97.52
+  },
+  {
+    "countryCode": "ABW",
+    "country": "Aruba",
+    "indicator": "Female Literacy Rate",
+    "rate": 97.51
+  },
+  {
+    "countryCode": "ABW",
+    "country": "Aruba",
+    "indicator": "Male Literacy Rate",
+    "rate": 97.54
+  },
+  {
+    "countryCode": "AUS",
+    "country": "Australia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "AUS",
+    "country": "Australia",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "AUS",
+    "country": "Australia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "AUT",
+    "country": "Austria",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "AUT",
+    "country": "Austria",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "AUT",
+    "country": "Austria",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "AZE",
+    "country": "Azerbaijan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.81
+  },
+  {
+    "countryCode": "AZE",
+    "country": "Azerbaijan",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.74
+  },
+  {
+    "countryCode": "AZE",
+    "country": "Azerbaijan",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.89
+  },
+  {
+    "countryCode": "BHS",
+    "country": "Bahamas, The",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BHS",
+    "country": "Bahamas, The",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BHS",
+    "country": "Bahamas, The",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BHR",
+    "country": "Bahrain",
+    "indicator": "Adult Literacy Rate",
+    "rate": 95.7
+  },
+  {
+    "countryCode": "BHR",
+    "country": "Bahrain",
+    "indicator": "Female Literacy Rate",
+    "rate": 93.46
+  },
+  {
+    "countryCode": "BHR",
+    "country": "Bahrain",
+    "indicator": "Male Literacy Rate",
+    "rate": 96.92
+  },
+  {
+    "countryCode": "BGD",
+    "country": "Bangladesh",
+    "indicator": "Adult Literacy Rate",
+    "rate": 61.55
+  },
+  {
+    "countryCode": "BGD",
+    "country": "Bangladesh",
+    "indicator": "Female Literacy Rate",
+    "rate": 58.49
+  },
+  {
+    "countryCode": "BGD",
+    "country": "Bangladesh",
+    "indicator": "Male Literacy Rate",
+    "rate": 64.57
+  },
+  {
+    "countryCode": "BRB",
+    "country": "Barbados",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BRB",
+    "country": "Barbados",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BRB",
+    "country": "Barbados",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BLR",
+    "country": "Belarus",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.73
+  },
+  {
+    "countryCode": "BLR",
+    "country": "Belarus",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.68
+  },
+  {
+    "countryCode": "BLR",
+    "country": "Belarus",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.79
+  },
+  {
+    "countryCode": "BEL",
+    "country": "Belgium",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BEL",
+    "country": "Belgium",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BEL",
+    "country": "Belgium",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BLZ",
+    "country": "Belize",
+    "indicator": "Adult Literacy Rate",
+    "rate": 82.69
+  },
+  {
+    "countryCode": "BLZ",
+    "country": "Belize",
+    "indicator": "Female Literacy Rate",
+    "rate": 83.04
+  },
+  {
+    "countryCode": "BLZ",
+    "country": "Belize",
+    "indicator": "Male Literacy Rate",
+    "rate": 82.33
+  },
+  {
+    "countryCode": "BEN",
+    "country": "Benin",
+    "indicator": "Adult Literacy Rate",
+    "rate": 38.45
+  },
+  {
+    "countryCode": "BEN",
+    "country": "Benin",
+    "indicator": "Female Literacy Rate",
+    "rate": 27.29
+  },
+  {
+    "countryCode": "BEN",
+    "country": "Benin",
+    "indicator": "Male Literacy Rate",
+    "rate": 49.87
+  },
+  {
+    "countryCode": "BMU",
+    "country": "Bermuda",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BMU",
+    "country": "Bermuda",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BMU",
+    "country": "Bermuda",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "BTN",
+    "country": "Bhutan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 64.89
+  },
+  {
+    "countryCode": "BTN",
+    "country": "Bhutan",
+    "indicator": "Female Literacy Rate",
+    "rate": 54.98
+  },
+  {
+    "countryCode": "BTN",
+    "country": "Bhutan",
+    "indicator": "Male Literacy Rate",
+    "rate": 73.06
+  },
+  {
+    "countryCode": "BOL",
+    "country": "Bolivia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 95.65
+  },
+  {
+    "countryCode": "BOL",
+    "country": "Bolivia",
+    "indicator": "Female Literacy Rate",
+    "rate": 93.57
+  },
+  {
+    "countryCode": "BOL",
+    "country": "Bolivia",
+    "indicator": "Male Literacy Rate",
+    "rate": 97.78
+  },
+  {
+    "countryCode": "BIH",
+    "country": "Bosnia and Herzegovina",
+    "indicator": "Adult Literacy Rate",
+    "rate": 98.48
+  },
+  {
+    "countryCode": "BIH",
+    "country": "Bosnia and Herzegovina",
+    "indicator": "Female Literacy Rate",
+    "rate": 97.48
+  },
+  {
+    "countryCode": "BIH",
+    "country": "Bosnia and Herzegovina",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.55
+  },
+  {
+    "countryCode": "BWA",
+    "country": "Botswana",
+    "indicator": "Adult Literacy Rate",
+    "rate": 88.46
+  },
+  {
+    "countryCode": "BWA",
+    "country": "Botswana",
+    "indicator": "Female Literacy Rate",
+    "rate": 88.93
+  },
+  {
+    "countryCode": "BWA",
+    "country": "Botswana",
+    "indicator": "Male Literacy Rate",
+    "rate": 88.01
+  },
+  {
+    "countryCode": "BRA",
+    "country": "Brazil",
+    "indicator": "Adult Literacy Rate",
+    "rate": 92.58
+  },
+  {
+    "countryCode": "BRA",
+    "country": "Brazil",
+    "indicator": "Female Literacy Rate",
+    "rate": 92.9
+  },
+  {
+    "countryCode": "BRA",
+    "country": "Brazil",
+    "indicator": "Male Literacy Rate",
+    "rate": 92.24
+  },
+  {
+    "countryCode": "BRN",
+    "country": "Brunei Darussalam",
+    "indicator": "Adult Literacy Rate",
+    "rate": 96.41
+  },
+  {
+    "countryCode": "BRN",
+    "country": "Brunei Darussalam",
+    "indicator": "Female Literacy Rate",
+    "rate": 95.11
+  },
+  {
+    "countryCode": "BRN",
+    "country": "Brunei Darussalam",
+    "indicator": "Male Literacy Rate",
+    "rate": 97.68
+  },
+  {
+    "countryCode": "BGR",
+    "country": "Bulgaria",
+    "indicator": "Adult Literacy Rate",
+    "rate": 98.39
+  },
+  {
+    "countryCode": "BGR",
+    "country": "Bulgaria",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.07
+  },
+  {
+    "countryCode": "BGR",
+    "country": "Bulgaria",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.73
+  },
+  {
+    "countryCode": "BFA",
+    "country": "Burkina Faso",
+    "indicator": "Adult Literacy Rate",
+    "rate": 36.02
+  },
+  {
+    "countryCode": "BFA",
+    "country": "Burkina Faso",
+    "indicator": "Female Literacy Rate",
+    "rate": 29.32
+  },
+  {
+    "countryCode": "BFA",
+    "country": "Burkina Faso",
+    "indicator": "Male Literacy Rate",
+    "rate": 43.03
+  },
+  {
+    "countryCode": "BDI",
+    "country": "Burundi",
+    "indicator": "Adult Literacy Rate",
+    "rate": 85.62
+  },
+  {
+    "countryCode": "BDI",
+    "country": "Burundi",
+    "indicator": "Female Literacy Rate",
+    "rate": 83.12
+  },
+  {
+    "countryCode": "BDI",
+    "country": "Burundi",
+    "indicator": "Male Literacy Rate",
+    "rate": 88.24
+  },
+  {
+    "countryCode": "CPV",
+    "country": "Cabo Verde",
+    "indicator": "Adult Literacy Rate",
+    "rate": 87.58
+  },
+  {
+    "countryCode": "CPV",
+    "country": "Cabo Verde",
+    "indicator": "Female Literacy Rate",
+    "rate": 83.09
+  },
+  {
+    "countryCode": "CPV",
+    "country": "Cabo Verde",
+    "indicator": "Male Literacy Rate",
+    "rate": 92.1
+  },
+  {
+    "countryCode": "KHM",
+    "country": "Cambodia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 77.19
+  },
+  {
+    "countryCode": "KHM",
+    "country": "Cambodia",
+    "indicator": "Female Literacy Rate",
+    "rate": 70.53
+  },
+  {
+    "countryCode": "KHM",
+    "country": "Cambodia",
+    "indicator": "Male Literacy Rate",
+    "rate": 84.47
+  },
+  {
+    "countryCode": "CMR",
+    "country": "Cameroon",
+    "indicator": "Adult Literacy Rate",
+    "rate": 74.99
+  },
+  {
+    "countryCode": "CMR",
+    "country": "Cameroon",
+    "indicator": "Female Literacy Rate",
+    "rate": 68.88
+  },
+  {
+    "countryCode": "CMR",
+    "country": "Cameroon",
+    "indicator": "Male Literacy Rate",
+    "rate": 81.15
+  },
+  {
+    "countryCode": "CAN",
+    "country": "Canada",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CAN",
+    "country": "Canada",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CAN",
+    "country": "Canada",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CYM",
+    "country": "Cayman Islands",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CYM",
+    "country": "Cayman Islands",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CYM",
+    "country": "Cayman Islands",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CAF",
+    "country": "Central African Republic",
+    "indicator": "Adult Literacy Rate",
+    "rate": 36.75
+  },
+  {
+    "countryCode": "CAF",
+    "country": "Central African Republic",
+    "indicator": "Female Literacy Rate",
+    "rate": 24.36
+  },
+  {
+    "countryCode": "CAF",
+    "country": "Central African Republic",
+    "indicator": "Male Literacy Rate",
+    "rate": 50.71
+  },
+  {
+    "countryCode": "TCD",
+    "country": "Chad",
+    "indicator": "Adult Literacy Rate",
+    "rate": 40.17
+  },
+  {
+    "countryCode": "TCD",
+    "country": "Chad",
+    "indicator": "Female Literacy Rate",
+    "rate": 31.92
+  },
+  {
+    "countryCode": "TCD",
+    "country": "Chad",
+    "indicator": "Male Literacy Rate",
+    "rate": 48.49
+  },
+  {
+    "countryCode": "CHI",
+    "country": "Channel Islands",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CHI",
+    "country": "Channel Islands",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CHI",
+    "country": "Channel Islands",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CHL",
+    "country": "Chile",
+    "indicator": "Adult Literacy Rate",
+    "rate": 97.3
+  },
+  {
+    "countryCode": "CHL",
+    "country": "Chile",
+    "indicator": "Female Literacy Rate",
+    "rate": 97.21
+  },
+  {
+    "countryCode": "CHL",
+    "country": "Chile",
+    "indicator": "Male Literacy Rate",
+    "rate": 97.38
+  },
+  {
+    "countryCode": "CHN",
+    "country": "China",
+    "indicator": "Adult Literacy Rate",
+    "rate": 96.38
+  },
+  {
+    "countryCode": "CHN",
+    "country": "China",
+    "indicator": "Female Literacy Rate",
+    "rate": 94.48
+  },
+  {
+    "countryCode": "CHN",
+    "country": "China",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.17
+  },
+  {
+    "countryCode": "COL",
+    "country": "Colombia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 94.68
+  },
+  {
+    "countryCode": "COL",
+    "country": "Colombia",
+    "indicator": "Female Literacy Rate",
+    "rate": 94.76
+  },
+  {
+    "countryCode": "COL",
+    "country": "Colombia",
+    "indicator": "Male Literacy Rate",
+    "rate": 94.58
+  },
+  {
+    "countryCode": "COM",
+    "country": "Comoros",
+    "indicator": "Adult Literacy Rate",
+    "rate": 77.76
+  },
+  {
+    "countryCode": "COM",
+    "country": "Comoros",
+    "indicator": "Female Literacy Rate",
+    "rate": 73.72
+  },
+  {
+    "countryCode": "COM",
+    "country": "Comoros",
+    "indicator": "Male Literacy Rate",
+    "rate": 81.81
+  },
+  {
+    "countryCode": "ZAR",
+    "country": "Congo, Dem. Rep.",
+    "indicator": "Adult Literacy Rate",
+    "rate": 77.29
+  },
+  {
+    "countryCode": "ZAR",
+    "country": "Congo, Dem. Rep.",
+    "indicator": "Female Literacy Rate",
+    "rate": 66.04
+  },
+  {
+    "countryCode": "ZAR",
+    "country": "Congo, Dem. Rep.",
+    "indicator": "Male Literacy Rate",
+    "rate": 88.86
+  },
+  {
+    "countryCode": "COG",
+    "country": "Congo, Rep.",
+    "indicator": "Adult Literacy Rate",
+    "rate": 79.31
+  },
+  {
+    "countryCode": "COG",
+    "country": "Congo, Rep.",
+    "indicator": "Female Literacy Rate",
+    "rate": 72.88
+  },
+  {
+    "countryCode": "COG",
+    "country": "Congo, Rep.",
+    "indicator": "Male Literacy Rate",
+    "rate": 86.43
+  },
+  {
+    "countryCode": "CRI",
+    "country": "Costa Rica",
+    "indicator": "Adult Literacy Rate",
+    "rate": 97.76
+  },
+  {
+    "countryCode": "CRI",
+    "country": "Costa Rica",
+    "indicator": "Female Literacy Rate",
+    "rate": 97.83
+  },
+  {
+    "countryCode": "CRI",
+    "country": "Costa Rica",
+    "indicator": "Male Literacy Rate",
+    "rate": 97.69
+  },
+  {
+    "countryCode": "CIV",
+    "country": "Cote d'Ivoire",
+    "indicator": "Adult Literacy Rate",
+    "rate": 43.11
+  },
+  {
+    "countryCode": "CIV",
+    "country": "Cote d'Ivoire",
+    "indicator": "Female Literacy Rate",
+    "rate": 32.55
+  },
+  {
+    "countryCode": "CIV",
+    "country": "Cote d'Ivoire",
+    "indicator": "Male Literacy Rate",
+    "rate": 53.15
+  },
+  {
+    "countryCode": "HRV",
+    "country": "Croatia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.27
+  },
+  {
+    "countryCode": "HRV",
+    "country": "Croatia",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.93
+  },
+  {
+    "countryCode": "HRV",
+    "country": "Croatia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.66
+  },
+  {
+    "countryCode": "CUB",
+    "country": "Cuba",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.71
+  },
+  {
+    "countryCode": "CUB",
+    "country": "Cuba",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.77
+  },
+  {
+    "countryCode": "CUB",
+    "country": "Cuba",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.65
+  },
+  {
+    "countryCode": "CUW",
+    "country": "Curacao",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CUW",
+    "country": "Curacao",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CUW",
+    "country": "Curacao",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CYP",
+    "country": "Cyprus",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.07
+  },
+  {
+    "countryCode": "CYP",
+    "country": "Cyprus",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.65
+  },
+  {
+    "countryCode": "CYP",
+    "country": "Cyprus",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.46
+  },
+  {
+    "countryCode": "CZE",
+    "country": "Czech Republic",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CZE",
+    "country": "Czech Republic",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CZE",
+    "country": "Czech Republic",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DNK",
+    "country": "Denmark",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DNK",
+    "country": "Denmark",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DNK",
+    "country": "Denmark",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DJI",
+    "country": "Djibouti",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DJI",
+    "country": "Djibouti",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DJI",
+    "country": "Djibouti",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DMA",
+    "country": "Dominica",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DMA",
+    "country": "Dominica",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DMA",
+    "country": "Dominica",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DOM",
+    "country": "Dominican Republic",
+    "indicator": "Adult Literacy Rate",
+    "rate": 91.79
+  },
+  {
+    "countryCode": "DOM",
+    "country": "Dominican Republic",
+    "indicator": "Female Literacy Rate",
+    "rate": 92.35
+  },
+  {
+    "countryCode": "DOM",
+    "country": "Dominican Republic",
+    "indicator": "Male Literacy Rate",
+    "rate": 91.23
+  },
+  {
+    "countryCode": "EAS",
+    "country": "East Asia & Pacific (all income levels)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "EAS",
+    "country": "East Asia & Pacific (all income levels)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "EAS",
+    "country": "East Asia & Pacific (all income levels)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "EAP",
+    "country": "East Asia & Pacific (developing only)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "EAP",
+    "country": "East Asia & Pacific (developing only)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "EAP",
+    "country": "East Asia & Pacific (developing only)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ECU",
+    "country": "Ecuador",
+    "indicator": "Adult Literacy Rate",
+    "rate": 94.46
+  },
+  {
+    "countryCode": "ECU",
+    "country": "Ecuador",
+    "indicator": "Female Literacy Rate",
+    "rate": 93.55
+  },
+  {
+    "countryCode": "ECU",
+    "country": "Ecuador",
+    "indicator": "Male Literacy Rate",
+    "rate": 95.38
+  },
+  {
+    "countryCode": "EGY",
+    "country": "Egypt, Arab Rep.",
+    "indicator": "Adult Literacy Rate",
+    "rate": 75.24
+  },
+  {
+    "countryCode": "EGY",
+    "country": "Egypt, Arab Rep.",
+    "indicator": "Female Literacy Rate",
+    "rate": 67.29
+  },
+  {
+    "countryCode": "EGY",
+    "country": "Egypt, Arab Rep.",
+    "indicator": "Male Literacy Rate",
+    "rate": 83.24
+  },
+  {
+    "countryCode": "SLV",
+    "country": "El Salvador",
+    "indicator": "Adult Literacy Rate",
+    "rate": 88.39
+  },
+  {
+    "countryCode": "SLV",
+    "country": "El Salvador",
+    "indicator": "Female Literacy Rate",
+    "rate": 86.42
+  },
+  {
+    "countryCode": "SLV",
+    "country": "El Salvador",
+    "indicator": "Male Literacy Rate",
+    "rate": 90.71
+  },
+  {
+    "countryCode": "GNQ",
+    "country": "Equatorial Guinea",
+    "indicator": "Adult Literacy Rate",
+    "rate": 95.26
+  },
+  {
+    "countryCode": "GNQ",
+    "country": "Equatorial Guinea",
+    "indicator": "Female Literacy Rate",
+    "rate": 92.99
+  },
+  {
+    "countryCode": "GNQ",
+    "country": "Equatorial Guinea",
+    "indicator": "Male Literacy Rate",
+    "rate": 97.37
+  },
+  {
+    "countryCode": "ERI",
+    "country": "Eritrea",
+    "indicator": "Adult Literacy Rate",
+    "rate": 73.77
+  },
+  {
+    "countryCode": "ERI",
+    "country": "Eritrea",
+    "indicator": "Female Literacy Rate",
+    "rate": 65.45
+  },
+  {
+    "countryCode": "ERI",
+    "country": "Eritrea",
+    "indicator": "Male Literacy Rate",
+    "rate": 82.39
+  },
+  {
+    "countryCode": "EST",
+    "country": "Estonia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.83
+  },
+  {
+    "countryCode": "EST",
+    "country": "Estonia",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.81
+  },
+  {
+    "countryCode": "EST",
+    "country": "Estonia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.85
+  },
+  {
+    "countryCode": "ETH",
+    "country": "Ethiopia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 49.09
+  },
+  {
+    "countryCode": "ETH",
+    "country": "Ethiopia",
+    "indicator": "Female Literacy Rate",
+    "rate": 41.09
+  },
+  {
+    "countryCode": "ETH",
+    "country": "Ethiopia",
+    "indicator": "Male Literacy Rate",
+    "rate": 57.21
+  },
+  {
+    "countryCode": "EMU",
+    "country": "Euro area",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "EMU",
+    "country": "Euro area",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "EMU",
+    "country": "Euro area",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ECS",
+    "country": "Europe & Central Asia (all income levels)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ECS",
+    "country": "Europe & Central Asia (all income levels)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ECS",
+    "country": "Europe & Central Asia (all income levels)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ECA",
+    "country": "Europe & Central Asia (developing only)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ECA",
+    "country": "Europe & Central Asia (developing only)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ECA",
+    "country": "Europe & Central Asia (developing only)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "EUU",
+    "country": "European Union",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "EUU",
+    "country": "European Union",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "EUU",
+    "country": "European Union",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FRO",
+    "country": "Faeroe Islands",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FRO",
+    "country": "Faeroe Islands",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FRO",
+    "country": "Faeroe Islands",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FJI",
+    "country": "Fiji",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FJI",
+    "country": "Fiji",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FJI",
+    "country": "Fiji",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FIN",
+    "country": "Finland",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FIN",
+    "country": "Finland",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FIN",
+    "country": "Finland",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FCS",
+    "country": "Fragile and conflict affected situations",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FCS",
+    "country": "Fragile and conflict affected situations",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FCS",
+    "country": "Fragile and conflict affected situations",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FRA",
+    "country": "France",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FRA",
+    "country": "France",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FRA",
+    "country": "France",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "PYF",
+    "country": "French Polynesia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "PYF",
+    "country": "French Polynesia",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "PYF",
+    "country": "French Polynesia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "GAB",
+    "country": "Gabon",
+    "indicator": "Adult Literacy Rate",
+    "rate": 83.18
+  },
+  {
+    "countryCode": "GAB",
+    "country": "Gabon",
+    "indicator": "Female Literacy Rate",
+    "rate": 81.02
+  },
+  {
+    "countryCode": "GAB",
+    "country": "Gabon",
+    "indicator": "Male Literacy Rate",
+    "rate": 85.32
+  },
+  {
+    "countryCode": "GMB",
+    "country": "Gambia, The",
+    "indicator": "Adult Literacy Rate",
+    "rate": 55.55
+  },
+  {
+    "countryCode": "GMB",
+    "country": "Gambia, The",
+    "indicator": "Female Literacy Rate",
+    "rate": 47.62
+  },
+  {
+    "countryCode": "GMB",
+    "country": "Gambia, The",
+    "indicator": "Male Literacy Rate",
+    "rate": 63.91
+  },
+  {
+    "countryCode": "GEO",
+    "country": "Georgia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.76
+  },
+  {
+    "countryCode": "GEO",
+    "country": "Georgia",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.73
+  },
+  {
+    "countryCode": "GEO",
+    "country": "Georgia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.79
+  },
+  {
+    "countryCode": "DEU",
+    "country": "Germany",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DEU",
+    "country": "Germany",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "DEU",
+    "country": "Germany",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "GHA",
+    "country": "Ghana",
+    "indicator": "Adult Literacy Rate",
+    "rate": 76.57
+  },
+  {
+    "countryCode": "GHA",
+    "country": "Ghana",
+    "indicator": "Female Literacy Rate",
+    "rate": 71.35
+  },
+  {
+    "countryCode": "GHA",
+    "country": "Ghana",
+    "indicator": "Male Literacy Rate",
+    "rate": 82.04
+  },
+  {
+    "countryCode": "GRC",
+    "country": "Greece",
+    "indicator": "Adult Literacy Rate",
+    "rate": 97.69
+  },
+  {
+    "countryCode": "GRC",
+    "country": "Greece",
+    "indicator": "Female Literacy Rate",
+    "rate": 96.88
+  },
+  {
+    "countryCode": "GRC",
+    "country": "Greece",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.53
+  },
+  {
+    "countryCode": "GRL",
+    "country": "Greenland",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "GRL",
+    "country": "Greenland",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "GRL",
+    "country": "Greenland",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "GRD",
+    "country": "Grenada",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "GRD",
+    "country": "Grenada",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "GRD",
+    "country": "Grenada",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "GUM",
+    "country": "Guam",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.79
+  },
+  {
+    "countryCode": "GUM",
+    "country": "Guam",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.8
+  },
+  {
+    "countryCode": "GUM",
+    "country": "Guam",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.77
+  },
+  {
+    "countryCode": "GTM",
+    "country": "Guatemala",
+    "indicator": "Adult Literacy Rate",
+    "rate": 79.31
+  },
+  {
+    "countryCode": "GTM",
+    "country": "Guatemala",
+    "indicator": "Female Literacy Rate",
+    "rate": 74.39
+  },
+  {
+    "countryCode": "GTM",
+    "country": "Guatemala",
+    "indicator": "Male Literacy Rate",
+    "rate": 84.75
+  },
+  {
+    "countryCode": "GIN",
+    "country": "Guinea",
+    "indicator": "Adult Literacy Rate",
+    "rate": 30.41
+  },
+  {
+    "countryCode": "GIN",
+    "country": "Guinea",
+    "indicator": "Female Literacy Rate",
+    "rate": 22.77
+  },
+  {
+    "countryCode": "GIN",
+    "country": "Guinea",
+    "indicator": "Male Literacy Rate",
+    "rate": 38.08
+  },
+  {
+    "countryCode": "GNB",
+    "country": "Guinea-Bissau",
+    "indicator": "Adult Literacy Rate",
+    "rate": 59.91
+  },
+  {
+    "countryCode": "GNB",
+    "country": "Guinea-Bissau",
+    "indicator": "Female Literacy Rate",
+    "rate": 48.28
+  },
+  {
+    "countryCode": "GNB",
+    "country": "Guinea-Bissau",
+    "indicator": "Male Literacy Rate",
+    "rate": 71.78
+  },
+  {
+    "countryCode": "GUY",
+    "country": "Guyana",
+    "indicator": "Adult Literacy Rate",
+    "rate": 88.5
+  },
+  {
+    "countryCode": "GUY",
+    "country": "Guyana",
+    "indicator": "Female Literacy Rate",
+    "rate": 89.8
+  },
+  {
+    "countryCode": "GUY",
+    "country": "Guyana",
+    "indicator": "Male Literacy Rate",
+    "rate": 87.2
+  },
+  {
+    "countryCode": "HTI",
+    "country": "Haiti",
+    "indicator": "Adult Literacy Rate",
+    "rate": 60.73
+  },
+  {
+    "countryCode": "HTI",
+    "country": "Haiti",
+    "indicator": "Female Literacy Rate",
+    "rate": 57.32
+  },
+  {
+    "countryCode": "HTI",
+    "country": "Haiti",
+    "indicator": "Male Literacy Rate",
+    "rate": 64.34
+  },
+  {
+    "countryCode": "HPC",
+    "country": "Heavily indebted poor countries (HIPC)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "HPC",
+    "country": "Heavily indebted poor countries (HIPC)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "HPC",
+    "country": "Heavily indebted poor countries (HIPC)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "HIC",
+    "country": "High income",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "HIC",
+    "country": "High income",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "HIC",
+    "country": "High income",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NOC",
+    "country": "High income: nonOECD",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NOC",
+    "country": "High income: nonOECD",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NOC",
+    "country": "High income: nonOECD",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "OEC",
+    "country": "High income: OECD",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "OEC",
+    "country": "High income: OECD",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "OEC",
+    "country": "High income: OECD",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "HND",
+    "country": "Honduras",
+    "indicator": "Adult Literacy Rate",
+    "rate": 88.48
+  },
+  {
+    "countryCode": "HND",
+    "country": "Honduras",
+    "indicator": "Female Literacy Rate",
+    "rate": 88.56
+  },
+  {
+    "countryCode": "HND",
+    "country": "Honduras",
+    "indicator": "Male Literacy Rate",
+    "rate": 88.41
+  },
+  {
+    "countryCode": "HKG",
+    "country": "Hong Kong SAR, China",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "HKG",
+    "country": "Hong Kong SAR, China",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "HKG",
+    "country": "Hong Kong SAR, China",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "HUN",
+    "country": "Hungary",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.05
+  },
+  {
+    "countryCode": "HUN",
+    "country": "Hungary",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.98
+  },
+  {
+    "countryCode": "HUN",
+    "country": "Hungary",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.13
+  },
+  {
+    "countryCode": "ISL",
+    "country": "Iceland",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ISL",
+    "country": "Iceland",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ISL",
+    "country": "Iceland",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "IND",
+    "country": "India",
+    "indicator": "Adult Literacy Rate",
+    "rate": 72.13
+  },
+  {
+    "countryCode": "IND",
+    "country": "India",
+    "indicator": "Female Literacy Rate",
+    "rate": 62.84
+  },
+  {
+    "countryCode": "IND",
+    "country": "India",
+    "indicator": "Male Literacy Rate",
+    "rate": 80.95
+  },
+  {
+    "countryCode": "IDN",
+    "country": "Indonesia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 93.88
+  },
+  {
+    "countryCode": "IDN",
+    "country": "Indonesia",
+    "indicator": "Female Literacy Rate",
+    "rate": 91.52
+  },
+  {
+    "countryCode": "IDN",
+    "country": "Indonesia",
+    "indicator": "Male Literacy Rate",
+    "rate": 96.26
+  },
+  {
+    "countryCode": "IRN",
+    "country": "Iran, Islamic Rep.",
+    "indicator": "Adult Literacy Rate",
+    "rate": 86.85
+  },
+  {
+    "countryCode": "IRN",
+    "country": "Iran, Islamic Rep.",
+    "indicator": "Female Literacy Rate",
+    "rate": 82.51
+  },
+  {
+    "countryCode": "IRN",
+    "country": "Iran, Islamic Rep.",
+    "indicator": "Male Literacy Rate",
+    "rate": 91.19
+  },
+  {
+    "countryCode": "IRQ",
+    "country": "Iraq",
+    "indicator": "Adult Literacy Rate",
+    "rate": 79.69
+  },
+  {
+    "countryCode": "IRQ",
+    "country": "Iraq",
+    "indicator": "Female Literacy Rate",
+    "rate": 73.73
+  },
+  {
+    "countryCode": "IRQ",
+    "country": "Iraq",
+    "indicator": "Male Literacy Rate",
+    "rate": 85.65
+  },
+  {
+    "countryCode": "IRL",
+    "country": "Ireland",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "IRL",
+    "country": "Ireland",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "IRL",
+    "country": "Ireland",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "IMY",
+    "country": "Isle of Man",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "IMY",
+    "country": "Isle of Man",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "IMY",
+    "country": "Isle of Man",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ISR",
+    "country": "Israel",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ISR",
+    "country": "Israel",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ISR",
+    "country": "Israel",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ITA",
+    "country": "Italy",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.15
+  },
+  {
+    "countryCode": "ITA",
+    "country": "Italy",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.97
+  },
+  {
+    "countryCode": "ITA",
+    "country": "Italy",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.35
+  },
+  {
+    "countryCode": "JAM",
+    "country": "Jamaica",
+    "indicator": "Adult Literacy Rate",
+    "rate": 88.69
+  },
+  {
+    "countryCode": "JAM",
+    "country": "Jamaica",
+    "indicator": "Female Literacy Rate",
+    "rate": 93.1
+  },
+  {
+    "countryCode": "JAM",
+    "country": "Jamaica",
+    "indicator": "Male Literacy Rate",
+    "rate": 84.04
+  },
+  {
+    "countryCode": "JPN",
+    "country": "Japan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "JPN",
+    "country": "Japan",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "JPN",
+    "country": "Japan",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "JOR",
+    "country": "Jordan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 96.67
+  },
+  {
+    "countryCode": "JOR",
+    "country": "Jordan",
+    "indicator": "Female Literacy Rate",
+    "rate": 95.16
+  },
+  {
+    "countryCode": "JOR",
+    "country": "Jordan",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.12
+  },
+  {
+    "countryCode": "KAZ",
+    "country": "Kazakhstan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.79
+  },
+  {
+    "countryCode": "KAZ",
+    "country": "Kazakhstan",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.78
+  },
+  {
+    "countryCode": "KAZ",
+    "country": "Kazakhstan",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.81
+  },
+  {
+    "countryCode": "KEN",
+    "country": "Kenya",
+    "indicator": "Adult Literacy Rate",
+    "rate": 77.97
+  },
+  {
+    "countryCode": "KEN",
+    "country": "Kenya",
+    "indicator": "Female Literacy Rate",
+    "rate": 74.9
+  },
+  {
+    "countryCode": "KEN",
+    "country": "Kenya",
+    "indicator": "Male Literacy Rate",
+    "rate": 81.08
+  },
+  {
+    "countryCode": "KIR",
+    "country": "Kiribati",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "KIR",
+    "country": "Kiribati",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "KIR",
+    "country": "Kiribati",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "PRK",
+    "country": "Korea, Dem. Rep.",
+    "indicator": "Adult Literacy Rate",
+    "rate": 100
+  },
+  {
+    "countryCode": "PRK",
+    "country": "Korea, Dem. Rep.",
+    "indicator": "Female Literacy Rate",
+    "rate": 100
+  },
+  {
+    "countryCode": "PRK",
+    "country": "Korea, Dem. Rep.",
+    "indicator": "Male Literacy Rate",
+    "rate": 100
+  },
+  {
+    "countryCode": "KOR",
+    "country": "Korea, Rep.",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "KOR",
+    "country": "Korea, Rep.",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "KOR",
+    "country": "Korea, Rep.",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "KSV",
+    "country": "Kosovo",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "KSV",
+    "country": "Kosovo",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "KSV",
+    "country": "Kosovo",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "KWT",
+    "country": "Kuwait",
+    "indicator": "Adult Literacy Rate",
+    "rate": 96.16
+  },
+  {
+    "countryCode": "KWT",
+    "country": "Kuwait",
+    "indicator": "Female Literacy Rate",
+    "rate": 94.98
+  },
+  {
+    "countryCode": "KWT",
+    "country": "Kuwait",
+    "indicator": "Male Literacy Rate",
+    "rate": 96.87
+  },
+  {
+    "countryCode": "KGZ",
+    "country": "Kyrgyz Republic",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.52
+  },
+  {
+    "countryCode": "KGZ",
+    "country": "Kyrgyz Republic",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.41
+  },
+  {
+    "countryCode": "KGZ",
+    "country": "Kyrgyz Republic",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.64
+  },
+  {
+    "countryCode": "LAO",
+    "country": "Lao PDR",
+    "indicator": "Adult Literacy Rate",
+    "rate": 79.86
+  },
+  {
+    "countryCode": "LAO",
+    "country": "Lao PDR",
+    "indicator": "Female Literacy Rate",
+    "rate": 72.81
+  },
+  {
+    "countryCode": "LAO",
+    "country": "Lao PDR",
+    "indicator": "Male Literacy Rate",
+    "rate": 87.14
+  },
+  {
+    "countryCode": "LCN",
+    "country": "Latin America & Caribbean (all income levels)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LCN",
+    "country": "Latin America & Caribbean (all income levels)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LCN",
+    "country": "Latin America & Caribbean (all income levels)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LAC",
+    "country": "Latin America & Caribbean (developing only)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LAC",
+    "country": "Latin America & Caribbean (developing only)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LAC",
+    "country": "Latin America & Caribbean (developing only)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LVA",
+    "country": "Latvia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.89
+  },
+  {
+    "countryCode": "LVA",
+    "country": "Latvia",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.91
+  },
+  {
+    "countryCode": "LVA",
+    "country": "Latvia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.87
+  },
+  {
+    "countryCode": "LDC",
+    "country": "Least developed countries: UN classification",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LDC",
+    "country": "Least developed countries: UN classification",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LDC",
+    "country": "Least developed countries: UN classification",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LBN",
+    "country": "Lebanon",
+    "indicator": "Adult Literacy Rate",
+    "rate": 93.94
+  },
+  {
+    "countryCode": "LBN",
+    "country": "Lebanon",
+    "indicator": "Female Literacy Rate",
+    "rate": 91.85
+  },
+  {
+    "countryCode": "LBN",
+    "country": "Lebanon",
+    "indicator": "Male Literacy Rate",
+    "rate": 95.97
+  },
+  {
+    "countryCode": "LSO",
+    "country": "Lesotho",
+    "indicator": "Adult Literacy Rate",
+    "rate": 79.36
+  },
+  {
+    "countryCode": "LSO",
+    "country": "Lesotho",
+    "indicator": "Female Literacy Rate",
+    "rate": 88.29
+  },
+  {
+    "countryCode": "LSO",
+    "country": "Lesotho",
+    "indicator": "Male Literacy Rate",
+    "rate": 70.07
+  },
+  {
+    "countryCode": "LBR",
+    "country": "Liberia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 47.6
+  },
+  {
+    "countryCode": "LBR",
+    "country": "Liberia",
+    "indicator": "Female Literacy Rate",
+    "rate": 32.81
+  },
+  {
+    "countryCode": "LBR",
+    "country": "Liberia",
+    "indicator": "Male Literacy Rate",
+    "rate": 62.42
+  },
+  {
+    "countryCode": "LBY",
+    "country": "Libya",
+    "indicator": "Adult Literacy Rate",
+    "rate": 91.02
+  },
+  {
+    "countryCode": "LBY",
+    "country": "Libya",
+    "indicator": "Female Literacy Rate",
+    "rate": 85.59
+  },
+  {
+    "countryCode": "LBY",
+    "country": "Libya",
+    "indicator": "Male Literacy Rate",
+    "rate": 96.72
+  },
+  {
+    "countryCode": "LIE",
+    "country": "Liechtenstein",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LIE",
+    "country": "Liechtenstein",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LIE",
+    "country": "Liechtenstein",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LTU",
+    "country": "Lithuania",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.82
+  },
+  {
+    "countryCode": "LTU",
+    "country": "Lithuania",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.84
+  },
+  {
+    "countryCode": "LTU",
+    "country": "Lithuania",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.8
+  },
+  {
+    "countryCode": "LMY",
+    "country": "Low & middle income",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LMY",
+    "country": "Low & middle income",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LMY",
+    "country": "Low & middle income",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LIC",
+    "country": "Low income",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LIC",
+    "country": "Low income",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LIC",
+    "country": "Low income",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LMC",
+    "country": "Lower middle income",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LMC",
+    "country": "Lower middle income",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LMC",
+    "country": "Lower middle income",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LUX",
+    "country": "Luxembourg",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LUX",
+    "country": "Luxembourg",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LUX",
+    "country": "Luxembourg",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MAC",
+    "country": "Macao SAR, China",
+    "indicator": "Adult Literacy Rate",
+    "rate": 96.23
+  },
+  {
+    "countryCode": "MAC",
+    "country": "Macao SAR, China",
+    "indicator": "Female Literacy Rate",
+    "rate": 94.6
+  },
+  {
+    "countryCode": "MAC",
+    "country": "Macao SAR, China",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.02
+  },
+  {
+    "countryCode": "MKD",
+    "country": "Macedonia, FYR",
+    "indicator": "Adult Literacy Rate",
+    "rate": 97.83
+  },
+  {
+    "countryCode": "MKD",
+    "country": "Macedonia, FYR",
+    "indicator": "Female Literacy Rate",
+    "rate": 96.84
+  },
+  {
+    "countryCode": "MKD",
+    "country": "Macedonia, FYR",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.83
+  },
+  {
+    "countryCode": "MDG",
+    "country": "Madagascar",
+    "indicator": "Adult Literacy Rate",
+    "rate": 64.66
+  },
+  {
+    "countryCode": "MDG",
+    "country": "Madagascar",
+    "indicator": "Female Literacy Rate",
+    "rate": 62.61
+  },
+  {
+    "countryCode": "MDG",
+    "country": "Madagascar",
+    "indicator": "Male Literacy Rate",
+    "rate": 66.74
+  },
+  {
+    "countryCode": "MWI",
+    "country": "Malawi",
+    "indicator": "Adult Literacy Rate",
+    "rate": 65.79
+  },
+  {
+    "countryCode": "MWI",
+    "country": "Malawi",
+    "indicator": "Female Literacy Rate",
+    "rate": 58.64
+  },
+  {
+    "countryCode": "MWI",
+    "country": "Malawi",
+    "indicator": "Male Literacy Rate",
+    "rate": 72.99
+  },
+  {
+    "countryCode": "MYS",
+    "country": "Malaysia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 94.64
+  },
+  {
+    "countryCode": "MYS",
+    "country": "Malaysia",
+    "indicator": "Female Literacy Rate",
+    "rate": 93.21
+  },
+  {
+    "countryCode": "MYS",
+    "country": "Malaysia",
+    "indicator": "Male Literacy Rate",
+    "rate": 96.18
+  },
+  {
+    "countryCode": "MDV",
+    "country": "Maldives",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.31
+  },
+  {
+    "countryCode": "MDV",
+    "country": "Maldives",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.84
+  },
+  {
+    "countryCode": "MDV",
+    "country": "Maldives",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.78
+  },
+  {
+    "countryCode": "MLI",
+    "country": "Mali",
+    "indicator": "Adult Literacy Rate",
+    "rate": 38.7
+  },
+  {
+    "countryCode": "MLI",
+    "country": "Mali",
+    "indicator": "Female Literacy Rate",
+    "rate": 29.22
+  },
+  {
+    "countryCode": "MLI",
+    "country": "Mali",
+    "indicator": "Male Literacy Rate",
+    "rate": 48.21
+  },
+  {
+    "countryCode": "MLT",
+    "country": "Malta",
+    "indicator": "Adult Literacy Rate",
+    "rate": 94.14
+  },
+  {
+    "countryCode": "MLT",
+    "country": "Malta",
+    "indicator": "Female Literacy Rate",
+    "rate": 95.75
+  },
+  {
+    "countryCode": "MLT",
+    "country": "Malta",
+    "indicator": "Male Literacy Rate",
+    "rate": 92.51
+  },
+  {
+    "countryCode": "MHL",
+    "country": "Marshall Islands",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MHL",
+    "country": "Marshall Islands",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MHL",
+    "country": "Marshall Islands",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MRT",
+    "country": "Mauritania",
+    "indicator": "Adult Literacy Rate",
+    "rate": 52.1
+  },
+  {
+    "countryCode": "MRT",
+    "country": "Mauritania",
+    "indicator": "Female Literacy Rate",
+    "rate": 41.57
+  },
+  {
+    "countryCode": "MRT",
+    "country": "Mauritania",
+    "indicator": "Male Literacy Rate",
+    "rate": 62.6
+  },
+  {
+    "countryCode": "MUS",
+    "country": "Mauritius",
+    "indicator": "Adult Literacy Rate",
+    "rate": 90.62
+  },
+  {
+    "countryCode": "MUS",
+    "country": "Mauritius",
+    "indicator": "Female Literacy Rate",
+    "rate": 88.48
+  },
+  {
+    "countryCode": "MUS",
+    "country": "Mauritius",
+    "indicator": "Male Literacy Rate",
+    "rate": 92.85
+  },
+  {
+    "countryCode": "MEX",
+    "country": "Mexico",
+    "indicator": "Adult Literacy Rate",
+    "rate": 94.39
+  },
+  {
+    "countryCode": "MEX",
+    "country": "Mexico",
+    "indicator": "Female Literacy Rate",
+    "rate": 93.32
+  },
+  {
+    "countryCode": "MEX",
+    "country": "Mexico",
+    "indicator": "Male Literacy Rate",
+    "rate": 95.57
+  },
+  {
+    "countryCode": "FSM",
+    "country": "Micronesia, Fed. Sts.",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FSM",
+    "country": "Micronesia, Fed. Sts.",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "FSM",
+    "country": "Micronesia, Fed. Sts.",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MEA",
+    "country": "Middle East & North Africa (all income levels)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MEA",
+    "country": "Middle East & North Africa (all income levels)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MEA",
+    "country": "Middle East & North Africa (all income levels)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MNA",
+    "country": "Middle East & North Africa (developing only)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MNA",
+    "country": "Middle East & North Africa (developing only)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MNA",
+    "country": "Middle East & North Africa (developing only)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MIC",
+    "country": "Middle income",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MIC",
+    "country": "Middle income",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MIC",
+    "country": "Middle income",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MDA",
+    "country": "Moldova",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.36
+  },
+  {
+    "countryCode": "MDA",
+    "country": "Moldova",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.06
+  },
+  {
+    "countryCode": "MDA",
+    "country": "Moldova",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.71
+  },
+  {
+    "countryCode": "MCO",
+    "country": "Monaco",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MCO",
+    "country": "Monaco",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MCO",
+    "country": "Monaco",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MNG",
+    "country": "Mongolia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 98.38
+  },
+  {
+    "countryCode": "MNG",
+    "country": "Mongolia",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.58
+  },
+  {
+    "countryCode": "MNG",
+    "country": "Mongolia",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.18
+  },
+  {
+    "countryCode": "MNE",
+    "country": "Montenegro",
+    "indicator": "Adult Literacy Rate",
+    "rate": 98.73
+  },
+  {
+    "countryCode": "MNE",
+    "country": "Montenegro",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.04
+  },
+  {
+    "countryCode": "MNE",
+    "country": "Montenegro",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.45
+  },
+  {
+    "countryCode": "MAR",
+    "country": "Morocco",
+    "indicator": "Adult Literacy Rate",
+    "rate": 72.38
+  },
+  {
+    "countryCode": "MAR",
+    "country": "Morocco",
+    "indicator": "Female Literacy Rate",
+    "rate": 62.5
+  },
+  {
+    "countryCode": "MAR",
+    "country": "Morocco",
+    "indicator": "Male Literacy Rate",
+    "rate": 82.72
+  },
+  {
+    "countryCode": "MOZ",
+    "country": "Mozambique",
+    "indicator": "Adult Literacy Rate",
+    "rate": 58.77
+  },
+  {
+    "countryCode": "MOZ",
+    "country": "Mozambique",
+    "indicator": "Female Literacy Rate",
+    "rate": 45.37
+  },
+  {
+    "countryCode": "MOZ",
+    "country": "Mozambique",
+    "indicator": "Male Literacy Rate",
+    "rate": 73.26
+  },
+  {
+    "countryCode": "MMR",
+    "country": "Myanmar",
+    "indicator": "Adult Literacy Rate",
+    "rate": 93.09
+  },
+  {
+    "countryCode": "MMR",
+    "country": "Myanmar",
+    "indicator": "Female Literacy Rate",
+    "rate": 91.18
+  },
+  {
+    "countryCode": "MMR",
+    "country": "Myanmar",
+    "indicator": "Male Literacy Rate",
+    "rate": 95.17
+  },
+  {
+    "countryCode": "NAM",
+    "country": "Namibia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 81.94
+  },
+  {
+    "countryCode": "NAM",
+    "country": "Namibia",
+    "indicator": "Female Literacy Rate",
+    "rate": 84.48
+  },
+  {
+    "countryCode": "NAM",
+    "country": "Namibia",
+    "indicator": "Male Literacy Rate",
+    "rate": 79.16
+  },
+  {
+    "countryCode": "NPL",
+    "country": "Nepal",
+    "indicator": "Adult Literacy Rate",
+    "rate": 64.66
+  },
+  {
+    "countryCode": "NPL",
+    "country": "Nepal",
+    "indicator": "Female Literacy Rate",
+    "rate": 55.11
+  },
+  {
+    "countryCode": "NPL",
+    "country": "Nepal",
+    "indicator": "Male Literacy Rate",
+    "rate": 75.58
+  },
+  {
+    "countryCode": "NLD",
+    "country": "Netherlands",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NLD",
+    "country": "Netherlands",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NLD",
+    "country": "Netherlands",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NCL",
+    "country": "New Caledonia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 96.94
+  },
+  {
+    "countryCode": "NCL",
+    "country": "New Caledonia",
+    "indicator": "Female Literacy Rate",
+    "rate": 96.53
+  },
+  {
+    "countryCode": "NCL",
+    "country": "New Caledonia",
+    "indicator": "Male Literacy Rate",
+    "rate": 97.34
+  },
+  {
+    "countryCode": "NZL",
+    "country": "New Zealand",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NZL",
+    "country": "New Zealand",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NZL",
+    "country": "New Zealand",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NIC",
+    "country": "Nicaragua",
+    "indicator": "Adult Literacy Rate",
+    "rate": 82.82
+  },
+  {
+    "countryCode": "NIC",
+    "country": "Nicaragua",
+    "indicator": "Female Literacy Rate",
+    "rate": 83.25
+  },
+  {
+    "countryCode": "NIC",
+    "country": "Nicaragua",
+    "indicator": "Male Literacy Rate",
+    "rate": 82.36
+  },
+  {
+    "countryCode": "NER",
+    "country": "Niger",
+    "indicator": "Adult Literacy Rate",
+    "rate": 19.13
+  },
+  {
+    "countryCode": "NER",
+    "country": "Niger",
+    "indicator": "Female Literacy Rate",
+    "rate": 11.04
+  },
+  {
+    "countryCode": "NER",
+    "country": "Niger",
+    "indicator": "Male Literacy Rate",
+    "rate": 27.29
+  },
+  {
+    "countryCode": "NGA",
+    "country": "Nigeria",
+    "indicator": "Adult Literacy Rate",
+    "rate": 59.57
+  },
+  {
+    "countryCode": "NGA",
+    "country": "Nigeria",
+    "indicator": "Female Literacy Rate",
+    "rate": 49.68
+  },
+  {
+    "countryCode": "NGA",
+    "country": "Nigeria",
+    "indicator": "Male Literacy Rate",
+    "rate": 69.19
+  },
+  {
+    "countryCode": "NAC",
+    "country": "North America",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NAC",
+    "country": "North America",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NAC",
+    "country": "North America",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MNP",
+    "country": "Northern Mariana Islands",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MNP",
+    "country": "Northern Mariana Islands",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MNP",
+    "country": "Northern Mariana Islands",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NOR",
+    "country": "Norway",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NOR",
+    "country": "Norway",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "NOR",
+    "country": "Norway",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "OED",
+    "country": "OECD members",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "OED",
+    "country": "OECD members",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "OED",
+    "country": "OECD members",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "OMN",
+    "country": "Oman",
+    "indicator": "Adult Literacy Rate",
+    "rate": 94.76
+  },
+  {
+    "countryCode": "OMN",
+    "country": "Oman",
+    "indicator": "Female Literacy Rate",
+    "rate": 89.97
+  },
+  {
+    "countryCode": "OMN",
+    "country": "Oman",
+    "indicator": "Male Literacy Rate",
+    "rate": 96.88
+  },
+  {
+    "countryCode": "PAK",
+    "country": "Pakistan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 58.68
+  },
+  {
+    "countryCode": "PAK",
+    "country": "Pakistan",
+    "indicator": "Female Literacy Rate",
+    "rate": 45.29
+  },
+  {
+    "countryCode": "PAK",
+    "country": "Pakistan",
+    "indicator": "Male Literacy Rate",
+    "rate": 71.5
+  },
+  {
+    "countryCode": "PLW",
+    "country": "Palau",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.52
+  },
+  {
+    "countryCode": "PLW",
+    "country": "Palau",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.55
+  },
+  {
+    "countryCode": "PLW",
+    "country": "Palau",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.5
+  },
+  {
+    "countryCode": "PAN",
+    "country": "Panama",
+    "indicator": "Adult Literacy Rate",
+    "rate": 95.05
+  },
+  {
+    "countryCode": "PAN",
+    "country": "Panama",
+    "indicator": "Female Literacy Rate",
+    "rate": 94.43
+  },
+  {
+    "countryCode": "PAN",
+    "country": "Panama",
+    "indicator": "Male Literacy Rate",
+    "rate": 95.66
+  },
+  {
+    "countryCode": "PNG",
+    "country": "Papua New Guinea",
+    "indicator": "Adult Literacy Rate",
+    "rate": 64.23
+  },
+  {
+    "countryCode": "PNG",
+    "country": "Papua New Guinea",
+    "indicator": "Female Literacy Rate",
+    "rate": 62.81
+  },
+  {
+    "countryCode": "PNG",
+    "country": "Papua New Guinea",
+    "indicator": "Male Literacy Rate",
+    "rate": 65.63
+  },
+  {
+    "countryCode": "PRY",
+    "country": "Paraguay",
+    "indicator": "Adult Literacy Rate",
+    "rate": 95.56
+  },
+  {
+    "countryCode": "PRY",
+    "country": "Paraguay",
+    "indicator": "Female Literacy Rate",
+    "rate": 95.01
+  },
+  {
+    "countryCode": "PRY",
+    "country": "Paraguay",
+    "indicator": "Male Literacy Rate",
+    "rate": 96.11
+  },
+  {
+    "countryCode": "PER",
+    "country": "Peru",
+    "indicator": "Adult Literacy Rate",
+    "rate": 94.48
+  },
+  {
+    "countryCode": "PER",
+    "country": "Peru",
+    "indicator": "Female Literacy Rate",
+    "rate": 91.7
+  },
+  {
+    "countryCode": "PER",
+    "country": "Peru",
+    "indicator": "Male Literacy Rate",
+    "rate": 97.28
+  },
+  {
+    "countryCode": "PHL",
+    "country": "Philippines",
+    "indicator": "Adult Literacy Rate",
+    "rate": 96.29
+  },
+  {
+    "countryCode": "PHL",
+    "country": "Philippines",
+    "indicator": "Female Literacy Rate",
+    "rate": 96.79
+  },
+  {
+    "countryCode": "PHL",
+    "country": "Philippines",
+    "indicator": "Male Literacy Rate",
+    "rate": 95.78
+  },
+  {
+    "countryCode": "POL",
+    "country": "Poland",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.79
+  },
+  {
+    "countryCode": "POL",
+    "country": "Poland",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.68
+  },
+  {
+    "countryCode": "POL",
+    "country": "Poland",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.92
+  },
+  {
+    "countryCode": "PRT",
+    "country": "Portugal",
+    "indicator": "Adult Literacy Rate",
+    "rate": 95.68
+  },
+  {
+    "countryCode": "PRT",
+    "country": "Portugal",
+    "indicator": "Female Literacy Rate",
+    "rate": 94.38
+  },
+  {
+    "countryCode": "PRT",
+    "country": "Portugal",
+    "indicator": "Male Literacy Rate",
+    "rate": 97.08
+  },
+  {
+    "countryCode": "PRI",
+    "country": "Puerto Rico",
+    "indicator": "Adult Literacy Rate",
+    "rate": 93.33
+  },
+  {
+    "countryCode": "PRI",
+    "country": "Puerto Rico",
+    "indicator": "Female Literacy Rate",
+    "rate": 93.83
+  },
+  {
+    "countryCode": "PRI",
+    "country": "Puerto Rico",
+    "indicator": "Male Literacy Rate",
+    "rate": 92.78
+  },
+  {
+    "countryCode": "QAT",
+    "country": "Qatar",
+    "indicator": "Adult Literacy Rate",
+    "rate": 97.76
+  },
+  {
+    "countryCode": "QAT",
+    "country": "Qatar",
+    "indicator": "Female Literacy Rate",
+    "rate": 97.28
+  },
+  {
+    "countryCode": "QAT",
+    "country": "Qatar",
+    "indicator": "Male Literacy Rate",
+    "rate": 97.88
+  },
+  {
+    "countryCode": "ROM",
+    "country": "Romania",
+    "indicator": "Adult Literacy Rate",
+    "rate": 98.77
+  },
+  {
+    "countryCode": "ROM",
+    "country": "Romania",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.49
+  },
+  {
+    "countryCode": "ROM",
+    "country": "Romania",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.07
+  },
+  {
+    "countryCode": "RUS",
+    "country": "Russian Federation",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.72
+  },
+  {
+    "countryCode": "RUS",
+    "country": "Russian Federation",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.72
+  },
+  {
+    "countryCode": "RUS",
+    "country": "Russian Federation",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.73
+  },
+  {
+    "countryCode": "RWA",
+    "country": "Rwanda",
+    "indicator": "Adult Literacy Rate",
+    "rate": 70.52
+  },
+  {
+    "countryCode": "RWA",
+    "country": "Rwanda",
+    "indicator": "Female Literacy Rate",
+    "rate": 68.02
+  },
+  {
+    "countryCode": "RWA",
+    "country": "Rwanda",
+    "indicator": "Male Literacy Rate",
+    "rate": 73.21
+  },
+  {
+    "countryCode": "WSM",
+    "country": "Samoa",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.02
+  },
+  {
+    "countryCode": "WSM",
+    "country": "Samoa",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.12
+  },
+  {
+    "countryCode": "WSM",
+    "country": "Samoa",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.91
+  },
+  {
+    "countryCode": "SMR",
+    "country": "San Marino",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SMR",
+    "country": "San Marino",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SMR",
+    "country": "San Marino",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "STP",
+    "country": "Sao Tome and Principe",
+    "indicator": "Adult Literacy Rate",
+    "rate": 74.92
+  },
+  {
+    "countryCode": "STP",
+    "country": "Sao Tome and Principe",
+    "indicator": "Female Literacy Rate",
+    "rate": 68.38
+  },
+  {
+    "countryCode": "STP",
+    "country": "Sao Tome and Principe",
+    "indicator": "Male Literacy Rate",
+    "rate": 81.8
+  },
+  {
+    "countryCode": "SAU",
+    "country": "Saudi Arabia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 94.65
+  },
+  {
+    "countryCode": "SAU",
+    "country": "Saudi Arabia",
+    "indicator": "Female Literacy Rate",
+    "rate": 91.06
+  },
+  {
+    "countryCode": "SAU",
+    "country": "Saudi Arabia",
+    "indicator": "Male Literacy Rate",
+    "rate": 97
+  },
+  {
+    "countryCode": "SEN",
+    "country": "Senegal",
+    "indicator": "Adult Literacy Rate",
+    "rate": 55.67
+  },
+  {
+    "countryCode": "SEN",
+    "country": "Senegal",
+    "indicator": "Female Literacy Rate",
+    "rate": 43.85
+  },
+  {
+    "countryCode": "SEN",
+    "country": "Senegal",
+    "indicator": "Male Literacy Rate",
+    "rate": 68.49
+  },
+  {
+    "countryCode": "SRB",
+    "country": "Serbia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 98.11
+  },
+  {
+    "countryCode": "SRB",
+    "country": "Serbia",
+    "indicator": "Female Literacy Rate",
+    "rate": 97.19
+  },
+  {
+    "countryCode": "SRB",
+    "country": "Serbia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.09
+  },
+  {
+    "countryCode": "SYC",
+    "country": "Seychelles",
+    "indicator": "Adult Literacy Rate",
+    "rate": 95.21
+  },
+  {
+    "countryCode": "SYC",
+    "country": "Seychelles",
+    "indicator": "Female Literacy Rate",
+    "rate": 95.7
+  },
+  {
+    "countryCode": "SYC",
+    "country": "Seychelles",
+    "indicator": "Male Literacy Rate",
+    "rate": 94.74
+  },
+  {
+    "countryCode": "SLE",
+    "country": "Sierra Leone",
+    "indicator": "Adult Literacy Rate",
+    "rate": 48.09
+  },
+  {
+    "countryCode": "SLE",
+    "country": "Sierra Leone",
+    "indicator": "Female Literacy Rate",
+    "rate": 37.65
+  },
+  {
+    "countryCode": "SLE",
+    "country": "Sierra Leone",
+    "indicator": "Male Literacy Rate",
+    "rate": 58.74
+  },
+  {
+    "countryCode": "SGP",
+    "country": "Singapore",
+    "indicator": "Adult Literacy Rate",
+    "rate": 96.84
+  },
+  {
+    "countryCode": "SGP",
+    "country": "Singapore",
+    "indicator": "Female Literacy Rate",
+    "rate": 95.09
+  },
+  {
+    "countryCode": "SGP",
+    "country": "Singapore",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.66
+  },
+  {
+    "countryCode": "SXM",
+    "country": "Sint Maarten (Dutch part)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SXM",
+    "country": "Sint Maarten (Dutch part)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SXM",
+    "country": "Sint Maarten (Dutch part)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SVK",
+    "country": "Slovak Republic",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.62
+  },
+  {
+    "countryCode": "SVK",
+    "country": "Slovak Republic",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.64
+  },
+  {
+    "countryCode": "SVK",
+    "country": "Slovak Republic",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.59
+  },
+  {
+    "countryCode": "SVN",
+    "country": "Slovenia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.72
+  },
+  {
+    "countryCode": "SVN",
+    "country": "Slovenia",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.7
+  },
+  {
+    "countryCode": "SVN",
+    "country": "Slovenia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.73
+  },
+  {
+    "countryCode": "SLB",
+    "country": "Solomon Islands",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SLB",
+    "country": "Solomon Islands",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SLB",
+    "country": "Solomon Islands",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SOM",
+    "country": "Somalia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SOM",
+    "country": "Somalia",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SOM",
+    "country": "Somalia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "ZAF",
+    "country": "South Africa",
+    "indicator": "Adult Literacy Rate",
+    "rate": 94.27
+  },
+  {
+    "countryCode": "ZAF",
+    "country": "South Africa",
+    "indicator": "Female Literacy Rate",
+    "rate": 93.13
+  },
+  {
+    "countryCode": "ZAF",
+    "country": "South Africa",
+    "indicator": "Male Literacy Rate",
+    "rate": 95.51
+  },
+  {
+    "countryCode": "SAS",
+    "country": "South Asia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SAS",
+    "country": "South Asia",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SAS",
+    "country": "South Asia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SSD",
+    "country": "South Sudan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 31.94
+  },
+  {
+    "countryCode": "SSD",
+    "country": "South Sudan",
+    "indicator": "Female Literacy Rate",
+    "rate": 25.34
+  },
+  {
+    "countryCode": "SSD",
+    "country": "South Sudan",
+    "indicator": "Male Literacy Rate",
+    "rate": 38.62
+  },
+  {
+    "countryCode": "ESP",
+    "country": "Spain",
+    "indicator": "Adult Literacy Rate",
+    "rate": 98.1
+  },
+  {
+    "countryCode": "ESP",
+    "country": "Spain",
+    "indicator": "Female Literacy Rate",
+    "rate": 97.47
+  },
+  {
+    "countryCode": "ESP",
+    "country": "Spain",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.75
+  },
+  {
+    "countryCode": "LKA",
+    "country": "Sri Lanka",
+    "indicator": "Adult Literacy Rate",
+    "rate": 92.63
+  },
+  {
+    "countryCode": "LKA",
+    "country": "Sri Lanka",
+    "indicator": "Female Literacy Rate",
+    "rate": 91.71
+  },
+  {
+    "countryCode": "LKA",
+    "country": "Sri Lanka",
+    "indicator": "Male Literacy Rate",
+    "rate": 93.63
+  },
+  {
+    "countryCode": "KNA",
+    "country": "St. Kitts and Nevis",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "KNA",
+    "country": "St. Kitts and Nevis",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "KNA",
+    "country": "St. Kitts and Nevis",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LCA",
+    "country": "St. Lucia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LCA",
+    "country": "St. Lucia",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "LCA",
+    "country": "St. Lucia",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MAF",
+    "country": "St. Martin (French part)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MAF",
+    "country": "St. Martin (French part)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "MAF",
+    "country": "St. Martin (French part)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "VCT",
+    "country": "St. Vincent and the Grenadines",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "VCT",
+    "country": "St. Vincent and the Grenadines",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "VCT",
+    "country": "St. Vincent and the Grenadines",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SSF",
+    "country": "Sub-Saharan Africa (all income levels)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SSF",
+    "country": "Sub-Saharan Africa (all income levels)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SSF",
+    "country": "Sub-Saharan Africa (all income levels)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SSA",
+    "country": "Sub-Saharan Africa (developing only)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SSA",
+    "country": "Sub-Saharan Africa (developing only)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SSA",
+    "country": "Sub-Saharan Africa (developing only)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SDN",
+    "country": "Sudan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 75.9
+  },
+  {
+    "countryCode": "SDN",
+    "country": "Sudan",
+    "indicator": "Female Literacy Rate",
+    "rate": 68.61
+  },
+  {
+    "countryCode": "SDN",
+    "country": "Sudan",
+    "indicator": "Male Literacy Rate",
+    "rate": 83.26
+  },
+  {
+    "countryCode": "SUR",
+    "country": "Suriname",
+    "indicator": "Adult Literacy Rate",
+    "rate": 95.57
+  },
+  {
+    "countryCode": "SUR",
+    "country": "Suriname",
+    "indicator": "Female Literacy Rate",
+    "rate": 95.01
+  },
+  {
+    "countryCode": "SUR",
+    "country": "Suriname",
+    "indicator": "Male Literacy Rate",
+    "rate": 96.14
+  },
+  {
+    "countryCode": "SWZ",
+    "country": "Swaziland",
+    "indicator": "Adult Literacy Rate",
+    "rate": 87.47
+  },
+  {
+    "countryCode": "SWZ",
+    "country": "Swaziland",
+    "indicator": "Female Literacy Rate",
+    "rate": 87.5
+  },
+  {
+    "countryCode": "SWZ",
+    "country": "Swaziland",
+    "indicator": "Male Literacy Rate",
+    "rate": 87.44
+  },
+  {
+    "countryCode": "SWE",
+    "country": "Sweden",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SWE",
+    "country": "Sweden",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SWE",
+    "country": "Sweden",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CHE",
+    "country": "Switzerland",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CHE",
+    "country": "Switzerland",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "CHE",
+    "country": "Switzerland",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "SYR",
+    "country": "Syrian Arab Republic",
+    "indicator": "Adult Literacy Rate",
+    "rate": 86.43
+  },
+  {
+    "countryCode": "SYR",
+    "country": "Syrian Arab Republic",
+    "indicator": "Female Literacy Rate",
+    "rate": 80.98
+  },
+  {
+    "countryCode": "SYR",
+    "country": "Syrian Arab Republic",
+    "indicator": "Male Literacy Rate",
+    "rate": 91.72
+  },
+  {
+    "countryCode": "TJK",
+    "country": "Tajikistan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.77
+  },
+  {
+    "countryCode": "TJK",
+    "country": "Tajikistan",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.72
+  },
+  {
+    "countryCode": "TJK",
+    "country": "Tajikistan",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.83
+  },
+  {
+    "countryCode": "TZA",
+    "country": "Tanzania",
+    "indicator": "Adult Literacy Rate",
+    "rate": 80.32
+  },
+  {
+    "countryCode": "TZA",
+    "country": "Tanzania",
+    "indicator": "Female Literacy Rate",
+    "rate": 75.87
+  },
+  {
+    "countryCode": "TZA",
+    "country": "Tanzania",
+    "indicator": "Male Literacy Rate",
+    "rate": 84.82
+  },
+  {
+    "countryCode": "THA",
+    "country": "Thailand",
+    "indicator": "Adult Literacy Rate",
+    "rate": 96.67
+  },
+  {
+    "countryCode": "THA",
+    "country": "Thailand",
+    "indicator": "Female Literacy Rate",
+    "rate": 96.68
+  },
+  {
+    "countryCode": "THA",
+    "country": "Thailand",
+    "indicator": "Male Literacy Rate",
+    "rate": 96.65
+  },
+  {
+    "countryCode": "TMP",
+    "country": "Timor-Leste",
+    "indicator": "Adult Literacy Rate",
+    "rate": 67.52
+  },
+  {
+    "countryCode": "TMP",
+    "country": "Timor-Leste",
+    "indicator": "Female Literacy Rate",
+    "rate": 63.44
+  },
+  {
+    "countryCode": "TMP",
+    "country": "Timor-Leste",
+    "indicator": "Male Literacy Rate",
+    "rate": 71.49
+  },
+  {
+    "countryCode": "TGO",
+    "country": "Togo",
+    "indicator": "Adult Literacy Rate",
+    "rate": 66.55
+  },
+  {
+    "countryCode": "TGO",
+    "country": "Togo",
+    "indicator": "Female Literacy Rate",
+    "rate": 55.3
+  },
+  {
+    "countryCode": "TGO",
+    "country": "Togo",
+    "indicator": "Male Literacy Rate",
+    "rate": 78.31
+  },
+  {
+    "countryCode": "TON",
+    "country": "Tonga",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.4
+  },
+  {
+    "countryCode": "TON",
+    "country": "Tonga",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.45
+  },
+  {
+    "countryCode": "TON",
+    "country": "Tonga",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.35
+  },
+  {
+    "countryCode": "TTO",
+    "country": "Trinidad and Tobago",
+    "indicator": "Adult Literacy Rate",
+    "rate": 98.96
+  },
+  {
+    "countryCode": "TTO",
+    "country": "Trinidad and Tobago",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.69
+  },
+  {
+    "countryCode": "TTO",
+    "country": "Trinidad and Tobago",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.24
+  },
+  {
+    "countryCode": "TUN",
+    "country": "Tunisia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 81.78
+  },
+  {
+    "countryCode": "TUN",
+    "country": "Tunisia",
+    "indicator": "Female Literacy Rate",
+    "rate": 74.24
+  },
+  {
+    "countryCode": "TUN",
+    "country": "Tunisia",
+    "indicator": "Male Literacy Rate",
+    "rate": 89.62
+  },
+  {
+    "countryCode": "TUR",
+    "country": "Turkey",
+    "indicator": "Adult Literacy Rate",
+    "rate": 95.01
+  },
+  {
+    "countryCode": "TUR",
+    "country": "Turkey",
+    "indicator": "Female Literacy Rate",
+    "rate": 91.83
+  },
+  {
+    "countryCode": "TUR",
+    "country": "Turkey",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.39
+  },
+  {
+    "countryCode": "TKM",
+    "country": "Turkmenistan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.69
+  },
+  {
+    "countryCode": "TKM",
+    "country": "Turkmenistan",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.63
+  },
+  {
+    "countryCode": "TKM",
+    "country": "Turkmenistan",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.76
+  },
+  {
+    "countryCode": "TCA",
+    "country": "Turks and Caicos Islands",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "TCA",
+    "country": "Turks and Caicos Islands",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "TCA",
+    "country": "Turks and Caicos Islands",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "TUV",
+    "country": "Tuvalu",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "TUV",
+    "country": "Tuvalu",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "TUV",
+    "country": "Tuvalu",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "UGA",
+    "country": "Uganda",
+    "indicator": "Adult Literacy Rate",
+    "rate": 73.86
+  },
+  {
+    "countryCode": "UGA",
+    "country": "Uganda",
+    "indicator": "Female Literacy Rate",
+    "rate": 66.89
+  },
+  {
+    "countryCode": "UGA",
+    "country": "Uganda",
+    "indicator": "Male Literacy Rate",
+    "rate": 80.85
+  },
+  {
+    "countryCode": "UKR",
+    "country": "Ukraine",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.76
+  },
+  {
+    "countryCode": "UKR",
+    "country": "Ukraine",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.74
+  },
+  {
+    "countryCode": "UKR",
+    "country": "Ukraine",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.79
+  },
+  {
+    "countryCode": "ARE",
+    "country": "United Arab Emirates",
+    "indicator": "Adult Literacy Rate",
+    "rate": 93.84
+  },
+  {
+    "countryCode": "ARE",
+    "country": "United Arab Emirates",
+    "indicator": "Female Literacy Rate",
+    "rate": 95.76
+  },
+  {
+    "countryCode": "ARE",
+    "country": "United Arab Emirates",
+    "indicator": "Male Literacy Rate",
+    "rate": 93.13
+  },
+  {
+    "countryCode": "GBR",
+    "country": "United Kingdom",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "GBR",
+    "country": "United Kingdom",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "GBR",
+    "country": "United Kingdom",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "USA",
+    "country": "United States",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "USA",
+    "country": "United States",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "USA",
+    "country": "United States",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "UMC",
+    "country": "Upper middle income",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "UMC",
+    "country": "Upper middle income",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "UMC",
+    "country": "Upper middle income",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "URY",
+    "country": "Uruguay",
+    "indicator": "Adult Literacy Rate",
+    "rate": 98.43
+  },
+  {
+    "countryCode": "URY",
+    "country": "Uruguay",
+    "indicator": "Female Literacy Rate",
+    "rate": 98.7
+  },
+  {
+    "countryCode": "URY",
+    "country": "Uruguay",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.12
+  },
+  {
+    "countryCode": "UZB",
+    "country": "Uzbekistan",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99.59
+  },
+  {
+    "countryCode": "UZB",
+    "country": "Uzbekistan",
+    "indicator": "Female Literacy Rate",
+    "rate": 99.47
+  },
+  {
+    "countryCode": "UZB",
+    "country": "Uzbekistan",
+    "indicator": "Male Literacy Rate",
+    "rate": 99.72
+  },
+  {
+    "countryCode": "VUT",
+    "country": "Vanuatu",
+    "indicator": "Adult Literacy Rate",
+    "rate": 85.23
+  },
+  {
+    "countryCode": "VUT",
+    "country": "Vanuatu",
+    "indicator": "Female Literacy Rate",
+    "rate": 83.81
+  },
+  {
+    "countryCode": "VUT",
+    "country": "Vanuatu",
+    "indicator": "Male Literacy Rate",
+    "rate": 86.63
+  },
+  {
+    "countryCode": "VEN",
+    "country": "Venezuela, RB",
+    "indicator": "Adult Literacy Rate",
+    "rate": 95.36
+  },
+  {
+    "countryCode": "VEN",
+    "country": "Venezuela, RB",
+    "indicator": "Female Literacy Rate",
+    "rate": 95.72
+  },
+  {
+    "countryCode": "VEN",
+    "country": "Venezuela, RB",
+    "indicator": "Male Literacy Rate",
+    "rate": 95
+  },
+  {
+    "countryCode": "VNM",
+    "country": "Vietnam",
+    "indicator": "Adult Literacy Rate",
+    "rate": 94.51
+  },
+  {
+    "countryCode": "VNM",
+    "country": "Vietnam",
+    "indicator": "Female Literacy Rate",
+    "rate": 92.83
+  },
+  {
+    "countryCode": "VNM",
+    "country": "Vietnam",
+    "indicator": "Male Literacy Rate",
+    "rate": 96.28
+  },
+  {
+    "countryCode": "VIR",
+    "country": "Virgin Islands (U.S.)",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "VIR",
+    "country": "Virgin Islands (U.S.)",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "VIR",
+    "country": "Virgin Islands (U.S.)",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "WBG",
+    "country": "West Bank and Gaza",
+    "indicator": "Adult Literacy Rate",
+    "rate": 96.65
+  },
+  {
+    "countryCode": "WBG",
+    "country": "West Bank and Gaza",
+    "indicator": "Female Literacy Rate",
+    "rate": 94.77
+  },
+  {
+    "countryCode": "WBG",
+    "country": "West Bank and Gaza",
+    "indicator": "Male Literacy Rate",
+    "rate": 98.49
+  },
+  {
+    "countryCode": "WLD",
+    "country": "World",
+    "indicator": "Adult Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "WLD",
+    "country": "World",
+    "indicator": "Female Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "WLD",
+    "country": "World",
+    "indicator": "Male Literacy Rate",
+    "rate": 99
+  },
+  {
+    "countryCode": "YEM",
+    "country": "Yemen, Rep.",
+    "indicator": "Adult Literacy Rate",
+    "rate": 70.07
+  },
+  {
+    "countryCode": "YEM",
+    "country": "Yemen, Rep.",
+    "indicator": "Female Literacy Rate",
+    "rate": 55.02
+  },
+  {
+    "countryCode": "YEM",
+    "country": "Yemen, Rep.",
+    "indicator": "Male Literacy Rate",
+    "rate": 85.13
+  },
+  {
+    "countryCode": "ZMB",
+    "country": "Zambia",
+    "indicator": "Adult Literacy Rate",
+    "rate": 63.38
+  },
+  {
+    "countryCode": "ZMB",
+    "country": "Zambia",
+    "indicator": "Female Literacy Rate",
+    "rate": 55.96
+  },
+  {
+    "countryCode": "ZMB",
+    "country": "Zambia",
+    "indicator": "Male Literacy Rate",
+    "rate": 70.89
+  },
+  {
+    "countryCode": "ZWE",
+    "country": "Zimbabwe",
+    "indicator": "Adult Literacy Rate",
+    "rate": 86.5
+  },
+  {
+    "countryCode": "ZWE",
+    "country": "Zimbabwe",
+    "indicator": "Female Literacy Rate",
+    "rate": 84.55
+  },
+  {
+    "countryCode": "ZWE",
+    "country": "Zimbabwe",
+    "indicator": "Male Literacy Rate",
+    "rate": 88.53
+  }
+]
