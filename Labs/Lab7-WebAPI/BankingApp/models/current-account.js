@@ -8,10 +8,8 @@ class CurrentAccount extends BankAccount {
     }
 
     deductFee() {
-        if (this.balance >= this.monthlyFee) {
-            super.withdraw(this.monthlyFee);
-            //console.log(`Balance is ${super.balance} Fee is ${this.monthlyFee}`);
-        }
+        if (this.balance < this.monthlyFee) throw 'No enough balance to deduct fee';
+        super.withdraw(this.monthlyFee);
     }
 
     toString() {

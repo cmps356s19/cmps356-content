@@ -10,7 +10,12 @@ class BankAccount {
     }
 
     withdraw(amount) {
+
+        if (this.balance < amount) throw 'Not enough balance' ;
+
         this.balance -= amount;
+
+
     }
 
     toString() {

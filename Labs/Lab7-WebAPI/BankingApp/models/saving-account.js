@@ -4,7 +4,6 @@ class SavingAccount extends BankAccount {
     constructor(accountNo, acctType, balance, minimumBalance) {
         super(accountNo, acctType, balance);
         this.minimumBalance = minimumBalance;
-
     }
 
     addBenefit(benefitRate) {

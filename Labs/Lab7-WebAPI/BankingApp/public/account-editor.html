@@ -1,0 +1,25 @@
+<br>
+<h3 align="center">Add Account </h3>
+<br>
+<form>
+    <div class="form-group row">
+        <label for="accountNo" class="col-md-3">Account No</label>
+        <input type="number" class="form-control col-md" id="accountNo" name="accountNo" required>
+    </div>
+    <div class="form-group row" required>
+        <lable for="acctType" class="col-md-3">Account Type</lable>
+        <select name="acctType" id="acctType" class="form-control col-md">
+            <option value="" selected disabled></option>
+            <option value="Current">Current</option>
+            <option value="Saving">Saving</option>
+        </select>
+    </div>
+    <div class="form-group row">
+        <label for="balance" class="col-md-3">Balance</label>
+        <input type="number" class="form-control col-md" id="balance" name="balance" required>
+    </div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-primary" onclick="onAddAccount(this.form)">
+    </div>
+</form>
+

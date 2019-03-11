@@ -1,20 +1,33 @@
+const fs = require('fs-extra');
+const path = require('path');
+const SavingAccount = require('../models/saving-account');
+const CurrentAccount = require('../models/current-account');
+
 class AccountRepository {
 
-    //ToDo - Get accounts by acctType from accounts.json file
-    /* acctType could be 'Saving', 'Current' or 'All'. If acctType = 'All' then return all accounts
-      Important Tip
-        - After you do JSON.parse(accountsText) to create the accounts objects
-        You need to loop through the list of accounts to set the prototype to
-        either SavingAccount or CurrentAccount using:
-        Object.setPrototypeOf(acct, CurrentAccount.prototype); or
-        Object.setPrototypeOf(acct, SavingAccount.prototype);
-
-        This will add the methods back to the deserialized account.
-    */
-    async getAccounts(acctType) {
+    constructor() {
+        this.accountsFilePath = path.join(__dirname, '../data/accounts.json');
     }
 
-    //ToDo - Get account by accountNo
+    //Get account from accounts.json file
+    async getAccounts(acctType) {
+        let accounts = await fs.readJSON(this.accountsFilePath);
+
+        if (acctType && acctType != 'All') {
+            accounts = accounts.filter(acct => acct.acctType === acctType);
+        }
+
+        //This will add Account methods back to the deserialized account.
+        for (const acct of accounts) {
+            if (acct.acctType === "Saving")
+                Object.setPrototypeOf(acct, CurrentAccount.prototype);
+            else
+                Object.setPrototypeOf(acct, SavingAccount.prototype);
+        }
+        return accounts;
+    }
+
+    //Get account by accountNo
     async getAccount(accountNo) {
         try {
             const accounts = await this.getAccounts();
@@ -97,8 +110,9 @@ class AccountRepository {
         }
     }
 
-    //ToDo - Save accounts to accounts.json file
+    //Save accounts to accounts.json file
     async saveAccounts(accounts) {
+        return await fs.writeJSON(this.accountsFilePath, accounts);
     }
 
     async addTransaction(transaction) {
