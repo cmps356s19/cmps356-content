@@ -1,0 +1,12 @@
+{
+  "name": "BankingApp",
+  "version": "0.0.1",
+  "dependencies": {
+    "fs-extra": "latest"
+  },
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "latest",
+    "chai-http": "latest"
+  }
+}
