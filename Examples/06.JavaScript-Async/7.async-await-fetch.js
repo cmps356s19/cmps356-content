@@ -8,6 +8,16 @@ async function getCountries(region) {
     return countries;
 }
 
+let nums = [1, 2, 3, 4, 5];
+let sumEven = 0;
+for (const num of nums) {
+    if( num % 2 === 0 ){
+        sumEven += num;
+    }
+}
+
+
+
 function displayCountries(region, countries) {
     console.log(`Countries in ${region} and their capital city:`);
     countries.map(country => {

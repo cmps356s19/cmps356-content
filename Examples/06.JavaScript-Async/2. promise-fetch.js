@@ -2,7 +2,8 @@ let fetch = require("node-fetch");
 
 function getStudents() {
     let url = "https://cmps356s19.github.io/data/student.json";
-    return fetch(url).then(response => response.json());
+    return fetch(url).then(response => response.json())
+        .catch(err => console.log(err));
 }
 
 function displayStudents(students) {

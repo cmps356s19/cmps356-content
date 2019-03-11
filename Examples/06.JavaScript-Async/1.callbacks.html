@@ -13,10 +13,16 @@
 
             //console.log("myLocation", myLocation);
 
-            navigator.geolocation.getCurrentPosition(showPosition);
+            //let x = add(10, 20);
+            let coor = navigator.geolocation.getCurrentPosition();
+            navigator.geolocation.getCurrentPosition(position => {
+                console.log(position);
+            });
+            //console.log(coordinates);
         }
 
         function showPosition(position) {
+            console.log(position);
             let p = document.getElementById("result");
             p.innerHTML += `Latitude: ${position.coords.latitude}
                     Longitude: ${position.coords.longitude} <BR>`;
@@ -25,6 +31,8 @@
         function greet() {
             document.getElementById("result").innerHTML += "السلام عليكم و رحمة الله و بركاته" + "<br>";
         }
+
+        getLocation();
     </script>
 
 
