@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Banking App</title>
+
+    <style>
+        #logo {
+            display: block;
+            max-width: 80px;
+            max-height: 30px;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                    <img src="img/logo.png" id="logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Index</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="onAddAcct()">Add Account</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="onAcctTrans()">Account Transactions</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <div id="contentDiv">
+        <select class="form-control" id="accountType" onchange="loadAccounts(this.value)">
+            <option value="All">All</option>
+            <option value="Current">Current</option>
+            <option value="Saving">Saving</option>
+        </select>
+        <table id="accountsTable" class="table">
+            <thead>
+            <tr>
+                <th>Account No</th>
+                <th>Account Type</th>
+                <th>Balance</th>
+            </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
