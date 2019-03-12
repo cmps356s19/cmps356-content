@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Event Handlers</title>
+    <style type = "text/css">
+        img {
+            width: 100px;
+            hight: 100px;
+            display: inline;
+        }
+    </style>
+
+	<script>
+
+        let ninjaClickCount = 0;
+        document.addEventListener("DOMContentLoaded", () => {
+            let ninjaImage = document.querySelector("#happyNinjaImage");
+            document.querySelector("#gender-select").addEventListener("change", onGenderChange);
+
+            ninjaImage.addEventListener("click", onImageClick);
+        });
+
+		function onGenderChange() {
+			let select = document.getElementById("gender-select");
+			log("Selected gender: " + select.options[select.selectedIndex].value);
+		}
+
+		function onImageClick() {
+            console.log(this);
+            ninjaClickCount++;
+            log(`Beware of the Ninja! Alert #${ninjaClickCount}`);
+
+            if (ninjaClickCount >= 3) {
+                log("سأهشم جهازك ...! لصبر حدود");
+                this.src = "images/moving-ninja.gif";
+            }
+        }
+		
+		function log(content) {
+            let messagesDev = document.querySelector("#messages");
+            messagesDev.innerHTML += `<br>${content}`;
+        }
+	</script>
+</head>
+
+															   
+<body>
+    <img id="happyNinjaImage" src="images/happy-ninja.png" />
+    <br>
+	<label for="gender-select">Gender: </label>
+	<select id="gender-select">
+		<option value="male">Male</option>
+		<option value="female">Female</option>
+		<option value="alien">Alien</option>
+	</select>
+
+	<div id="messages"></div>
+</body>
+</html>

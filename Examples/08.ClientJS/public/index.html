@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Heroes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/index.js"></script>
+    <style>
+        #logo {
+            display: block;
+            max-width:40px;
+            max-height:40px;
+            width: auto;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- A grey horizontal navbar that becomes vertical on extra small screens -->
+    <nav class="navbar navbar-expand-sm bg-light">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" id="logo">
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Heroes</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" onclick="onAddHero(event)">Add Hero</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="1.calculator.html">Calculator</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="3.bulb-on-off.html">Bulb</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="2.eventHandlers.html">Ninja</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="4.timer.html">Clock</a>
+            </li>
+        </ul>
+    </nav>
+    <br>
+
+    <div id="heroes"></div>
+</div>
+</body>
+</html>

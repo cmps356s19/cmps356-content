@@ -1,21 +1,24 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-
 const path = require('path');
+
 const heroRespository = require('./repositories/HeroRepository');
 
 const app = express();
-app.use( bodyParser.json() );
+/*  express.json() is a middleware function that extracts the body portion of an incoming request and assigns
+    it to req.body. without this line req.body will be undefined
+ */
+app.use( express.json() );
 
 //Allow serving static files from public folder
 app.use( express.static('public') );
 
 app.get('/', (req, res) => {
-    let responseText = 'السلام عليكم ورحمة الله وبركاته';
-    responseText += '<br><a href="heroes">Heroes</a>';
-    responseText += '<br><a href="quote">Quote</a>';
-    responseText += '<br><a href="cats.jpg">Cats</a>';
-    res.send(responseText);
+    const resText = `السلام عليكم ورحمة الله وبركاته
+        <br><a href="heroes">Heroes</a>
+        <br><a href="quote">Quote</a>
+        <br><a href="cats.jpg">Cats</a>`;
+
+    res.send(resText);
 });
 
 app.get('/quote', (req, res) => {
@@ -33,8 +36,9 @@ app.post('/heroes', async (req, res) => {
     res.sendStatus(201);
 });
 
-
 app.get('/heroes/:id', async (req, res) => {
+    //req.params: This property is an object containing properties mapped to the named route parameters
+    //For example, if you have the route /users/:id, then the “id” property is available as req.params.id
     let heroId = req.params.id;
     console.log(heroId);
     let hero = await heroRespository.getHero(heroId);
@@ -43,8 +47,7 @@ app.get('/heroes/:id', async (req, res) => {
 });
 
 app.get('/*', (req, res) => {
-    res.status(404);
-    res.send('Not found');
+    res.status(404).send('Not found');
 });
 
 const port = 4000;

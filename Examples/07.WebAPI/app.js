@@ -1,15 +1,14 @@
 const express	   =  require('express');
-const bodyParser   =  require('body-parser');
+const routes = require('./routes');
 
 const app		   =   express();
 
-/*  body-parser extracts the body portion of an incoming request and assigns
-    it to req.body.
+/*  express.json() is a middleware function that extracts the body portion of an incoming request and assigns
+    it to req.body. without this line req.body will be undefined
  */
-app.use( bodyParser.json() );
+app.use( express.json() );
 
 //Mount the routes to the app
-const routes = require('./routes');
 app.use('/api/', routes);
 
 const port = 9080;

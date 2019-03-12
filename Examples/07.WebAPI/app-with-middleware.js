@@ -12,9 +12,9 @@ function logger (req, res, next) {
 app.use(logger);
 
 app.get('/', (req, res) => {
-    const responseText = `السلام عليكم ورحمة الله وبركاته<br>
+    const resText = `السلام عليكم ورحمة الله وبركاته<br>
         Requested at: ${req.requestTime}`;
-    res.send(responseText);
+    res.send(resText);
 });
 
 const port = 5000;
