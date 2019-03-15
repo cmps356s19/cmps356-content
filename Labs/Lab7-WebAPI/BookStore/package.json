@@ -1,0 +1,16 @@
+{
+  "name": "hw5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha **/*.spec.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "fs-extra": "^7.0.1",
+    "mocha": "^6.0.2"
+  }
+}
