@@ -1,6 +1,6 @@
 //After the document is loaded in the browser
-document.addEventListener("DOMContentLoaded", async function() {
-    await onPageLoad();
+document.addEventListener("DOMContentLoaded", async () => {
+    await handleInitPage();
 });
 
 /*****************************
@@ -68,13 +68,13 @@ async function getHeroEditor() {
  Functions to handle UI Events
  *****************************/
 //region UI Event Handlers
-async function onPageLoad() {
+async function handleInitPage() {
     const heroes = await getHeroes();
     const heroesDiv = document.querySelector("#heroes");
     heroesDiv.innerHTML = heroes2Html(heroes);
 }
 
-async function onUpdateHero(event, heroId) {
+async function handleUpdateHero(event, heroId) {
     event.preventDefault();
     //console.log("heroId:", heroId, event);
 
@@ -89,7 +89,7 @@ async function onUpdateHero(event, heroId) {
     document.querySelector("#quote").value = hero.quote;
 }
 
-async function onAddHero(event) {
+async function handleAddHero(event) {
     event.preventDefault();
 
     const heroesDiv = document.querySelector("#heroes");
@@ -97,8 +97,8 @@ async function onAddHero(event) {
     heroesDiv.innerHTML = heroEdtior;
 }
 
-async function onSubmitHero() {
-    let hero = formToJsonObject("heroForm");
+async function handleSubmitHero() {
+    const hero = formToJsonObject("heroForm");
     //If hero.id has value then do update otherwise do add
     if (hero.id) {
         await updateHero(hero);
@@ -109,8 +109,8 @@ async function onSubmitHero() {
     window.location.href = "index.html";
 }
 
-async function onDeleteHero(event, heroId) {
-    let clikedElement = event.target;
+async function handleDeleteHero(event, heroId) {
+    const clikedElement = event.target;
     await deleteHero(heroId);
 
     //Delete the parent tr of the button that was clicked
@@ -125,10 +125,10 @@ async function onDeleteHero(event, heroId) {
  *****************************/
 //region Helper Functions
 function formToJsonObject(formName) {
-    let form = document.forms[formName];
-    let formData = new FormData(form);
-    let data = {};
-    for (let [key, value] of formData) {
+    const form = document.forms[formName];
+    const formData = new FormData(form);
+    const data = {};
+    for (const [key, value] of formData) {
         data[key] = value;
     }
     //data = JSON.stringify(data);
@@ -152,16 +152,16 @@ function heroes2Html(heroes) {
             ${ heroes.map( hero =>
             `<tr>
                 <td>
-                    <a href="#" onclick="onUpdateHero(event, ${hero.id})">
+                    <a href="#" onclick="handleUpdateHero(event, ${hero.id})">
                         ${hero.name}
                     </a>
                 </td>
-                <td> ${ hero.heroType } </td>
+                <td> ${hero.heroType} </td>
                 <td align="right">
-                    ${ hero.quote }
+                    ${hero.quote}
                 </td>
                 <td>
-                  <span class="delete" title="Delete hero" onclick="onDeleteHero(event, ${hero.id})">
+                  <span class="delete" title="Delete hero" onclick="handleDeleteHero(event, ${hero.id})">
                     <i style="color: indianred;" class="fa fa-times" aria-hidden="true"></i>
                   </span>
                 </td>

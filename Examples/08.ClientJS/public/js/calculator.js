@@ -1,10 +1,10 @@
 //When the document is loaded in the browser then listen to btnCompute click event
 document.addEventListener("DOMContentLoaded", () => {
     console.log("js-DOM fully loaded and parsed");
-    document.querySelector('#btnCompute').addEventListener("click", computeResult);
+    document.querySelector('#btnCompute').addEventListener("click", handleCompute);
 });
 
-function computeResult() {
+function handleCompute() {
     const num1 = parseInt( document.querySelector("#num1").value );
     const num2 = parseInt( document.querySelector("#num2").value );
     const operation = document.querySelector("#operation").value;
