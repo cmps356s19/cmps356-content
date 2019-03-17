@@ -69,6 +69,21 @@ class AccountRepository {
         }
     }
 
+    async updateAccount(account) {
+        try {
+            const accounts = await this.getAccounts();
+            const index = accounts.findIndex(acct => acct.accountNo == account.accountNo);
+            if (index >= 0) {
+                accounts[index] = account;
+                return await this.saveAccounts(accounts);
+            }
+
+            return -1;
+        } catch (err) {
+            throw err;
+        }
+    }
+
     async sumBalance() {
         try {
             const accounts = await this.getAccounts();
