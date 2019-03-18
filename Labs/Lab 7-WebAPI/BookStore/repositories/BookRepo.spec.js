@@ -28,6 +28,9 @@ let bookAuthor = {
     },
     "thumbnailUrl": "https://s3.amazonaws.com/AKIAJC5RLADLUMVRPFDQ.book-thumb-images/adzic.jpg",
     "status": "PUBLISH",
+
+
+
     "authors": [
         "Gojko Adzic"
     ],
