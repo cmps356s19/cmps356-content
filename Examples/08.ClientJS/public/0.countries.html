@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countries</title>
+    <script>
+        async function getCountries(region) {
+            const url = `https://restcountries.eu/rest/v2/region/${region}`;
+            const response = await fetch(url);
+            return await response.json();
+        }
+
+        async function handleRegionChange(event) {
+            const region = event.target.value;
+            console.log(region);
+            const countries = await getCountries(region);
+            console.log(countries);
+
+            const countriesUL = document.querySelector('#countries');
+            countriesUL.innerHTML = '';
+            countries.forEach(c => {
+                const li = `<li>${c.name} (${c.capital}) </li>`;
+                countriesUL.innerHTML += li;
+            })
+        }
+    </script>
+</head>
+<body>
+Region:
+<select onchange="handleRegionChange(event)">
+    <option value=""></option>
+    <option value="africa">Africa</option>
+    <option value="americas">Americas</option>
+    <option value="asia">Asia</option>
+    <option value="europe">Europe</option>
+    <option value="oceania">Oceania</option>
+</select>
+<ul id="countries"></ul>
+</body>
+</html>

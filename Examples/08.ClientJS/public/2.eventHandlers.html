@@ -13,26 +13,19 @@
 	<script>
 
         let ninjaClickCount = 0;
-        document.addEventListener("DOMContentLoaded", () => {
-            let ninjaImage = document.querySelector("#happyNinjaImage");
-            document.querySelector("#gender-select").addEventListener("change", onGenderChange);
 
-            ninjaImage.addEventListener("click", onImageClick);
-        });
-
-		function onGenderChange() {
-			let select = document.getElementById("gender-select");
-			log("Selected gender: " + select.options[select.selectedIndex].value);
+		function handleGenderChange(event) {
+			log(`Selected gender: ${event.target.value}`);
 		}
 
-		function onImageClick() {
-            console.log(this);
+		function handleImageClicked(event) {
+            console.log(event.target);
             ninjaClickCount++;
             log(`Beware of the Ninja! Alert #${ninjaClickCount}`);
 
             if (ninjaClickCount >= 3) {
                 log("سأهشم جهازك ...! لصبر حدود");
-                this.src = "images/moving-ninja.gif";
+                event.target.src = "images/moving-ninja.gif";
             }
         }
 		
@@ -45,10 +38,10 @@
 
 															   
 <body>
-    <img id="happyNinjaImage" src="images/happy-ninja.png" />
+    <img id="happyNinjaImage" src="images/happy-ninja.png" onclick="handleImageClicked(event)"/>
     <br>
 	<label for="gender-select">Gender: </label>
-	<select id="gender-select">
+	<select id="gender-select" onchange="handleGenderChange(event)">
 		<option value="male">Male</option>
 		<option value="female">Female</option>
 		<option value="alien">Alien</option>
