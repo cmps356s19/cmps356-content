@@ -6,6 +6,11 @@
     height: auto;
 }
 
+#errorMsg{
+    color: #D8000C;
+    background-color: #FFD2D2;
+}
+
 /* Form styling */
 form {
     display: grid;

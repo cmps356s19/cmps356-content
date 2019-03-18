@@ -15,21 +15,27 @@ async function getHeroes() {
 
 async function getHero(heroId) {
     const url = `/api/heroes/${heroId}`;
-    const response = await fetch(url);
-    return await response.json()
+    try {
+        log('');
+        const response = await fetch(url);
+        return await response.json();
+    } catch (e) {
+        log(e);
+    }
 }
 
 async function addHero(hero) {
     const url = '/api/heroes/';
     console.log(url);
     try {
+        log(''); // Clear any error message displayed on the screen
         await fetch(url, {
             method: "post",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(hero)
         });
-    } catch (err) {
-        console.error(err);
+    } catch (e) {
+        log(e);
     }
 }
 
@@ -37,23 +43,29 @@ async function updateHero(hero) {
     const url = `/api/heroes/${hero.id}`;
     console.log(url);
     try {
+        log(''); // Clear any error message displayed on the screen
         await fetch(url, {
             method: "put",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(hero)
         });
-    } catch (err) {
-        console.error(err);
+    } catch (e) {
+        log(e);
     }
 }
 
 async function deleteHero(heroId) {
     const url = `/api/heroes/${heroId}`;
+    let success = false;
     console.log(url);
     try {
+        log(''); // Clear any error message displayed on the screen
         await fetch(url, {method: "delete"});
-    } catch (err) {
-        console.log(err);
+        success = true;
+    } catch (e) {
+        log(e);
+    } finally {
+        return success;
     }
 }
 
@@ -69,9 +81,14 @@ async function getHeroForm() {
  *****************************/
 //region UI Event Handlers
 async function handleInitPage() {
-    const heroes = await getHeroes();
-    const heroesDiv = document.querySelector("#heroes");
-    heroesDiv.innerHTML = heroes2Html(heroes);
+    try {
+        log(''); // Clear any error message displayed on the screen
+        const heroes = await getHeroes();
+        const heroesDiv = document.querySelector("#heroes");
+        heroesDiv.innerHTML = heroes2Html(heroes);
+    } catch (e) {
+        log(e);
+    }
 }
 
 async function handleUpdateHero(event, heroId) {
@@ -93,7 +110,7 @@ async function handleUpdateHero(event, heroId) {
 
 async function handleAddHero(event) {
     event.preventDefault();
-
+    log(''); // Clear any error message displayed on the screen
     const heroesDiv = document.querySelector("#heroes");
     const heroForm = await getHeroForm();
     heroesDiv.innerHTML = heroForm;
@@ -119,14 +136,12 @@ async function handleSubmitHero(event) {
 }
 
 async function handleDeleteHero(id) {
-    try {
-        const confirmed = confirm(`Are you sure you want to delete hero #${id}?`);
-        if (confirmed) {
-            await deleteHero(id);
+    const confirmed = confirm(`Are you sure you want to delete hero #${id}?`);
+    if (confirmed) {
+        const deleted = await deleteHero(id);
+        if (deleted) {
             document.querySelector(`#row-${id}`).remove();
         }
-    } catch(e){
-        console.log(e);
     }
 }
 //endregion
@@ -147,6 +162,15 @@ function formToObject(form) {
     });
 
     return formObject;
+}
+
+function log(err) {
+    if (err != '') {
+        console.error(err);
+    }
+    const message = err.message || err;
+    let messagesDev = document.querySelector("#errorMsg");
+    messagesDev.innerHTML = message;
 }
 
 function heroes2Html(heroes) {
