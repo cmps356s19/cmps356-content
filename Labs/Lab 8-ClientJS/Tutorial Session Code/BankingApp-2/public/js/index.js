@@ -40,7 +40,7 @@ function accountToHTMLRow(acct) {
             <td>
                 ${ acct.balance <= 0 ? 
                         `<button onclick='handleDeleteAccount(${acct.accountNo})'>
-                           Delete
+                            <i class="fas fa-pencil-alt"></i>
                         </button>` 
                     : ''
                 }
