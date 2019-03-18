@@ -8,23 +8,35 @@
             display: grid;
             padding: 1em;
             background: #f9f9f9;
-            border: 1px solid lightgrey;
+            border:1px solid #c9e6ff;
             margin: 2em auto 0 auto;
             max-width: 500px;
             padding: 1em;
         }
         form input {
-            background: #fff;
-            border: 1px solid #9c9c9c;
+            border:1px solid #c9e6ff;
         }
+
         form button {
-            background: lightgrey;
-            padding: 0.7em;
-            width: 100%;
-            border: 0;
+            border: none;
+            padding: 1em;
+            background: #0069ed;
+            color: #ffffff;
+            cursor: pointer;
         }
-        form button:hover {
-            background: gold;
+
+        form button:hover,
+        form button:focus {
+            background: #0053ba;
+        }
+
+        form button:focus {
+            outline: 1px solid #fff;
+            outline-offset: -4px;
+        }
+
+        form button:active {
+            transform: scale(0.99);
         }
 
         label {
@@ -36,7 +48,7 @@
             margin-bottom: 0.5rem;
         }
         input:focus {
-            outline: 3px solid gold;
+            outline: 2px solid royalblue;
         }
 
         @media (min-width: 700px) {
@@ -47,6 +59,7 @@
 
             button {
                 grid-column: 2 / 3;
+                justify-self: center;
             }
         }
     </style>
@@ -54,10 +67,10 @@
 <body>
 
 <form action="">
-    <label for="firstName" class="first-name">First Name</label>
+    <label for="firstName">First Name</label>
     <input id="firstName" type="text">
 
-    <label for="lastName" class="last-name">Last Name</label>
+    <label for="lastName">Last Name</label>
     <input id="lastName" type="text">
 
     <label for="job">Job</label>

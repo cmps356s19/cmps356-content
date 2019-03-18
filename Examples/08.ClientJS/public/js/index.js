@@ -57,8 +57,8 @@ async function deleteHero(heroId) {
     }
 }
 
-async function getHeroEditor() {
-    const url = `hero-editor.html`;
+async function getHeroForm() {
+    const url = `hero-form.html`;
     const response = await fetch(url);
     return await response.text();
 }
@@ -79,10 +79,12 @@ async function handleUpdateHero(event, heroId) {
     //console.log("heroId:", heroId, event);
 
     const heroesDiv = document.querySelector("#heroes");
-    const heroEdtior = await getHeroEditor();
-    heroesDiv.innerHTML = heroEdtior;
+    const heroForm = await getHeroForm();
+    heroesDiv.innerHTML = heroForm;
 
     const hero = await getHero(heroId);
+
+    //Fill the form field with the hero data fetched from the Web API
     document.querySelector("#id").value = hero.id;
     document.querySelector("#name").value = hero.name;
     document.querySelector("#heroType").value = hero.heroType;
@@ -93,12 +95,19 @@ async function handleAddHero(event) {
     event.preventDefault();
 
     const heroesDiv = document.querySelector("#heroes");
-    const heroEdtior = await getHeroEditor();
-    heroesDiv.innerHTML = heroEdtior;
+    const heroForm = await getHeroForm();
+    heroesDiv.innerHTML = heroForm;
 }
 
-async function handleSubmitHero() {
-    const hero = formToJsonObject("heroForm");
+async function handleSubmitHero(event) {
+    const form = event.target.form;
+    const isFormValid = form.checkValidity();
+    if (!isFormValid) return;
+
+    //Prevent the submit button default behavior
+    event.preventDefault();
+
+    const hero = formToObject(form);
     //If hero.id has value then do update otherwise do add
     if (hero.id) {
         await updateHero(hero);
@@ -109,13 +118,16 @@ async function handleSubmitHero() {
     window.location.href = "index.html";
 }
 
-async function handleDeleteHero(event, heroId) {
-    const clikedElement = event.target;
-    await deleteHero(heroId);
-
-    //Delete the parent tr of the button that was clicked
-    deleteParentTr(clikedElement);
-    //console.log("heroId:", heroId, clikedElement);
+async function handleDeleteHero(id) {
+    try {
+        const confirmed = confirm(`Are you sure you want to delete hero #${id}?`);
+        if (confirmed) {
+            await deleteHero(id);
+            document.querySelector(`#row-${id}`).remove();
+        }
+    } catch(e){
+        console.log(e);
+    }
 }
 //endregion
 
@@ -124,33 +136,25 @@ async function handleDeleteHero(event, heroId) {
  Helper Functions
  *****************************/
 //region Helper Functions
-function formToJsonObject(formName) {
-    const form = document.forms[formName];
+function formToObject(form) {
+    // Construct key/value pairs representing form fields and their values,
     const formData = new FormData(form);
-    const data = {};
-    for (const [key, value] of formData) {
-        data[key] = value;
-    }
-    //data = JSON.stringify(data);
-    console.log(data);
-    return data;
-}
+    let formObject = {};
 
-function deleteParentTr(el) {
-    // Look the parent tr of the clicked delete button
-    do {
-        el = el.parentNode;
-    } while (el.tagName.toLowerCase() != 'tr');
-    //Remove the tr
-    el.parentNode.removeChild(el);
+    // Convert key/value pairs to an object
+    formData.forEach( (value, key) => {
+        formObject[key] = value;
+    });
+
+    return formObject;
 }
 
 function heroes2Html(heroes) {
     const html = `
         <h2>Heroes</h2>
-        <table id="heroesTable" class="table table-bordered table-striped table-hover">
+        <table id="heroesTable">
             ${ heroes.map( hero =>
-            `<tr>
+            `<tr id="row-${hero.id}">
                 <td>
                     <a href="#" onclick="handleUpdateHero(event, ${hero.id})">
                         ${hero.name}
@@ -161,14 +165,14 @@ function heroes2Html(heroes) {
                     ${hero.quote}
                 </td>
                 <td>
-                  <span class="delete" title="Delete hero" onclick="handleDeleteHero(event, ${hero.id})">
-                    <i style="color: indianred;" class="fa fa-times" aria-hidden="true"></i>
-                  </span>
+                    <i style="color: indianred; cursor: pointer" title="Delete hero" 
+                        class="fas fa-user-times" onclick="handleDeleteHero(${hero.id})">
+                    </i>
                 </td>
-            </tr>`).join('') }
+            </tr>`).join('') 
+            }
         </table>`;
 
     return html;
 }
-
 //endregion
