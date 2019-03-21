@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "chai": "^4.2.0",
-    "fs-extra": "^7.0.1",
-    "mocha": "^6.0.2"
+    "chai": "latest",
+    "express": "latest",
+    "fs-extra": "latest",
+    "mocha": "latest",
+    "morgan": "latest"
   }
 }
