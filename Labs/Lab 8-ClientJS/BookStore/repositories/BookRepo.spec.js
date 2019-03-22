@@ -1,5 +1,6 @@
-const BooksRepository = require('./BookRepo.js'),
-    expect = require('chai').expect;
+const bookRepository = require('./BookRepo.js');
+
+const expect = require('chai').expect;
 
 let book = {
     "_id": 4,
@@ -38,13 +39,13 @@ let bookAuthor = {
 
 describe("Books Repository Class Test", () => {
     it("book with name \"Specification by Example\" should return the all the details about this book", async () => {
-        const result = await BooksRepository.getBook("Specification by Example")
+        const result = await bookRepository.getBooksByName("Specification by Example")
         expect(result).to.be.ok;
         expect(result).to.have.property("title").and.equal('Specification by Example')
 
     });
     it("The number of books with page count more than 700 should be 22", async () => {
-        const result = await BooksRepository.getBooksByPageCount(700)
+        const result = await bookRepository.getBooksByPageCount(700)
         expect(result).to.be.ok;
         expect(result).to.be.an('array');
         expect(result).to.have.lengthOf(22);
@@ -52,19 +53,19 @@ describe("Books Repository Class Test", () => {
     });
 
     it("The Books for the author \"Gojko Adzic\" should return all his books", async () => {
-        const result = await BooksRepository.getBooksByAuthor("Gojko Adzic");
+        const result = await bookRepository.getBooksByAuthor("Gojko Adzic");
         expect(result[0].authors[0]).to.equal(bookAuthor.authors[0]);
 
     });
 
     it("The number of books of the author \"Richard Siddaway\" is 6", async () => {
-        const result = await BooksRepository.getBooksSummary();
+        const result = await bookRepository.getBooksSummary();
         expect(result.get("Richard Siddaway")).to.be.equal(6);
 
     });
 
     it("The number of books with category \"Programming\" should be 12", async () => {
-        const result = await BooksRepository.getBooksByCategory("Programming")
+        const result = await bookRepository.getBooksByCategory("Programming")
         expect(result).to.have.lengthOf(12);
     });
 });

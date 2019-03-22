@@ -5,8 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
+    <title>BookStore App</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
     <link rel="stylesheet" href="css/nav-bar.css">
@@ -21,17 +20,16 @@
         </span>
 
     <a href="/" class="logo">Book Store</a>
-    <!--<img src="img/logo.png" alt="" width="200" height="200">-->
     <ul class="main-nav" id="js-menu">
         <li>
             <a href="/" class="nav-links">Books</a>
         </li>
-        <li onclick="loadPage('book-editor.html')">
+        <li>
             <a href="#" class="nav-links">Add Book</a>
         </li>
 
-        <li onclick="handleLoadBookSummary()">
-            <a href="#" class="nav-links">Author Book Summary</a>
+        <li>
+            <a href="#" class="nav-links">Books Summary</a>
         </li>
     </ul>
 </nav>
@@ -47,7 +45,6 @@
                     <div class="form-group">
                         <input type="radio" id="category"
                                name="search"
-                               onclick=handleLoadListValues('category')
                                value="category">
 
                         <label for="category">Category</label>
@@ -55,28 +52,24 @@
                     <div class="form-group">
                         <input type="radio" id="name"
                                name="search"
-                               onclick=handleLoadListValues('name')
                                value="name">
                         <label for="name">Book Name</label>
                     </div>
                     <div class="author">
                         <input type="radio" id="author"
                                name="search"
-                               onclick=handleLoadListValues('author')
                                value="author">
                         <label for="author">Author Name</label>
                     </div>
                     <div class="isbn">
                         <input type="radio" id="isbn"
                                name="search"
-                               onclick=handleLoadListValues('isbn')
                                value="isbn">
                         <label for="isbn">ISBN</label>
                     </div>
                     <div class="pageCount">
                         <input type="radio" id="pageCount"
                                name="search"
-                               onclick=handleLoadListValues('pageCount')
                                value="pageCount">
                         <label for="pageCount">Page Count</label>
                     </div>
@@ -84,12 +77,11 @@
 
                 <input list="list"
                        name="searchValue"
-                       placeholder="Search By Categories"
+                       placeholder="Search parameter"
                        id="search-box">
                 <input type="button"
                        value="Search"
-                       id="search-btn"
-                       onclick="handleBookSearch(event)">
+                       id="search-btn">
             </div>
         </form>
 

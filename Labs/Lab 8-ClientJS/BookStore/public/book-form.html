@@ -1,11 +1,11 @@
 <br><h1 align="center" id="page-title">Add Book</h1>
 <form id="book-editor-form">
     <div class="form-group">
-        <label for="">Title </label>
+        <label for="title">Name</label>
         <input type="text"
                class="form-control"
-               name="name" id="name"
-               placeholder="">
+               name="title" id="title"
+               placeholder="title">
     </div>
     <div class="form-group">
         <label for="isbn">ISBN </label>
@@ -36,7 +36,7 @@
         >
     </div>
     <div class="form-group">
-        <label for="">Short Description </label>
+        <label for="shortDescription">Short Description </label>
         <textarea class="form-control"
                   name="shortDescription" id="shortDescription"
         ></textarea>
@@ -47,7 +47,7 @@
                   id="longDescription"></textarea>
     </div>
     <div class="form-group">
-        <label for="">Book Status</label>
+        <label for="status">Book Status</label>
         <select class="form-control" name="status" id="status">
             <option>REVIEW</option>
             <option>PUBLISH</option>
@@ -69,6 +69,6 @@
                   placeholder="Separate them by Comma"></textarea>
     </div>
     <div class="form-group">
-        <input type="submit" class="btn" onclick="handleAddBook(event)">
+        <input type="submit" class="btn">
     </div>
 </form>

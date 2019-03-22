@@ -1,10 +1,6 @@
 const accountRepo = require('../repositories/account-repository')
 
 class AccountService {
-    constructor() {
-
-    }
-
     async getAccounts(req, res) {
         try {
             const acctType = req.query.acctType;
