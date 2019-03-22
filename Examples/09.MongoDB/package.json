@@ -1,0 +1,19 @@
+{
+  "name": "09.mongodb",
+  "version": "0.0.1",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "dependencies": {
+    "express": "latest",
+    "fs-extra": "latest",
+    "mongoose": "latest"
+  },
+  "devDependencies": {
+    "chai": "latest",
+    "chai-http": "latest",
+    "mocha": "latest"
+  }
+}

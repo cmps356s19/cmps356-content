@@ -1,0 +1,42 @@
+[
+  {
+    "isbn" : "123",
+    "title": "Mr Bean and the Forty Thieves",
+    "authors": ["Mr Bean", "Juha Dahak"],
+    "publisher": {"name": "MrBeanCo", "country": "UK"},
+    "category": "Fun",
+    "pages": 250
+  },
+  {
+    "isbn" : "223",
+    "title": "One Thousand and One Nights",
+    "authors": ["Mr Samir", "Ms Samira"],
+    "publisher": {"name": "SamirCo", "country": "Qatar"},
+    "category": "Fun",
+    "pages": 150
+  },
+  {
+    "isbn" : "234",
+    "title": "Java 8",
+    "authors": ["Mr Java", "Ms Java"],
+    "publisher": {"name": "JavaCo", "country": "USA"},
+    "category": "Programming",
+    "pages": 350
+  },
+  {
+    "isbn" : "345",
+    "title": "Node.js Programming",
+    "authors": ["Mr Node.js", "Ms Node.js"],
+    "publisher": {"name": "NodejsCo", "country": "UK"},
+    "category": "Programming",
+    "pages": 450
+  },
+  {
+    "isbn" : "456",
+    "title": "Mongoose for Dummies",
+    "authors": ["Mongoose", "Mr Dummy"],
+    "publisher": {"name": "MongooseCo", "country": "Burkina Faso"},
+    "category": "Programming",
+    "pages": 155
+  }
+]
