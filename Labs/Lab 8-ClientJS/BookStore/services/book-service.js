@@ -12,7 +12,7 @@ class BookService {
         }
     }
     //Read
-    async getBook(req, res) {
+    async getBooks(req, res) {
         try {
             console.log(req.query);
             let books;

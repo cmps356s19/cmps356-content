@@ -2,7 +2,7 @@ const bookService = require('./services/book-service'),
     router = require('express').Router();
 
 router.route('/books')
-    .get(bookService.getBook)
+    .get(bookService.getBooks)
     .post(bookService.addBook)
 
 router.get('/books/summary', bookService.getBooksSummary);
