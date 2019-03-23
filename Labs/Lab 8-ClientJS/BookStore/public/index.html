@@ -76,9 +76,9 @@
                 </div>
 
                 <input list="list"
-                       name="searchValue"
+                       name="searchParam"
                        placeholder="Search parameter"
-                       id="search-box">
+                       id="searchParam">
                 <input type="button"
                        value="Search"
                        id="search-btn">
@@ -86,16 +86,14 @@
         </form>
 
         <div class="books-table"></div>
-        <datalist id="list">
 
-        </datalist>
         <ul id="book-cards" class="cards">
             <!--SAMPLE CARD..YOU CAN USE THE BELOW CODE TO REGENERATE A CARD SIMILAR TO CARDS-->
             <li class="cards__item">
                 <div class="card">
                     <img class="card__image" src="https://unsplash.it/800/600?image=82" alt="">
                     <div class="card__content">
-                        <div id="book-title" class="card__title">${title}</div>
+                        <div id="book-title" class="card__title">Book Title</div>
                         <p id="book-desc" class="card__text">This is the shorthand for flex-grow, flex-shrink and
                         </p>
                         <div class="btn--options">
