@@ -13,11 +13,10 @@
 
 </head>
 <body>
-
 <nav class="navbar">
-        <span class="navbar-toggle" id="js-navbar-toggle">
-            <i class="fas fa-bars"></i>
-        </span>
+    <span class="navbar-toggle" id="js-navbar-toggle">
+        <i class="fas fa-bars"></i>
+    </span>
 
     <a href="/" class="logo">Book Store</a>
     <ul class="main-nav" id="js-menu">
@@ -35,80 +34,72 @@
 </nav>
 
 <main>
-    <div id="main-content">
-        <form id="search-form">
-            <div id="book-filters">
+    <form id="search-form">
+        <h3><br>Select Search Criteria</h3>
+        <div></div>
+        <div id="search-options">
+            <div class="form-group">
+                <input type="radio" id="category"
+                       name="search"
+                       value="category">
 
-                <h3><br>Select Search Criteria</h3>
-                <div></div>
-                <div id="search-options">
-                    <div class="form-group">
-                        <input type="radio" id="category"
-                               name="search"
-                               value="category">
-
-                        <label for="category">Category</label>
-                    </div>
-                    <div class="form-group">
-                        <input type="radio" id="name"
-                               name="search"
-                               value="name">
-                        <label for="name">Book Name</label>
-                    </div>
-                    <div class="author">
-                        <input type="radio" id="author"
-                               name="search"
-                               value="author">
-                        <label for="author">Author Name</label>
-                    </div>
-                    <div class="isbn">
-                        <input type="radio" id="isbn"
-                               name="search"
-                               value="isbn">
-                        <label for="isbn">ISBN</label>
-                    </div>
-                    <div class="pageCount">
-                        <input type="radio" id="pageCount"
-                               name="search"
-                               value="pageCount">
-                        <label for="pageCount">Page Count</label>
-                    </div>
-                </div>
-
-                <input list="list"
-                       name="searchParam"
-                       placeholder="Search parameter"
-                       id="searchParam">
-                <input type="button"
-                       value="Search"
-                       id="search-btn">
+                <label for="category">Category</label>
             </div>
-        </form>
+            <div class="form-group">
+                <input type="radio" id="name"
+                       name="search"
+                       value="name">
+                <label for="name">Book Name</label>
+            </div>
+            <div class="author">
+                <input type="radio" id="author"
+                       name="search"
+                       value="author">
+                <label for="author">Author Name</label>
+            </div>
+            <div class="isbn">
+                <input type="radio" id="isbn"
+                       name="search"
+                       value="isbn">
+                <label for="isbn">ISBN</label>
+            </div>
+            <div class="pageCount">
+                <input type="radio" id="pageCount"
+                       name="search"
+                       value="pageCount">
+                <label for="pageCount">Page Count</label>
+            </div>
+        </div>
 
-        <div class="books-table"></div>
+        <input name="searchParam"
+               placeholder="Search parameter"
+               id="searchParam">
+        <input type="button"
+               value="Search"
+               id="search-btn">
+    </form>
 
-        <ul id="book-cards" class="cards">
-            <!--SAMPLE CARD..YOU CAN USE THE BELOW CODE TO REGENERATE A CARD SIMILAR TO CARDS-->
-            <li class="cards__item">
-                <div class="card">
-                    <img class="card__image" src="https://unsplash.it/800/600?image=82" alt="">
-                    <div class="card__content">
-                        <div id="book-title" class="card__title">Book Title</div>
-                        <p id="book-desc" class="card__text">This is the shorthand for flex-grow, flex-shrink and
-                        </p>
-                        <div class="btn--options">
-                            <button class="btn btn--details">Details</button>
-                            <button class="btn btn--update">Update</button>
-                            <button class="btn btn--delete">Delete</button>
-                        </div>
+    <div class="books-table"></div>
+
+    <ul id="book-cards" class="cards">
+        <!--SAMPLE CARD..YOU CAN USE THE BELOW CODE TO REGENERATE A CARD SIMILAR TO CARDS-->
+        <li class="cards__item">
+            <div class="card">
+                <img class="card__image" src="https://unsplash.it/800/600?image=82" alt="">
+                <div class="card__content">
+                    <div id="book-title" class="card__title">Book Title</div>
+                    <p id="book-desc" class="card__text">This is the shorthand for flex-grow, flex-shrink and
+                    </p>
+                    <div class="btn--options">
+                        <button class="btn btn--details">Details</button>
+                        <button class="btn btn--update">Update</button>
+                        <button class="btn btn--delete">Delete</button>
                     </div>
                 </div>
-            </li>
-        </ul>
-    </div>
-    </div>
+            </div>
+        </li>
+    </ul>
 </main>
-<footer></footer>
 <script src="js/index.js"></script>
 </body>
 </html>
