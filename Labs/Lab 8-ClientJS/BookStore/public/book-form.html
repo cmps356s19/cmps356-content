@@ -1,74 +1,50 @@
-<h1>Add Book</h1>
-<form>
-    <div class="form-group">
-        <label for="title">Title</label>
-        <input type="text"
-               class="form-control"
-               name="title" id="title"
-               placeholder="title">
-    </div>
-    <div class="form-group">
-        <label for="isbn">ISBN </label>
-        <input type="number"
-               class="form-control"
-               name="isbn" id="isbn"
-               placeholder="isbn">
-    </div>
-    <div class="form-group">
-        <label for="pageCount">Page Count</label>
-        <input type="number"
-               class="form-control"
-               name="pageCount" id="pageCount"
-               placeholder="page count">
-    </div>
-    <div class="form-group">
-        <label for="publishedDate">Published Date</label>
-        <input type="date"
-               class="form-control"
-               name="publishedDate" id="publishedDate"
-        >
-    </div>
-    <div class="form-group">
-        <label for="thumbnailUrl">thumbnailUrl</label>
-        <input type="url"
-               class="form-control"
-               name="thumbnailUrl" id="thumbnailUrl"
-        >
-    </div>
-    <div class="form-group">
-        <label for="shortDescription">Short Description </label>
-        <textarea class="form-control"
-                  name="shortDescription" id="shortDescription"
-        ></textarea>
-    </div>
-    <div class="form-group">
-        <label for="longDescription">Long Description</label>
-        <textarea class="form-control" name="longDescription"
-                  id="longDescription"></textarea>
-    </div>
-    <div class="form-group">
-        <label for="status">Book Status</label>
-        <select class="form-control" name="status" id="status">
-            <option>REVIEW</option>
-            <option>PUBLISH</option>
-        </select>
-    </div>
-    <div class="form-group">
-        <label for="authors">Authors</label>
-        <textarea type="text"
-                  class="form-control"
-                  name="authors" id="authors"
-                  size="50"
-                  placeholder="Separate them by Comma"></textarea>
-    </div>
-    <div class="form-group">
-        <label for="category">Category</label>
-        <textarea type="text"
-                  class="form-control"
-                  name="category" id="category"
-                  placeholder="Separate them by Comma"></textarea>
-    </div>
-    <div class="form-group">
-        <input type="submit" class="btn">
-    </div>
+<h3>Add Book</h3>
+<form class="simple-form">
+    <label for="title">Title</label>
+    <input type="text"
+           name="title" id="title"
+           placeholder="title">
+
+    <label for="isbn">ISBN </label>
+    <input type="number"
+           name="isbn" id="isbn"
+           placeholder="isbn">
+
+    <label for="pageCount">Page Count</label>
+    <input type="number"
+           name="pageCount" id="pageCount"
+           placeholder="page count">
+
+    <label for="publishedDate">Published Date</label>
+    <input type="date"
+           name="publishedDate" id="publishedDate">
+
+    <label for="thumbnailUrl">Thumbnail Url</label>
+    <input type="url"
+           name="thumbnailUrl" id="thumbnailUrl">
+
+    <label for="shortDescription">Short Description </label>
+    <textarea name="shortDescription" id="shortDescription"></textarea>
+
+    <label for="longDescription">Long Description</label>
+    <textarea name="longDescription"
+              id="longDescription"></textarea>
+
+    <label for="status">Book Status</label>
+    <select name="status" id="status">
+        <option>REVIEW</option>
+        <option>PUBLISH</option>
+    </select>
+
+    <label for="authors">Authors</label>
+    <textarea type="text"
+              name="authors" id="authors"
+              placeholder="Separate them by Comma"></textarea>
+
+    <label for="category">Category</label>
+    <textarea type="text"
+              name="category" id="category"
+              placeholder="Separate them by Comma"></textarea>
+
+    <input type="submit">
 </form>

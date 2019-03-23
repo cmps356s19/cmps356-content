@@ -1,69 +1,72 @@
 <!doctype html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BookStore App</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/cards.css">
-    <link rel="stylesheet" href="css/nav-bar.css">
-    <link rel="stylesheet" href="css/book-form.css">
+    <style>
+        #search-options {
+            display: flex;
+        }
+        #search-param {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            grid-gap: 5px;
+        }
+    </style>
 
 </head>
 <body>
-<nav class="navbar">
-    <span class="navbar-toggle" id="js-navbar-toggle">
-        <i class="fas fa-bars"></i>
-    </span>
-
-    <a href="/" class="logo">Book Store</a>
-    <ul class="main-nav" id="js-menu">
+<nav>
+    <ul>
         <li>
-            <a href="/" class="nav-links">Books</a>
+           Book Store
         </li>
         <li>
-            <a href="#" class="nav-links">Add Book</a>
+            <a href="#">Books</a>
+        </li>
+        <li>
+            <a href="#">Add Book</a>
         </li>
 
         <li>
-            <a href="#" class="nav-links">Books Summary</a>
+            <a href="#">Books Summary</a>
         </li>
     </ul>
 </nav>
 
 <main>
-    <form id="search-form">
-        <h3><br>Select Search Criteria</h3>
-        <div></div>
+    <form>
+        <h4>Select Search Criteria</h4>
         <div id="search-options">
-            <div class="form-group">
+            <div>
                 <input type="radio" id="category"
                        name="search"
                        value="category">
 
                 <label for="category">Category</label>
             </div>
-            <div class="form-group">
+            <div>
                 <input type="radio" id="name"
                        name="search"
                        value="name">
                 <label for="name">Book Name</label>
             </div>
-            <div class="author">
+            <div>
                 <input type="radio" id="author"
                        name="search"
                        value="author">
                 <label for="author">Author Name</label>
             </div>
-            <div class="isbn">
+            <div>
                 <input type="radio" id="isbn"
                        name="search"
                        value="isbn">
                 <label for="isbn">ISBN</label>
             </div>
-            <div class="pageCount">
+            <div>
                 <input type="radio" id="pageCount"
                        name="search"
                        value="pageCount">
@@ -71,16 +74,69 @@
             </div>
         </div>
 
-        <input name="searchParam"
-               placeholder="Search parameter"
-               id="searchParam">
-        <input type="button"
-               value="Search"
-               id="search-btn">
+        <div id="search-param">
+            <input name="searchParam"
+                   placeholder="Search parameter"
+                   id="searchParam">
+            <input type="button"
+                   value="Search"
+                   id="search-btn">
+        </div>
     </form>
 
-    <div id="contentDiv"></div>
+    <div id="contentDiv">
+        <h3>Add Book</h3>
+        <form class="simple-form">
+            <label for="title">Title</label>
+            <input type="text"
+                   name="title" id="title"
+                   placeholder="title">
 
+            <label for="isbn">ISBN </label>
+            <input type="number"
+                   name="isbn" id="isbn"
+                   placeholder="isbn">
+
+            <label for="pageCount">Page Count</label>
+            <input type="number"
+                   name="pageCount" id="pageCount"
+                   placeholder="page count">
+
+            <label for="publishedDate">Published Date</label>
+            <input type="date"
+                   name="publishedDate" id="publishedDate">
+
+            <label for="thumbnailUrl">Thumbnail Url</label>
+            <input type="url"
+                   name="thumbnailUrl" id="thumbnailUrl">
+
+            <label for="shortDescription">Short Description </label>
+            <textarea name="shortDescription" id="shortDescription"></textarea>
+
+            <label for="longDescription">Long Description</label>
+            <textarea name="longDescription"
+                      id="longDescription"></textarea>
+
+            <label for="status">Book Status</label>
+            <select name="status" id="status">
+                <option>REVIEW</option>
+                <option>PUBLISH</option>
+            </select>
+
+            <label for="authors">Authors</label>
+            <textarea type="text"
+                      name="authors" id="authors"
+                      placeholder="Separate them by Comma"></textarea>
+
+            <label for="category">Category</label>
+            <textarea type="text"
+                      name="category" id="category"
+                      placeholder="Separate them by Comma"></textarea>
+
+            <input type="submit">
+        </form>
+
+    </div>
 </main>
 <script src="js/index.js"></script>
 </body>
