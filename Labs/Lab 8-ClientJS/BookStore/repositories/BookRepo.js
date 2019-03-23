@@ -6,10 +6,34 @@ class BookRepo {
         this.booksFilePath = path.resolve(__dirname, '../data/catalog-books.json');
     }
 
+    async getCategories() {
+        const filePath = path.resolve(__dirname, '../data/categories.json');
+        const data = await fs.readFile(filePath);
+        return await JSON.parse(data);
+    }
+
+    async getAuthors() {
+        const filePath = path.resolve(__dirname, '../data/authors.json');
+        const data = await fs.readFile(filePath);
+        return await JSON.parse(data);
+
+        /*  const data = await this.getBooks();
+        let authors = new Set();
+        data.forEach(b => {
+            const cats = b.authors;
+            cats.forEach(c => {
+                authors.add(c);
+            });
+        });
+
+        authors = [...authors].sort();
+        console.log(authors);
+        return authors;*/
+    }
+
     async getBooks() {
         const data = await fs.readFile(this.booksFilePath);
-        const books = await JSON.parse(data);
-        return books;
+        return await JSON.parse(data);
     }
 
     async getBooksByName(bookName) {

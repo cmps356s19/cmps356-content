@@ -2,6 +2,24 @@ const bookRepo = require('../repositories/bookRepo')
 
 class BookService {
 
+    async getCategories(req, res) {
+        try {
+            const categories = await bookRepo.getCategories();
+            res.status(200).json(categories);
+        } catch (err) {
+            res.status(500).send(err);
+        }
+    }
+
+    async getAuthors(req, res) {
+        try {
+            const authors = await bookRepo.getAuthors();
+            res.status(200).json(authors);
+        } catch (err) {
+            res.status(500).send(err);
+        }
+    }
+    
     //Create
     async addBook(req, res) {
         try {
