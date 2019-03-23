@@ -1,3 +1,13 @@
+/* Search Form */
+#search-options {
+    display: flex;
+}
+#search-param {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 5px;
+}
+
 /* Form styling */
 .simple-form {
     display: grid;
