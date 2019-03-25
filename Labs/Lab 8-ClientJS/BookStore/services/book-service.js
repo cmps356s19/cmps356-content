@@ -37,17 +37,20 @@ class BookService {
             if (req.query.name)
                 books = await bookRepo.getBooksByName(req.query.name);
             else if (req.query.pageCount)
-                books =  bookRepo.getBooksByPageCount(parseInt(req.query.pageCount));
+                books =  await bookRepo.getBooksByPageCount(parseInt(req.query.pageCount));
             else if (req.query.author)
-                books =  bookRepo.getBooksByAuthor(req.query.author);
+                books =  await bookRepo.getBooksByAuthor(req.query.author);
             else if (req.query.category)
-                books =  bookRepo.getBooksByCategory(req.query.category);
+                books =  await bookRepo.getBooksByCategory(req.query.category);
             else if (req.query.isbn)
-                books =  bookRepo.getBookByISBN(req.query.isbn);
-            else
-                books =  bookRepo.getBooks();
+                books =  await bookRepo.getBookByISBN(req.query.isbn);
+            else{
+                books =  await bookRepo.getBooks();
+                res.status(200).json(books);
+            }
 
-            res.status(200).json(books);
+
+
         } catch (err) {
             res.status(500).send(err);
         }
