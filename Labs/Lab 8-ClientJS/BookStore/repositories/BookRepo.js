@@ -37,8 +37,13 @@ class BookRepo {
     }
 
     async getBooksByName(bookName) {
-            const books = await this.getBooks();
-            return books.filter(b => b.title.toLowerCase().includes(bookName.toLowerCase()));
+           try{
+               console.log(bookName);
+               const books = await this.getBooks();
+               return books.find(b => b.title.toLowerCase().includes(bookName.toLowerCase()));
+           }catch (e) {
+               return e;
+           }
     }
 
     async getBooksByPageCount(pageCount) {

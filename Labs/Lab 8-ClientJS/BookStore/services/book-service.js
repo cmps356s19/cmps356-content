@@ -46,9 +46,8 @@ class BookService {
                 books =  await bookRepo.getBookByISBN(req.query.isbn);
             else{
                 books =  await bookRepo.getBooks();
-                res.status(200).json(books);
             }
-
+            res.status(200).json(books);
 
 
         } catch (err) {
