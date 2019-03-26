@@ -19,7 +19,7 @@ class BookService {
             res.status(500).send(err);
         }
     }
-    
+
     //Create
     async addBook(req, res) {
         try {
@@ -29,6 +29,7 @@ class BookService {
             res.status(500).send(err);
         }
     }
+
     //Read
     async getBooks(req, res) {
         try {
@@ -37,18 +38,17 @@ class BookService {
             if (req.query.name)
                 books = await bookRepo.getBooksByName(req.query.name);
             else if (req.query.pageCount)
-                books =  await bookRepo.getBooksByPageCount(parseInt(req.query.pageCount));
+                books = await bookRepo.getBooksByPageCount(parseInt(req.query.pageCount));
             else if (req.query.author)
-                books =  await bookRepo.getBooksByAuthor(req.query.author);
+                books = await bookRepo.getBooksByAuthor(req.query.author);
             else if (req.query.category)
-                books =  await bookRepo.getBooksByCategory(req.query.category);
+                books = await bookRepo.getBooksByCategory(req.query.category);
             else if (req.query.isbn)
-                books =  await bookRepo.getBookByISBN(req.query.isbn);
-            else{
-                books =  await bookRepo.getBooks();
-            }
-            res.status(200).json(books);
+                books = await bookRepo.getBookByISBN(req.query.isbn);
+            else
+                books = await bookRepo.getBooks();
 
+            res.status(200).json(books);
 
         } catch (err) {
             res.status(500).send(err);
