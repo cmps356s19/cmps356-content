@@ -4,10 +4,9 @@ const logger = require('morgan');
 const path = require('path');
 const mongoose = require('mongoose')
 
-mongoose
-    .connect('mongodb://127.0.0.1:27017/BankDB', {useNewUrlParser: true,useCreateIndex: true})
-    .then((db)=>console.log('Database Started Successfully'))
-    .catch(e=>console.log("Failed to start"))
+mongoose.connect('mongodb://127.0.0.1:27017/BankDB',{useNewUrlParser: true , useCreateIndex: true})
+    .then(db=> console.log('Database connection was successful'))
+    .catch(e=> console.log('Could not connect to database' , e))
 
 const app = express();
 
