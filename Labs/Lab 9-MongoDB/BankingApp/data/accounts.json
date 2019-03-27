@@ -2,43 +2,36 @@
   {
     "accountNo": 125,
     "acctType": "Current",
-    "balance": 4888,
-    "monthlyFee": 15
+    "balance": 4888
   },
   {
     "acctType": "Saving",
     "balance": 123123,
-    "accountNo": 123123,
-    "minimumBalance": 1000
+    "accountNo": 123123
   },
   {
     "accountNo": 4455,
     "acctType": "Current",
-    "balance": 95,
-    "monthlyFee": 15
+    "balance": 95
   },
   {
     "accountNo": 4455,
     "acctType": "Current",
-    "balance": 7777,
-    "monthlyFee": 15
+    "balance": 7777
   },
   {
     "accountNo": 999,
     "acctType": "Saving",
-    "balance": 0,
-    "minimumBalance": 1000
+    "balance": 0
   },
   {
     "accountNo": 99,
     "acctType": "Saving",
-    "balance": 56789,
-    "minimumBalance": 1000
+    "balance": 56789
   },
   {
     "accountNo": 3333,
     "acctType": "Saving",
-    "balance": 3333,
-    "minimumBalance": 1000
+    "balance": 3333
   }
 ]

@@ -2,11 +2,6 @@ const Account = require('../models/account');
 const Transaction = require('../models/account-transaction');
 const uuid = require('uuid');
 
-/*
-    aggregation very fast
-    $match ,
-
- */
 class AccountRepository {
 
     constructor() {
