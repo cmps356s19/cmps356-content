@@ -7,18 +7,14 @@ class BookRepository {
 
     async addStore(newStore) {
         return await Store.create(newStore);
-        /*
-         const store = new Store(newStore)
-         return store.save()
-         */
     }
 
     async getStores() {
         return await Store.find({});
     }
 
-    async getStoresCount() {
-        return await Store.count({ city : 'Doha'});
+    async getStoresCount(aCity) {
+        return await Store.count({ city : aCity});
     }
 
     async getBookCategories() {
@@ -46,7 +42,7 @@ class BookRepository {
 
     getBook(bookId) {
         //.select(...) is oprtional, only addBook it if you wish to specify the properties to be returned
-        return Book.findById(bookId).select("_id isbn title authors publisher category pages reviews");
+        return Book.findById(bookId).select("isbn title authors publisher category pages reviews");
     }
 
     getBookByIsbn(isbn) {
@@ -56,10 +52,6 @@ class BookRepository {
 
     addBook(newBook) {
         return Book.create(newBook);
-        /*
-         const book = new Book(newBook)
-         return book.save()
-         */
     }
 
     //More details about query operators @ https://docs.mongodb.org/manual/reference/operator/query/
@@ -102,17 +94,17 @@ class BookRepository {
 
     async getBooksSummary() {
         return await Book.aggregate([
+            // Match only books with pages >= 200
+            { "$match": { "pages": {$gte : 200} } },
             { $group: {
                     _id : "$category",
                     pages: { $avg: "$pages"  },
                     count: { $sum: 1 }
                 }
             },
-            // Match only books with pages >= 200
-            { "$match": { "pages": {$gte : 200} } },
             // Sorting by pages descending
             { "$sort": { "pages": -1 } },
-            // limit results to top 5 longest books
+            // limit results to top 5 categories with longest books
             { "$limit": 5 }
         ]);
     }
@@ -125,7 +117,7 @@ class BookRepository {
     async initDb() {
         try {
             //Uncomment to empty the database
-            await this.emptyDB();
+            //await this.emptyDB();
             //If the db is empty then init the db with data in json files
             const booksCount = await this.getBooksCount();
             console.log(`Books Count: ${booksCount}. Comment out emptyDB() to stop re-initializing the database`);
@@ -141,6 +133,7 @@ class BookRepository {
     async loadDataFromJsonFiles() {
         const fs = require('fs-extra');
 
+        //const store = {name: 'Jarir Bookstore', city: 'Doha'};
         const store1 = await this.addStore({name: 'Jarir Bookstore', city: 'Doha'});
         const store2 = await this.addStore({name: 'Jarir Bookstore', city: 'Istanbul'});
 
