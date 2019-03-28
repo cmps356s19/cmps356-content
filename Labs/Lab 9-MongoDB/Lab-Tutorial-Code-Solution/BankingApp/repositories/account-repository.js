@@ -3,7 +3,9 @@ const Transaction = require('../models/account-trans')
 
 class AccountRepository {
     async getAccounts(acctType) {
-        return await Account.find({acctType});
+        if(acctType)
+            return await Account.find({acctType});
+        return await Account.find();
     }
 
     //Get account by accountNo
