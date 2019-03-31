@@ -1,7 +1,8 @@
 const bookService = require('./services/book-service'),
     router = require('express').Router();
 
-router.route('/categories').get(bookService.getCategories);
+router.route('/categories')
+    .get(bookService.getCategories);
 router.route('/authors').get(bookService.getAuthors);
 
 router.route('/books')
