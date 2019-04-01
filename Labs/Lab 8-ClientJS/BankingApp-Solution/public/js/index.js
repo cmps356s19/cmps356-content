@@ -1,6 +1,7 @@
 //After the document is loaded in the browser
 document.addEventListener("DOMContentLoaded", async () => {
     await handleLoadAccounts();
+    console.log('Reload');
 });
 
 //returns all the accounts depending on the type the user selected
@@ -9,6 +10,7 @@ async function getAccounts(acctType) {
     if (acctType) {
         url = `${url}?acctType=${acctType}`;
     }
+    console.timeStamp(url);
     const response = await fetch(url);
     return response.json();
 }
@@ -79,7 +81,8 @@ async function handleAddAccount(event) {
                 },
                 body: JSON.stringify(account)
             });
-        window.location.href = 'index.html'
+        window.location.href = '/';
+        // await handleLoadAccounts();
     } catch (e) {
         console.log(e);
     }
