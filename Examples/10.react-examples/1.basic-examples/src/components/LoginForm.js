@@ -17,17 +17,21 @@ function LoginForm () {
 
     return (
         <form onSubmit={handleSubmit}>
+            <label htmlFor='email'>Email</label>
             <input
-                name="email" placeholder="e-mail"
+                name="email" id="email" placeholder="e-mail"
                 type="email" required
                 value={values.user}
                 onChange={handleChange} />
+
+            <label htmlFor='password'>Password</label>
             <input
-                name="password" placeholder="password"
+                name="password" id="password" placeholder="password"
                 type="password" required
                 value={values.password}
                 onChange={handleChange} />
-            <input type="submit" />
+
+            <button type="submit">Login</button>
         </form>
     );
 };

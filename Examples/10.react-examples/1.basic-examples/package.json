@@ -4,7 +4,8 @@
   "private": true,
   "dependencies": {
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "react-router-dom": "latest"
   },
   "browserslist": [
     "last 1 Chrome version"
