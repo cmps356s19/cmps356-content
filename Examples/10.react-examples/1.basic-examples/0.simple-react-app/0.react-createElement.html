@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>React</title>
+    <script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+</head>
+<body>
+<div id='root'></div>
+<script>
+    <div>Hello </div>;
+
+    const headerElement = React.createElement(
+        'div',
+        null,
+        {props.name}
+    );
+    ReactDOM.render(
+        headerElement,
+        document.querySelector('#root')
+    );
+</script>
+</body>
+</html>

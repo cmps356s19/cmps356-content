@@ -3,6 +3,8 @@
 build/
 dist/
 .idea/
+.cache/
+._*/
 node_modules/
 private/
 old/

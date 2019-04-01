@@ -1,0 +1,10 @@
+{
+  "name": "2.router-example",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "latest",
+    "react-dom": "latest",
+    "react-router-dom": "latest"
+  }
+}

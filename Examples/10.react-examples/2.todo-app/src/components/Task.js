@@ -9,7 +9,7 @@ export default function Task ({ task, onToggleComplete, onDelete }) {
                 <input type="checkbox" checked={task.complete}  onChange={onToggleComplete} />
                 {task.text}
             </label>
-            <button type="button" className="close" onClick={onDelete}>&times;</button>
+            <button type="button" className="close" onClick={onDelete}>❌</button>
         </li>
     );
 }

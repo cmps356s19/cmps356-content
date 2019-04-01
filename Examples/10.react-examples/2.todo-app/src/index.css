@@ -1,20 +1,10 @@
-body {
-  background-color: #a1a1a1;
-  margin: 1rem;
-}
-
-.App {
-  font-family: "Helvetica", sans-serif;
-  background-color: #f7f9fa;
-  height: 50vmax;
-  padding: 1rem;
-  box-shadow: 0px 5px 30px rgba(119, 119, 119, 0.25);
-}
-
 .task-list {
   margin: 0;
   padding: 0;
   list-style: none;
+  font-family: "Helvetica", sans-serif;
+  background-color: #f7f9fa;
+  box-shadow: 0px 5px 30px rgba(119, 119, 119, 0.25);
 }
 
 .task-item {
@@ -25,6 +15,7 @@ body {
   display: grid;
   grid-template-columns: 1fr auto;
 }
+
 .task-item a:hover {
   color: #75b51b !important;
   cursor: pointer;

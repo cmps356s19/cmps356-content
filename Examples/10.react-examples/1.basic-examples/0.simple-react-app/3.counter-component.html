@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple React App</title>
+</head>
+<body>
+
+<div id="root"></div>
+
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone"></script>
+
+<script type="text/babel">
+    function Counter(props) {
+        const [count, setCount] = React.useState(props.startValue);
+
+        const increment = () => {
+            setCount(count + 1);
+        };
+
+        const decrement = () => {
+            setCount(count + 1);
+        };
+
+        return <div>
+            Count: {count} &nbsp;
+            <button type="button" onClick={increment}>+</button>
+            <button type="button" onClick={decrement}>-</button>
+        </div>
+    }
+
+    ReactDOM.render(<Counter startValue={2} />,
+        document.querySelector('#root'));
+
+</script>
+</body>
+</html>

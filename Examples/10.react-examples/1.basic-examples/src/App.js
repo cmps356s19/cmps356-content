@@ -6,13 +6,13 @@ import ToDoApp from "./components/ToDoApp";
 import GitHubUsers from "./components/GitHubUsers";
 import LoginForm from "./components/LoginForm";
 import Counter from "./components/Counter";
-import StudentsList from "./components/StudentsList";
+import FriendsList from "./components/FriendsList";
 
 function App() {
     return <div className="App">
         <Welcome appName='React Demo App'/>
         <Counter startValue={3} onChange={count => console.log(`Count from the child component: ${count}`)}/>
-        <StudentsList students={['Fatima', 'Mouza', 'Sarah']}/>
+        <FriendsList friends={['Fatima', 'Mouza', 'Sarah']}/>
         <br/>
         <SignupForm/>
         <LoginForm/>
