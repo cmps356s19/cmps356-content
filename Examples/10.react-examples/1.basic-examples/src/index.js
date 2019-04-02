@@ -1,8 +1,7 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import {render} from 'react-dom';
 import './index.css';
 import App from './App';
-import RouterBasicExample from "./components/RouterBasicExample";
 
-//ReactDOM.render(<App />, document.getElementById('root'));
-ReactDOM.render(<RouterBasicExample />, document.getElementById('root'));
+//ReactDOM.render — Renders a React component to a DOM node.
+render(<App />, document.getElementById('root'));

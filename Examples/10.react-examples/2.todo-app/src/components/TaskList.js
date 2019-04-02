@@ -4,32 +4,42 @@ import TaskForm from "./TaskForm";
 import Task from "./Task";
 
 export default () => {
-  const [tasks, setTasks] = useState([
-    {
-      text: "Read about React",
-      complete: false
-    },
-    {
-      text: "Write a React tutorial",
-      complete: false
-    }
-  ]);
+    const [tasks, setTasks] = useState([
+        {
+            text: "Read about React",
+            complete: false
+        },
+        {
+            text: "Learn React State Management",
+            isCompleted: false
+        },
+        {
+            text: "Meet friend for lunch",
+            isCompleted: false
+        },
+        {
+            text: "Build really cool todo app",
+            isCompleted: false
+        }
+    ]);
 
-  const handleToggleComplete = idx => {
-    const updatedTasks = tasks.map((task, i) =>
-        i === idx ? { ...task, complete: !task.complete } : task
-    );
-    console.log("handleToggleComplete", idx, updatedTasks);
-    setTasks(updatedTasks);
-  };
+    const handleAddTask = text => {
+        //Clone the tasks then add the new one
+        const  newTasks = [...tasks, { text, complete: false }];
+        setTasks(newTasks);
+    };
 
-  const handleAddTask = text => {
-      setTasks([{ text, complete: false }, ...tasks]);
-  };
+    const handleCompleteTask = index => {
+        //Clone the tasks then modify the task at index
+        const newTasks = [...tasks];
+        newTasks[index].complete = !newTasks[index].complete;
+        setTasks(newTasks);
+        console.log("handleCompleteTask", index, newTasks);
+    };
 
-  const handleDeleteTask = idx => {
-      const remainingTasks = tasks.filter((task, i) => i !== idx);
-      console.log("handleDelete", idx, remainingTasks);
+  const handleDeleteTask = index => {
+      const remainingTasks = tasks.filter((task, i) => i !== index);
+      console.log("handleDelete", index, remainingTasks);
       setTasks(remainingTasks);
   };
 
@@ -37,14 +47,14 @@ export default () => {
 
   return (
     <div className="App">
-      <TaskForm onAdd={handleAddTask} />
+      <TaskForm onAddTask={handleAddTask} />
 
       <h2>Todo list</h2>
       <ul className="task-list">
-        {tasks.map((task, i) => (
-          <Task key={i} task={task}
-                onToggleComplete={() => handleToggleComplete(i)}
-                onDelete ={() => handleDeleteTask(i)}
+        {tasks.map((task, index) => (
+          <Task key={index} task={task}
+                onCompleteTask={() => handleCompleteTask(index)}
+                onDeleteTask ={() => handleDeleteTask(index)}
           />
         ))}
       </ul>

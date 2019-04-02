@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <title>Countries</title>
     <script>
+
+        document.addEventListener("DOMContentLoaded", ()=> {
+            const regionDD = document.querySelector('#regionDD');
+            regionDD.value = 'asia';
+            handleRegionChange('asia');
+        });
+
         async function getCountries(region) {
             const url = `https://restcountries.eu/rest/v2/region/${region}`;
             const response = await fetch(url);
             return await response.json();
         }
 
-        async function handleRegionChange(event) {
-            const region = event.target.value;
+        async function handleRegionChange(region) {
+            //console.log(event);
+            //const region = event.target.value;
             console.log(region);
             const countries = await getCountries(region);
             console.log(countries);
@@ -23,11 +31,12 @@
                 countriesUL.innerHTML += li;
             })
         }
+
     </script>
 </head>
 <body>
 Region:
-<select onchange="handleRegionChange(event)">
+<select id="regionDD" onchange="handleRegionChange(event.target.value)">
     <option value=""></option>
     <option value="africa">Africa</option>
     <option value="americas">Americas</option>

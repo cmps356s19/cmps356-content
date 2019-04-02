@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function TaskForm ({ onAdd }) {
+export default function TaskForm ({ onAddTask }) {
   const [todo, setTodo] = useState("");
 
   const handleTodoChange = e => setTodo(e.target.value);
@@ -8,7 +8,7 @@ export default function TaskForm ({ onAdd }) {
   const handleSubmit = e => {
     e.preventDefault();
     if (!todo) return;
-    onAdd(todo);
+    onAddTask(todo);
     setTodo("");
   }
 

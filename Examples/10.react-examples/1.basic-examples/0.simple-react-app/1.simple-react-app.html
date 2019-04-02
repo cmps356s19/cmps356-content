@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple React App</title>
+</head>
+<body>
+
+<div id="root"></div>
+<div id="ageDiv"></div>
+<div id="counterDiv"></div>
+<div id="errorDiv"></div>
+
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone"></script>
+
+<script type="text/babel">
+    function Hello(props) {
+            return <div>Hello {props.name}</div>;
+    }
+
+    ReactDOM.render(<Hello name="Ali" />,
+        document.querySelector('#root'));
+
+    const age = 18;
+    const ageElement = <div>
+        <Hello name="Ali" />
+        <p>Age: {age}</p>
+    </div>;
+
+    ReactDOM.render(ageElement, document.querySelector('#ageDiv'));
+
+</script>
+</body>
+</html>

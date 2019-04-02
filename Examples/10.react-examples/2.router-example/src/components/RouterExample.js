@@ -1,17 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import NavBar from "./NavBar";
 
-function RouterBasicExample() {
+function RouterExample() {
   return (
     <Router>
         <div>
-            <nav>
-                <ul>
-                    <li> <Link to="/">Home</Link> </li>
-                    <li> <Link to="/about">About</Link> </li>
-                    <li> <Link to="/topics">Topics</Link> </li>
-                </ul>
-            </nav>
+            <NavBar />
             <hr />
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
@@ -61,4 +56,4 @@ function Topic({ match }) {
     return <h3>{match.params.topicId}</h3>
 }
 
-export default RouterBasicExample;
+export default RouterExample;

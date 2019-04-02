@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple React App</title>
+</head>
+<body>
+
+<div id="root"></div>
+
+<!-- Load React. -->
+<!-- Note: when deploying, replace "development.js" with "production.min.js". -->
+<script src="https://unpkg.com/react@16/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/babel-standalone"></script>
+
+<script type="text/babel">
+    function ErrorBox(props) {
+        const css = {
+            color: 'red', fontWeight: 'bold',
+            border: '1px solid red', padding: '8px'
+        };
+        return <div style={css}>Error: {props.msg}</div>;
+    }
+    ReactDOM.render(<ErrorBox msg='Invalid login!' />,
+        document.querySelector('#root')
+    );
+
+</script>
+</body>
+</html>
