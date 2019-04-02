@@ -15,21 +15,32 @@
 <script src="https://unpkg.com/babel-standalone"></script>
 
 <script type="text/babel">
+    function Message(props) {
+        return <h1>Current Count: {props.count}</h1>
+    }
+
     function Counter(props) {
+        //let count = props.startValue;
         const [count, setCount] = React.useState(props.startValue);
 
         const increment = () => {
+            //count++;
+            //console.log(count);
             setCount(count + 1);
         };
 
         const decrement = () => {
-            setCount(count + 1);
+            //count--;
+            //console.log(count);
+            setCount(count - 1);
         };
 
         return <div>
             Count: {count} &nbsp;
             <button type="button" onClick={increment}>+</button>
             <button type="button" onClick={decrement}>-</button>
+            <br />
+            <Message count={count}/>
         </div>
     }
 

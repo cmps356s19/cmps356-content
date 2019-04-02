@@ -19,15 +19,15 @@
 
 <script type="text/babel">
     function Hello(props) {
-            return <div>Hello {props.name}</div>;
+        return <div>Salamou Aleikoum! {props.name}. I have you are enjoying your {props.program} program.</div>;
     }
 
-    ReactDOM.render(<Hello name="Ali" />,
+    ReactDOM.render(<Hello name='Ali' program='CE'/>,
         document.querySelector('#root'));
 
     const age = 18;
     const ageElement = <div>
-        <Hello name="Ali" />
+        <Hello name='Ahmed' program='CS'/>
         <p>Age: {age}</p>
     </div>;
 
