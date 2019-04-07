@@ -8,9 +8,11 @@ import FriendsList from "./components/FriendsList";
 import NewsSearch from "./components/NewsSearch";
 import Avatar from "./components/Avatar";
 import FriendForm from "./components/FriendForm";
+import UserContext from './components/UserContext';
 
 function App() {
     const [friends, setFriends] = useState(['Fatima', 'Mouza', 'Sarah']);
+    const [user, setUser] = useState({username: 'aFaleh', firstName: 'Ali', lastName: 'Faleh'});
 
     const handleAddFriend = name => {
         //friends.push(name);
@@ -20,7 +22,12 @@ function App() {
         setFriends(newFriends);
     };
 
+    const hello = () => {
+        console.log(`Hello ${user.firstName}`);
+    }
+
     return (
+     <UserContext.Provider value={ { user, hello } }>
         <div className="App">
             <Welcome appName='React Demo App'/>
             <div style={ {display: 'flex', justifyContent: 'space-around'} }>
@@ -37,7 +44,8 @@ function App() {
             <GitHubUsers/>
             <NewsSearch query='react'/>
         </div>
-    )
+     </UserContext.Provider>
+    );
 }
 
 export default App;

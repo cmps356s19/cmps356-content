@@ -16,7 +16,8 @@ function RouterExample() {
   );
 }
 
-function Home() {
+function Home(props) {
+    console.log('props', props);
     return <h2>Home</h2>;
 }
 
@@ -24,12 +25,18 @@ function About() {
     return <h2>About</h2>;
 }
 
-function Topics({ match }) {
+function Topics({ match, history, ...otherProps }) {
+    //console.log('match', match);
+    //console.log('otherProps', otherProps);
     return (
         <div>
             <h2>Topics</h2>
             <nav>
             <ul>
+                <li>
+                    <a href='#' onClick={e => { history.push('/') }}>Back to Home</a>
+                </li>
+
                 <li>
                     <Link to={`${match.url}/rendering`}>Rendering with React</Link>
                 </li>
@@ -53,6 +60,7 @@ function Topics({ match }) {
 }
 
 function Topic({ match }) {
+    console.log(match);
     return <h3>{match.params.topicId}</h3>
 }
 
