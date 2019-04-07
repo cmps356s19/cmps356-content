@@ -7,21 +7,11 @@ import Counter from "./components/Counter";
 import FriendsList from "./components/FriendsList";
 import NewsSearch from "./components/NewsSearch";
 import Avatar from "./components/Avatar";
-import FriendForm from "./components/FriendForm";
 import UserContext from './components/UserContext';
 
 function App() {
-    const [friends, setFriends] = useState(['Fatima', 'Mouza', 'Sarah']);
+
     const [user, setUser] = useState({username: 'aFaleh', firstName: 'Ali', lastName: 'Faleh'});
-
-    const handleAddFriend = name => {
-        //friends.push(name);
-        //console.log(friends);
-        //Clone the friends then add the new one
-        const  newFriends = [...friends, name];
-        setFriends(newFriends);
-    };
-
     const hello = () => {
         console.log(`Hello ${user.firstName}`);
     }
@@ -36,8 +26,7 @@ function App() {
             </div>
             <Counter startValue={3} onChange={count => console.log(`Count from the child component: ${count}`)}/>
             <br />
-            <FriendForm onAddFriend={handleAddFriend} />
-            <FriendsList friends={friends}/>
+            <FriendsList />
             <br/>
             <LoginForm/>
             <SignupForm/>

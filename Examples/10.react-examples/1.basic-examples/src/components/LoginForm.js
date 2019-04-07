@@ -1,22 +1,25 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 function LoginForm () {
     const [values, setValues] = useState({ email: "", password: "" });
+    const formRef = useRef();
 
     const handleChange = e => {
-        const name = e.target.name;
-        const value = e.target.value;
+        const {name, value} = e.target;
         //Merge the object before change with the updated property
         setValues({ ...values, [name]: value });
     };
 
     const handleSubmit = e => {
+        const isFormValid = formRef.current.checkValidity();
+        if (!isFormValid) return;
+
         e.preventDefault();
         alert(JSON.stringify(values));
     };
 
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} ref={formRef}>
             <label htmlFor='email'>Email</label>
             <input
                 name="email" id="email" placeholder="e-mail"

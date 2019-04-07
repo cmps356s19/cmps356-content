@@ -1,10 +1,10 @@
 import React, {useState} from 'react';
 
-export default function FriendForm(props) {
+export default function FriendForm({onAddFriend}) {
     const [name, setName] = useState('');
 
     const handleAddFriend = () => {
-        props.onAddFriend(name);
+        onAddFriend(name);
         setName('');
     }
 

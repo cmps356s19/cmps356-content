@@ -1,12 +1,22 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 
 function SignupForm() {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const formRef = useRef();
+
+    const handleSubmit = e => {
+        const isFormValid = formRef.current.checkValidity();
+        if (!isFormValid) return;
+
+        e.preventDefault();
+        alert(JSON.stringify({firstName, lastName, email, password}));
+    };
+
     return (
-        <form>
+        <form onSubmit={handleSubmit} ref={formRef}>
             <label htmlFor="firstName">First name</label>
             <input
                 value={firstName}
