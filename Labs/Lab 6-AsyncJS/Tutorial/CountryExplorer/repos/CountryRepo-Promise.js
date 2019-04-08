@@ -40,7 +40,7 @@ let countryRepo = new CountryRepoPromise();
 // // console.log(countries[0].name , "- " , countries[1].name);
 //
 //
-// countryRepo.readFileAsync();
+// countryRepo.getCountries();
 // countryRepo.getCapitalCity("Qatar");
 countryRepo.getCountryLiteracy("Qatar");
 // console.log('This message will only be displayed after you read the file');

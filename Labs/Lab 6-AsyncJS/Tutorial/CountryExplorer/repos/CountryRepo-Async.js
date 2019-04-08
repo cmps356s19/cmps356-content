@@ -1,12 +1,12 @@
+const fs = require('fs-extra');
 class CountryRepoAsync {
     constructor() {
-        this.fse = require('fs-extra');
-        this.countryFilePath = '../data/country.json';
+        this.countryFilePath = './data/country.json';
         this.literacyFilePath = '../data/country-literacy-rate.json';
     }
 
-    async readFileAsync(filePath) {
-        let data = await this.fse.readFile(filePath);
+    async getCountries(filePath) {
+        let data = await fs.readFile(filePath);
         let parsedData = await JSON.parse(data);
 
         return parsedData;
@@ -14,17 +14,17 @@ class CountryRepoAsync {
 
     async getCapitalCity(countryName) {
 
-        let countries = await this.readFileAsync(this.countryFilePath);
+        let countries = await this.getCountries(this.countryFilePath);
         let country = countries.find(country=> country.name ==countryName);
         console.log(`The capital city of ${countryName} is ${country.capital}`);
         return country;
     }
 
     async getCountryLiteracy(countryName) {
-        let countries =  await this.readFileAsync(this.countryFilePath);
+        let countries =  await this.getCountries(this.countryFilePath);
         let country = countries.find(country=> country.name ==countryName);
 
-        let countriesLitracy = await this.readFileAsync(this.literacyFilePath);
+        let countriesLitracy = await this.getCountries(this.literacyFilePath);
         let singleCountryLiteracy = countriesLitracy.filter(lit=> lit.country==countryName);
 
         country.literacy = singleCountryLiteracy;
@@ -40,7 +40,15 @@ let countryRepo = new CountryRepoAsync();
 // // console.log(countries[0].name , "- " , countries[1].name);
 //
 //
-countryRepo.readFileAsync(countryRepo.countryFilePath).then(result=> console.log(result));
+countryRepo.getCountries(countryRepo.countryFilePath).then(result=> {
+    const countries = result.map(c => {
+        const {alpha2Code : code, name, capital, region : continent, population} = c;
+        return {code, name, capital, continent, population, flag: `https://cmps356s19.github.io/flags/${code.toLowerCase()}.png`};
+    });
+    console.log(countries);
+    fs.writeFile('./data/countries.json', JSON.stringify(countries));
+    
+ });
 
 
 // countryRepo.getCapitalCity("Qatar");

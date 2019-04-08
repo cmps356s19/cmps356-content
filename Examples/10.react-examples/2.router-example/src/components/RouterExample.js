@@ -10,13 +10,17 @@ function RouterExample() {
             <hr />
             <Route exact path="/" component={Home} />
             <Route path="/about" component={About} />
-            <Route path="/topics" component={Topics} />
+            <Route path="/topics/:topicId" component={Topic} />
+            <Route exact path="/topics/"
+                render={() => <h3>Under construction. Come back later!!!</h3>}
+            />
         </div>
     </Router>
   );
 }
 
-function Home() {
+function Home(props) {
+    console.log('props', props);
     return <h2>Home</h2>;
 }
 
@@ -24,12 +28,28 @@ function About() {
     return <h2>About</h2>;
 }
 
-function Topics({ match }) {
+function Topic({ history, match }) {
+    console.log("history:", history, "match:", match);
+    return <>
+        <h3>Received topic as route parameter: {match.params.topicId}</h3>
+        <a href='' onClick={() => { history.push('/') }}>Back to Home</a>
+    </>
+}
+
+export default RouterExample;
+
+/*function Topics({ match, history, ...otherProps }) {
+    //console.log('match', match);
+    //console.log('otherProps', otherProps);
     return (
         <div>
             <h2>Topics</h2>
             <nav>
             <ul>
+                <li>
+                    <a href='#' onClick={e => { history.push('/') }}>Back to Home</a>
+                </li>
+
                 <li>
                     <Link to={`${match.url}/rendering`}>Rendering with React</Link>
                 </li>
@@ -50,10 +70,5 @@ function Topics({ match }) {
             />
         </div>
     );
-}
+}*/
 
-function Topic({ match }) {
-    return <h3>{match.params.topicId}</h3>
-}
-
-export default RouterExample;

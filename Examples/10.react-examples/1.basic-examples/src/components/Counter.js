@@ -10,7 +10,7 @@ function Counter(props) {
     };
 
     const decrement = () => {
-        const updatedCount = count + 1;
+        const updatedCount = count - 1;
         setCount(updatedCount);
         props.onChange(updatedCount);
     };
