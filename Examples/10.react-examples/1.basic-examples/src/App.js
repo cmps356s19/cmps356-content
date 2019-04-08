@@ -19,7 +19,9 @@ function App() {
     return (
      <UserContext.Provider value={ { user, hello } }>
         <div className="App">
+
             <Welcome appName='React Demo App'/>
+
             <div style={ {display: 'flex', justifyContent: 'space-around'} }>
                 <Avatar username="erradi" picName='abdelkarim_erradi02.jpg'/>
                 <Avatar username="abdulla-alali" picName='Abdulla_Khalid.jpg'/>

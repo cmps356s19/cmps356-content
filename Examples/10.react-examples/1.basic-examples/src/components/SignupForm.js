@@ -8,17 +8,18 @@ function SignupForm() {
     const formRef = useRef();
 
     const handleSubmit = e => {
-        const isFormValid = formRef.current.checkValidity();
-        if (!isFormValid) return;
+        console.log(formRef.current.value);
+        //const isFormValid = formRef.current.checkValidity();
+        //if (!isFormValid) return;
 
         e.preventDefault();
         alert(JSON.stringify({firstName, lastName, email, password}));
     };
 
     return (
-        <form onSubmit={handleSubmit} ref={formRef}>
+        <form onSubmit={handleSubmit} >
             <label htmlFor="firstName">First name</label>
-            <input
+            <input ref={formRef}
                 value={firstName}
                 onChange={e => setFirstName(e.target.value)}
                 placeholder="First name"
@@ -57,6 +58,9 @@ function SignupForm() {
                 required
             />
             <button type="submit">Submit</button>
+
+            <p>first name: {firstName}</p>
+            <p>last name: {lastName}</p>
         </form>
     );
 }

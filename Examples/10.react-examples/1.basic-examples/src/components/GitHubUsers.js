@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from "react";
 
 function GitHubUsers() {
-    const [searchText, setSearchText] = useState('');
     const [users, setUsers] = useState([]);
 
     useEffect(() => {

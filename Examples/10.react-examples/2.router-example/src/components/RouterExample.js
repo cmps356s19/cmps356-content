@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { Switch, BrowserRouter as Router, Route, Link } from "react-router-dom";
 import NavBar from "./NavBar";
 
 function RouterExample() {
@@ -8,12 +8,14 @@ function RouterExample() {
         <div>
             <NavBar />
             <hr />
-            <Route exact path="/" component={Home} />
-            <Route path="/about" component={About} />
-            <Route path="/topics/:topicId" component={Topic} />
-            <Route exact path="/topics/"
-                render={() => <h3>Under construction. Come back later!!!</h3>}
-            />
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/about" component={About} />
+                <Route path="/topics/:topicId" component={Topic} />
+                <Route exact path="/topics/"
+                    render={() => <h3>Under construction. Come back later!!!</h3>}
+                />
+            </Switch>
         </div>
     </Router>
   );
@@ -32,7 +34,7 @@ function Topic({ history, match }) {
     console.log("history:", history, "match:", match);
     return <>
         <h3>Received topic as route parameter: {match.params.topicId}</h3>
-        <a href='' onClick={() => { history.push('/') }}>Back to Home</a>
+        <a href='' onClick={() => { history.push('/about') }}>Back to Home</a>
     </>
 }
 

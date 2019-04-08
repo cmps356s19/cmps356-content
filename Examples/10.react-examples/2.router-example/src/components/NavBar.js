@@ -8,7 +8,7 @@ export default function NavBar() {
                 <li>
                     <Link to="/">Home</Link>
                 </li>
-                {/*<li> <a href="/about">About</a> </li>*/}
+                <li> <a href="/about">About 2 </a> </li>
                 <li>
                     <Link to="/about">About</Link>
                 </li>
