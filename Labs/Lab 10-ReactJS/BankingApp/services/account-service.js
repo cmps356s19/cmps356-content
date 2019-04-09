@@ -66,7 +66,6 @@ class AccountService {
         try {
             const transaction = req.body;
             console.log(req.body);
-
             res.status(200).send(await accountRepo.addTransaction(transaction));
         }
         catch (err) {
