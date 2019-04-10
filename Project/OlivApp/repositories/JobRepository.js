@@ -105,7 +105,11 @@ class JobRepository {
     }
 
     // ToDo: Implement rescheduleJobs.
-    /* This method reschedule jobs according to the specified mode, days, hours and minutes */
+    /* This method reschedule jobs according to the specified mode, days, hours and minutes
+      reschedule mode could be either forward or backward.
+      This method should loop through the jobs then update the job
+      scheduled date based on these inputs.
+    */
     async rescheduleJobs({jobs, mode, days, hours, minutes}) {
     }
 
