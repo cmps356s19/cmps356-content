@@ -1,0 +1,50 @@
+[
+  {
+    "_id": 1,
+    "given_name": "Manager",
+    "family_name": "Oliva",
+    "email": "aliva@gmail.com",
+    "password": "secret",
+    "street": "Oliva Street",
+    "city": "Doha",
+    "mobile": "55667788",
+    "role":  "Manager",
+    "o_idProv_ider": "local"
+  },
+  {
+    "_id": 2,
+    "given_name": "Ali",
+    "family_name": "Hussaini",
+    "email": "hussaini@gmail.com",
+    "password": "secret",
+    "street": "Arab League Street",
+    "city": "Doha",
+    "mobile": "66338094",
+    "role":  "Customer",
+    "o_idProv_ider": "local"
+  },
+  {
+    "_id": 3,
+    "given_name": "Karima",
+    "family_name": "Akbar",
+    "email": "karima@gmail.com",
+    "password": "secret",
+    "street": "Karima Street",
+    "city": "Doha",
+    "mobile": "22334455",
+    "role":  "Customer",
+    "o_idProv_ider": "local"
+  },
+  {
+    "_id": 4,
+    "given_name": "Omar",
+    "family_name": "Saleh",
+    "email": "saleh@gmail.com",
+    "password": "secret",
+    "street": "Saleh Street",
+    "city": "Doha",
+    "mobile": "55443322",
+    "role":  "Customer",
+    "o_idProv_ider": "local"
+  }
+]

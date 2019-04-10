@@ -1,0 +1,124 @@
+[
+  {
+    "_id": 1,
+    "customerId": 2,
+    "oliveType": "Picholine",
+    "quantity": 4000,
+    "status": "Pending",
+    "harvestDate": "2019-04-10",
+    "sourceRegion": "Umm Said",
+    "receptionDate": "2019-04-10",
+    "scheduledDate": "2019-04-13",
+    "scheduledTime": "9:00 AM",
+    "Notes": [
+      {
+        "note": "Customer wants golden oil to gift to CMPS 356 students",
+        "createdOn": "2019-04-11",
+        "createdBy": "Oliva"
+      },
+      {
+        "note": "Customers requests to use 250g containers gift packages",
+        "createdOn": "2019-04-13",
+        "createdBy": "Oliva"
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "customerId": 2,
+    "oliveType": "Arbequina",
+    "quantity": 5000,
+    "status": "Pending",
+    "harvestDate": "2019-04-10",
+    "sourceRegion": "Al Wakra",
+    "receptionDate": "2019-04-10",
+    "scheduledDate": "2019-04-11",
+    "scheduledTime": "10:00 AM"
+  },
+  {
+    "_id": 3,
+    "customerId": 3,
+    "oliveType": "Picholine",
+    "quantity": 600,
+    "status": "Cancelled",
+    "harvestDate": "2019-04-10",
+    "sourceRegion": "Al Wakra",
+    "receptionDate": "2019-04-10"
+  },
+  {
+    "_id": 4,
+    "customerId": 2,
+    "oliveType": "Arbosana",
+    "quantity": 800,
+    "status": "Completed",
+    "harvestDate": "2019-04-10",
+    "sourceRegion": "Al Wakra",
+    "receptionDate": "2019-04-10",
+    "scheduledDate": "2019-04-11",
+    "scheduledTime": "10:00 AM",
+    "completedDate": "2019-04-11",
+    "completedTime": "11:00 AM",
+    "oilQuantity": 160,
+    "Notes": [
+      {
+        "note": "Called to customer to come and collect his olive",
+        "createdOn": "2019-04-11",
+        "createdBy": "Oliva"
+      },
+      {
+        "note": "Customer called and requested send the oil as gift to OlivApp developers",
+        "createdOn": "2019-04-12",
+        "createdBy": "Oliva"
+      }
+    ],
+    "invoice": {
+      "lineItems": [
+        {
+          "productId": 1,
+          "productName": "Milling fee (per Kg)",
+          "unitPrice": 1.5,
+          "quantity": 800
+        },
+        {
+          "productId": 2,
+          "productName": "50L Sansone Stainless Steel Container with Tap",
+          "unitPrice": 100,
+          "quantity": 4
+        }
+      ]
+    }
+  },
+  {
+    "_id": 5,
+    "customerId": 4,
+    "oliveType": "Haouzia",
+    "quantity": 800,
+    "status": "Paid and Collected",
+    "harvestDate": "2019-04-10",
+    "sourceRegion": "Al Wakra",
+    "receptionDate": "2019-04-10",
+    "scheduledDate": "2019-04-11",
+    "scheduledTime": "10:00 AM",
+    "completedDate": "2019-04-11",
+    "completedTime": "11:00 AM",
+    "oilQuantity": 160,
+    "invoice": {
+      "paymentMethod": "Cash",
+      "paymentDate": "2019-04-12",
+      "lineItems": [
+        {
+          "productId": 1,
+          "productName": "Milling fee (per Kg)",
+          "unitPrice": 1.5,
+          "quantity": 800
+        },
+        {
+          "productId": 2,
+          "productName": "50L Sansone Stainless Steel Container with Tap",
+          "unitPrice": 100,
+          "quantity": 5
+        }
+      ]
+    }
+  }
+]

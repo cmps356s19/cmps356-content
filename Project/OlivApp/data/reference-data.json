@@ -1,0 +1,17 @@
+{
+  "oliveTypes": [
+    "Picholine", "Haouzia", "Menara", "Arbequina", "Arbosana", "Picual"
+  ],
+  "sourceRegions": [
+    "Al Rayyan", "Al Wakra", "Umm Said", "Al Khor", "Mesaieed"
+  ],
+  "jobStatus": [
+    "Pending", "Completed", "Paid and Collected", "Cancelled"
+  ],
+  "productCategories": [
+    "Service", "Container"
+  ],
+  "paymentMethods": [
+    "Cash", "Cheque", "Debit Card", "Credit Card"
+  ]
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "_id": 1,
+    "name": "Milling fee (per Kg)",
+    "category": "Service",
+    "unitPrice": 1.5
+  },
+  {
+    "_id": 2,
+    "name": "50L Sansone Stainless Steel Container with Tap",
+    "imageUrl": "https://cmps356s19.github.io/images/SS001-50L.jpg",
+    "category": "Container",
+    "size": "50L",
+    "type": "Stainless Steel",
+    "unitPrice": 100,
+    "qty": 500
+  },
+  {
+    "_id": 3,
+    "name": "30L Sansone Stainless Steel Container with Tap",
+    "imageUrl": "https://cmps356s19.github.io/images/SS001-30L.jpg",
+    "category": "Container",
+    "size": "30L",
+    "type": "Stainless Steel",
+    "unitPrice": 60,
+    "qty": 300
+  },
+  {
+    "_id": 4,
+    "name": "10L Sansone Stainless Steel Container with Tap",
+    "imageUrl": "https://cmps356s19.github.io/images/SS001-10L.jpg",
+    "category": "Container",
+    "size": "10L",
+    "type": "Stainless Steel",
+    "unitPrice": 20,
+    "qty": 100
+  },
+  {
+    "_id": 5,
+    "name": "50L Plastic Oil Container",
+    "imageUrl": "https://cmps356s19.github.io/images/PL001-50L.jpg",
+    "category": "Container",
+    "size": "50L",
+    "type": "Plastic",
+    "unitPrice": 25,
+    "qty": 250
+  },
+  {
+    "_id": 6,
+    "name": "30L Plastic Oil Container",
+    "imageUrl": "https://cmps356s19.github.io/images/PL001-30L.jpg",
+    "category": "Container",
+    "size": "30L",
+    "type": "Plastic",
+    "unitPrice": 15,
+    "qty": 300
+  },
+  {
+    "_id": 7,
+    "name": "10L Plastic Oil Container",
+    "imageUrl": "https://cmps356s19.github.io/images/PL001-10L.jpg",
+    "category": "Container",
+    "size": "10L",
+    "type": "Plastic",
+    "unitPrice": 5,
+    "qty": 50
+  }
+]
