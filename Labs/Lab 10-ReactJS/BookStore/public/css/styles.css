@@ -1,5 +1,15 @@
+/* Search Form */
+#search-options {
+    display: flex;
+}
+#search-param {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    grid-gap: 5px;
+}
+
 /* Form styling */
-form {
+.simple-form {
     display: grid;
     padding: 1em;
     background: #f9f9f9;
@@ -51,7 +61,7 @@ input:focus {
 }
 
 @media (min-width: 700px) {
-    form {
+    .simple-form {
         grid-template-columns: auto 1fr;
         grid-gap: 16px;
     }
@@ -82,7 +92,7 @@ input:focus {
     }
 }
 
-/* NavBar.js Bar styling */
+/* Nav Bar styling */
 nav ul li:first-child {
    margin-right: auto;
 }

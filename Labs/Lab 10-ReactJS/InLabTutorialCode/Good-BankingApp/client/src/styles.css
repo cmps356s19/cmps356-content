@@ -82,7 +82,7 @@ input:focus {
     }
 }
 
-/* NavBar.js Bar styling */
+/* NavBar Bar styling */
 nav ul li:first-child {
    margin-right: auto;
 }
@@ -130,4 +130,21 @@ th {
     text-align: left;
     background-color: #0069ed;
     color: white;
+}
+
+.float{
+    position:fixed;
+    width:60px;
+    height:60px;
+    right: 40px;
+    margin: 10px;
+    background-color:#0C9;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+    margin-top:22px;
 }

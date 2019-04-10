@@ -4,13 +4,19 @@ npm install -g parcel-bundler
 ### Install packages
 npm install
 
-### Transpile and run the app
-parcel src/index.html
+### To run the app:
+ - Build the client app using: parcel build client/src/index.html --public-url ./
+ - Run app.js and visit http://localhost:5000
 
-npm install -g babel-core
+### Transpile and run the client app in dev mode
+npm start 
+
+Or
+
+parcel client/src/index.html
 
 ### Build for production
-parcel build src/index.html --public-url ./
+parcel build client/src/index.html --public-url ./
 
 ### Important notes
 // Tell parcel to use the browser's built in async/await by adding this to package.js:
