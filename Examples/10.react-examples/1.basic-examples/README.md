@@ -1,6 +1,8 @@
 ### Globally install parcel-bundler once
 npm install -g parcel-bundler
 
+#mac Users
+npm install -g parcel-bundler
 ### Install packages
 npm install
 
@@ -17,7 +19,7 @@ parcel build src/index.html --public-url ./
   "browserslist": [
     "last 1 Chrome version"
   ]
- 
-//To avoid parcel errors, you need to uncheck WebStorm "safe write" 
+
+//To avoid parcel errors, you need to uncheck WebStorm "safe write"
     in Preferences > Appearance & Behavior > System Settings
 See https://parceljs.org/hmr.html#safe-write for further details.

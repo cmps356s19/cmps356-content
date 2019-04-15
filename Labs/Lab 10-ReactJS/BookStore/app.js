@@ -13,16 +13,17 @@ mongoose.connect('mongodb://127.0.0.1:27017/BooksDB', { useCreateIndex: true,
     useNewUrlParser: true})
     .then(db => {
         //Initialize the database if it is not initialized from the JSON files
-        mongoose.connection.db.collection('books').countDocuments()
+        mongoose
+            .connection.db
+            .collection('books').countDocuments()
             .then(count => {
                 if(count==0){
                     Utils.initializeAuthorsDBCollectionFromJSONFile()
                         .then(()=> Utils.initializeBorrowersDBCollectionFromJSONFile())
                         .then(()=> Utils.initializeBooksDBCollectionFromJSONFile())
                 }
-                else{
-                    console.log('DB is already ...<Initialized>');
-                }
+                else
+                    console.log('DB is already ...<Initialized>')
             })
     })
     .catch(e => console.log(e));
