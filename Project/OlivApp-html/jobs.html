@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>OlivApp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<body>
+<!-- ToDo: Customer should have access to his/her Jobs.
+    The customer dropdown should be invisible for the customer -->
+<!-- ToDo: the customer and jobStatus dropdowns should be dynamically populated.
+    The App should have no hardcoding of any dropdown data. -->
+
+<div class="page-head">
+    <form class="horizontal-form">
+        <label for="customer">
+            Customer
+        </label>
+        <select id="customer" required>
+            <option value="">All</option>
+            <option value="2">Ali Hussaini</option>
+            <option value="3">Karima Akbar</option>
+            <option value="4">Omar Saleh</option>
+        </select>
+
+        <label for="jobStatus">
+            Job Status
+        </label>
+        <select id="jobStatus" required>
+            <option value="">All</option>
+            <option value="Pending">Pending</option>
+            <option value="Completed">Completed</option>
+            <option value="Paid and Collected">Paid and Collected</option>
+            <option value="Cancelled">Cancelled</option>
+        </select>
+
+        <button type="submit">Search</button>
+    </form>
+    <a href="#" title="Add Job"><i class="fas fa-calendar-plus"></i> Add Job</a>
+</div>
+
+<table>
+    <thead>
+    <tr>
+        <th>Id</th>
+        <th>Customer</th>
+        <th>Quantity</th>
+        <th>Status</th>
+        <th>Received</th>
+        <th>Scheduled</th>
+        <th>Completed</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td align="right">1</td>
+        <td>Ali Hussaini</td>
+        <td align="right">4000</td>
+        <td>Pending</td>
+        <td>10/04/2019</td>
+        <td>13/04/2019 9:00 AM</td>
+        <td></td>
+        <td>
+            <a href="#" title="Update Job"><i class="fas fa-pen"></i></a>
+            <a href="#" title="Cancel Job"><i class="fas fa-trash-alt"></i></a>
+            <a href="#" title="Complete Job"><i class="fas fa-calendar-check"></i></a>
+            <a href="#" title="Update Invoice"><i class="fas fa-file-invoice-dollar"></i></a>
+            <a href="#" title="Add a Note"><i class="fas fa-comment"></i></a>
+            <a href="#" title="Get Notes"><i class="fas fa-comments"></i></a>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">2</td>
+        <td>Ali Hussaini</td>
+        <td align="right">5000</td>
+        <td>Pending</td>
+        <td>10/04/2019</td>
+        <td>11/04/2019 10:00 AM</td>
+        <td></td>
+        <td>
+            <a href="#" title="Update Job"><i class="fas fa-pen"></i></a>
+            <a href="#" title="Cancel Job"><i class="fas fa-trash-alt"></i></a>
+            <a href="#" title="Complete Job"><i class="fas fa-calendar-check"></i></a>
+            <a href="#" title="Add a Note"><i class="fas fa-comment"></i></a>
+            <a href="#" title="Get Notes"><i class="fas fa-comments"></i></a>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">3</td>
+        <td>Karima Akbar</td>
+        <td align="right">600</td>
+        <td>Cancelled</td>
+        <td>10/04/2019</td>
+        <td></td>
+        <td></td>
+        <td>
+            <a href="#" title="Add a Note"><i class="fas fa-comment"></i></a>
+            <a href="#" title="Get Notes"><i class="fas fa-comments"></i></a>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">4</td>
+        <td>Ali Hussaini</td>
+        <td align="right">800</td>
+        <td>Completed</td>
+        <td>10/04/2019</td>
+        <td>11/04/2019 11:00 AM</td>
+        <td>11/04/2019 12:00 PM</td>
+        <td>
+            <a href="#" title="Update Invoice"><i class="fas fa-file-invoice-dollar"></i></a>
+            <a href="#" title="View Invoice"><i class="fas fa-receipt"></i></a>
+            <a href="#" title="Add a Note"><i class="fas fa-comment"></i></a>
+            <a href="#" title="Get Notes"><i class="fas fa-comments"></i></a>
+        </td>
+    </tr>
+    <tr>
+        <td align="right">5</td>
+        <td>Omar Saleh</td>
+        <td align="right">800</td>
+        <td>Paid and Collected</td>
+        <td>10/04/2019</td>
+        <td>12/04/2019 11:00 AM</td>
+        <td>12/04/2019 12:00 PM</td>
+        <td>
+            <a href="#" title="View Invoice"><i class="fas fa-receipt"></i></a>
+            <a href="#" title="Add a Note"><i class="fas fa-comment"></i></a>
+            <a href="#" title="Get Notes"><i class="fas fa-comments"></i></a>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

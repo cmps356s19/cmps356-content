@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+    <title>OlivApp</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ToDo: All dropdowns should be dynamically populated.
+    The App should have no hardcoding of any dropdown data. -->
+
+<h3>Job Details</h3>
+
+<form class="simple-form">
+    <label for="customerId">Customer </label>
+    <div class="grid-2cols">
+        <select id="customerId" required>
+            <option value=""></option>
+            <option value="2">Ali Hussaini</option>
+            <option value="3">Karima Akbar</option>
+            <option value="4">Omar Saleh</option>
+        </select>
+        <a href="#">Add Customer</a>
+    </div>
+
+    <label for="oliveType">Olive Type </label>
+    <select id="oliveType" required>
+        <option value=""></option>
+        <option value="Picholine">Picholine</option>
+        <option value="Haouzia">Haouzia</option>
+        <option value="Menara">Menara</option>
+        <option value="Arbequina">Arbequina</option>
+        <option value="Arbosana">Arbosana</option>
+        <option value="Picual">Picual</option>
+    </select>
+
+    <label for="sourceRegion">Source Region </label>
+    <select id="sourceRegion" required>
+        <option value=""></option>
+        <option value="Al Rayyan">Al Rayyan</option>
+        <option value="Al Wakra">Al Wakra</option>
+        <option value="Umm Said">Umm Said</option>
+        <option value="Al Khor">Al Khor</option>
+        <option value="Mesaieed">Mesaieed</option>
+    </select>
+
+    <label for="quantity">Quantity </label>
+    <input type="number" id="quantity" required>
+
+    <label for="harvestDate">Harvest Date </label>
+    <input type="date" id="harvestDate">
+
+    <label for="receptionDate">Reception Date </label>
+    <input type="datetime-local" id="receptionDate" required>
+
+    <label for="scheduledDate">Scheduled Date</label>
+    <input type="datetime-local" id="scheduledDate" required>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

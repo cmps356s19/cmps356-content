@@ -9,7 +9,7 @@
     "city": "Doha",
     "mobile": "55667788",
     "role":  "Manager",
-    "o_idProv_ider": "local"
+    "oidProvider": "local"
   },
   {
     "_id": 2,
@@ -21,7 +21,7 @@
     "city": "Doha",
     "mobile": "66338094",
     "role":  "Customer",
-    "o_idProv_ider": "local"
+    "oidProvider": "local"
   },
   {
     "_id": 3,
@@ -33,7 +33,7 @@
     "city": "Doha",
     "mobile": "22334455",
     "role":  "Customer",
-    "o_idProv_ider": "local"
+    "oidProvider": "local"
   },
   {
     "_id": 4,
@@ -45,6 +45,6 @@
     "city": "Doha",
     "mobile": "55443322",
     "role":  "Customer",
-    "o_idProv_ider": "local"
+    "oidProvider": "local"
   }
 ]

@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <title>OlivApp</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!--
+ToDo: add InvoiceForm component to allow the user to enter the invoice
+This form should submit an object to the server having:
+{completedDate, completedTime, oilQuantity, invoice}
+-->
+
+<h3>Complete Job</h3>
+
+<form class="simple-form">
+    <label for="completedDate">Completed Date </label>
+    <input type="datetime-local" id="completedDate" required>
+
+    <label for="oilQuantity">Oil Quantity (Liters)</label>
+    <input type="number" id="oilQuantity" required>
+
+    <!--
+        ToDo: add InvoiceForm component to allow the user to enter the invoice
+        This form should submit an object to the server having:
+        {completedDate, completedTime, oilQuantity, invoice}
+    -->
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

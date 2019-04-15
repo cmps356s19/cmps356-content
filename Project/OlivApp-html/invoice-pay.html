@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+    <title>OlivApp</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<h3>Pay Invoice</h3>
+
+<div class="page-head">
+    <div>
+        <b>Job Id:</b> 123
+    </div>
+    <div>
+        <b>Customer:</b> Omar Saleh
+    </div>
+</div>
+
+<br/>
+
+<!-- ToDo: the paymentMethod dropdown should be dynamically populated -->
+<form class="simple-form">
+    <label for="paymentMethod">Payment Method</label>
+    <select id="paymentMethod" required>
+        <option value=""></option>
+        <option value="Cash">Cash</option>
+        <option value="Cheque">Cheque</option>
+        <option value="Debit Card">Debit Card</option>
+        <option value="Credit Card">Credit Card</option>
+    </select>
+
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+</html>

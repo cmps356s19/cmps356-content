@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+<head>
+    <title>OlivApp</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+</head>
+<body>
+
+<!-- ToDo: the products dropdown should be dynamically populated. -->
+<h3>Invoice Details</h3>
+
+<div class="page-head">
+    <div>
+        <b>Job Id:</b> 123
+    </div>
+    <div>
+        <b>Customer:</b> Omar Saleh
+    </div>
+</div>
+
+<br />
+
+<form class="horizontal-form">
+    <label for="productId">Item</label>
+    <select id="productId" required>
+        <option value=""></option>
+        <option value="2">50L Sansone Stainless Steel Container with Tap</option>
+        <option value="3">30L Sansone Stainless Steel Container with Tap</option>
+        <option value="4">10L Sansone Stainless Steel Container with Tap</option>
+        <option value="5">50L Plastic Oil Container</option>
+    </select>
+
+    <label for="quantity">Quantity</label>
+    <input type="number" id="quantity" placeholder="Quantity" required>
+    <button name="add">Add</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Item</th>
+                <th>Quantity</th>
+                <th>Unit Price</th>
+                <th>Line Total</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Milling fee (per Kg)</td>
+                <td>1.5</td>
+                <td>500</td>
+                <td align="right">750</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>50L Sansone Stainless Steel Container with Tap</td>
+                <td>2</td>
+                <td>100</td>
+                <td align="right">200</td>
+                <td>
+                    <a href="#" title="Update Item"><i class="fas fa-pen"></i></a>
+                    <a href="#" title="Delete Item"> <i class="fas fa-trash-alt"></i></a>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total</td>
+                <td align="right">850</td>
+                <td></td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <br />
+    <button type="submit">Submit</button>
+</form>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!doctype html>
+<html>
+<head>
+    <title>OlivApp</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<h3>Jobs Summary Report</h3>
+<!-- ToDo: By default fromDate and toDate should be set to today's date -->
+<form class="horizontal-form">
+    <label for="fromDate">From date</label>
+    <input id="fromDate" type="date" required>
+
+    <label for="toDate">To date</label>
+    <input id="toDate" type="date" required>
+
+    <button type="submit">Go</button>
+</form>
+<table>
+    <tr>
+        <th></th>
+        <th>Pending</th>
+        <th>Completed</th>
+        <th>Paid and Collected</th>
+        <th>Cancelled</th>
+    </tr>
+    <tr>
+        <td>Jobs count</td>
+        <td>20</td>
+        <td>10</td>
+        <td>10</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>Processed Olives (Tones)</td>
+        <td>40</td>
+        <td>20</td>
+        <td>20</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>Oil Produced (Litres)</td>
+        <td>-</td>
+        <td>5,000</td>
+        <td>6,000</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Average oil (Liters/100 Kg)</td>
+        <td>-</td>
+        <td>20</td>
+        <td>22</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <td>Invoiced amount (QR)</td>
+        <td>-</td>
+        <td>20,000</td>
+        <td>30,000</td>
+        <td>-</td>
+    </tr>
+    <tr>
+        <!-- Completed DateTime - Reception Date (sine no reception time available consider it as 10am)-->
+        <td>Average waiting time (Hours)</td>
+        <td>-</td>
+        <td>15</td>
+        <td>10</td>
+        <td>-</td>
+    </tr>
+</table>
+</body>
+</html>
