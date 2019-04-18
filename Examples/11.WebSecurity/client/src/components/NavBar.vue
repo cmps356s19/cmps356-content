@@ -4,7 +4,7 @@
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="navbar-brand" href="#">
-                    <img src="../assets/logo.png" id="logo">
+                    <img src="imgs/logo.png" id="logo">
                 </a>
             </li>
             <li class="nav-item">
@@ -50,7 +50,7 @@
 </template>
 
 <script>
-    import AuthService from '../services/AuthService'
+    import AuthService from '../api-calls/AuthService'
     export default {
         data() {
           return {

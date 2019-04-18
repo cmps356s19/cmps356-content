@@ -3,15 +3,14 @@ const bcrypt = require('bcryptjs');
 
 class UserRepository {
     async initDb() {
-        let adminUser = await User.findOne({name: 'admin'});
+        let adminUser = await User.findOne({email: 'admin@jwt.org'});
         if (!adminUser) {
             adminUser = {
-                name: "admin",
-                password: "secret",
                 given_name: "Abbas",
                 family_name: "Ibn Firnas",
-                email: "abbas@jwt.org",
-                roles: ["Admin"]
+                email: "admin@jwt.org",
+                password: "secret",
+                role: "Admin"
             };
             await this.addUser(adminUser);
         }
@@ -29,14 +28,17 @@ class UserRepository {
         return User.findById(userId);
     }
 
-    async getUserOpenId(oid, oidProvider) {
+    async getOpenIdUser(oid, oidProvider) {
         //Do not return the column __v
         const user = await User.findOne({ sub: oid, oidProvider: oidProvider }).select('-__v');
         return user ? user.toObject() : user;
     }
 
-    async login(name, password) {
-        let user = await User.findOne({name: name});
+    async login(email, password) {
+        console.log("email: ", email, "password: ", password);
+        let user = await User.findOne({email: email});
+        console.log("login.user: ", user);
+
         //Compare the received password with the encrypted one stored in the database
         let match = false;
         if (user) {

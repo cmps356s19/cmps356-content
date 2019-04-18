@@ -49,10 +49,10 @@
 </template>
 
 <script>
-    import HeroService from '../services/HeroService'
+    import HeroService from '../api-calls/HeroService'
     // @ is an alias to /src
     import HeroEditor from './HeroEditor.vue'
-    import AuthService from '../services/AuthService'
+    import AuthService from '../api-calls/AuthService'
 
     export default {
         components: {

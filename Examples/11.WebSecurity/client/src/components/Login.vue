@@ -4,7 +4,7 @@
             <div class="row">
                 <div class="col-md-3"></div>
                 <div class="col-md-2">
-                    <img src="../assets/logo.png" id="logo">
+                    <img src="imgs/logo.png" id="logo">
                 </div>
                 <div class="col-md-4 justify-content-start">
                     <h3>Login</h3>
@@ -100,7 +100,7 @@
 
 <script>
     import {required, minLength} from 'vuelidate/lib/validators'
-    import AuthService from '../services/AuthService'
+    import AuthService from '../api-calls/AuthService'
 
     export default {
         data() {
@@ -134,7 +134,7 @@
                         const userInfo = {name: this.name, password: this.password};
                         user = await AuthService.login(userInfo);
                     } else {
-                        user = await AuthService.authOpenId(oidProvider, this.manageMyGoogleContacts);
+                        user = await AuthService.addOpenIdUser(oidProvider, this.manageMyGoogleContacts);
                     }
                     console.log('Login.vue.authenticate.user: ', user);
 

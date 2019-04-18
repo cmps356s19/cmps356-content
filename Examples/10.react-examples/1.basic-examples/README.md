@@ -1,15 +1,11 @@
 ### Globally install parcel-bundler once
 npm install -g parcel-bundler
 
-#mac Users
-npm install -g parcel-bundler
 ### Install packages
 npm install
 
 ### Transpile and run the app
 parcel src/index.html
-
-npm install -g babel-core
 
 ### Build for production
 parcel build src/index.html --public-url ./

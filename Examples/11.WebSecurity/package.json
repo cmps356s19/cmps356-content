@@ -1,0 +1,34 @@
+{
+  "name": "WebSecurity",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "node ./app.js",
+    "dev": "nodemon --watch . ./app.js"
+  },
+  "dependencies": {
+    "axios": "latest",
+    "bcryptjs": "latest",
+    "cors": "latest",
+    "crypto-js": "latest",
+    "express": "latest",
+    "fs-extra": "latest",
+    "imgs": "0.0.1",
+    "jsonwebtoken": "latest",
+    "jwt-decode": "latest",
+    "mongoose": "latest",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-google-login": "^5.0.4",
+    "react-router": "latest",
+    "react-router-dom": "latest"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@vue/babel-preset-app": "^3.6.0",
+    "autoprefixer": "^9.5.1",
+    "nodemon": "latest"
+  }
+}

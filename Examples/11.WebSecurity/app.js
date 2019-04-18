@@ -36,7 +36,7 @@ app.use( express.static('public') );
 app.use(cors());
 
 //Mount the routes
-const routes = require('./routes');
+const routes = require('./app-routes');
 app.use('/api/', routes);
 
 const authRoutes = require('./auth-routes');

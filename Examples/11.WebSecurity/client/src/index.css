@@ -1,3 +1,19 @@
+.align-center {
+  text-align: center;
+}
+
+.text-danger {
+  color: red;
+}
+
+.logo {
+  /*display: block;*/
+  max-width:40px;
+  max-height:40px;
+  width: auto;
+  height: auto;
+}
+
 nav ul {
   display: flex;
 }

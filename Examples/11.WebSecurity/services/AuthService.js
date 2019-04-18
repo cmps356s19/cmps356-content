@@ -23,19 +23,17 @@ class AuthService {
 
     async login(req, res) {
         try {
-            let user = await userRepository.login(req.body.name, req.body.password);
+            let user = await userRepository.login(req.body.email, req.body.password);
 
             //Generate JWT token using the secret key. Set the expiry to 2h
             if (user) {
-                const idToken = jwt.sign(user, keys.jwt.secret,
+                const id_token = jwt.sign(user, keys.jwt.secret,
                         {
                             expiresIn: '2h'
                         });
 
-                return res.json(user);
-                //return res.json({idToken});
+                return res.json({ id_token });
             }
-
         }
         catch (err) {
             console.log("Login", err);
@@ -43,7 +41,7 @@ class AuthService {
         }
     }
 
-    async authOpenId(req, res) {
+    async addOpenIdUser(req, res) {
         try {
             const accessToken = req.query.access_token;
             const id_token = req.query.id_token;
@@ -55,8 +53,9 @@ class AuthService {
             switch (req.params.provider) {
                 case 'google':
                     //First check if the user already exists in the local users DB
-                    let user = await userRepository.getUserOpenId(oidToken.sub, 'google');
+                    let user = await userRepository.getOpenIdUser(oidToken.sub, 'google');
                     if (!user) {
+                        console.log("addOpenIdUser.accessToken:", accessToken);
                         user = await this.getGoogleUserProfile(accessToken);
 
                         user.oidProvider = 'google';
@@ -64,11 +63,11 @@ class AuthService {
                         console.log("router.user: ", user);
                     }
                     console.log(user);
-                    const idToken = jwt.sign(user, keys.jwt.secret,
+                    const id_token = jwt.sign(user, keys.jwt.secret,
                         {
                             expiresIn: '2h'
                         });
-                    return res.json({idToken});
+                    return res.json({ id_token });
                     break;
             }
         }
@@ -92,7 +91,7 @@ class AuthService {
 
     //Only authenticated users can access this route
     async getUsers(req, res) {
-        if (this.isUserInRole(req.user, 'Admin')) {
+        if (req.user.role === 'Admin') {
             const users = await userRepository.getUsers();
             res.json(users);
         } else {
@@ -107,6 +106,7 @@ class AuthService {
     //Middleware function to Check if the user is authenticated
     async isAuthenticated(req, res, next) {
         let idToken = req.headers.authorization;
+        console.log("isAuthenticated.idToken", idToken);
         try {
             if (idToken) {
                 idToken = idToken.split(" ")[1];
@@ -123,10 +123,6 @@ class AuthService {
         } catch (error) {
             res.status(403).json({error});
         }
-    }
-
-    isUserInRole(user, role) {
-        return (user && user.roles.indexOf(role) >= 0);
     }
     //endregion
 }

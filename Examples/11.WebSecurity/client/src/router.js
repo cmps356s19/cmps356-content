@@ -6,7 +6,7 @@ import Contacts from './components/Contacts.vue'
 import Users from './components/Users.vue'
 import Calculator from './components/Calculator.vue'
 import Heroes from './components/Heroes.vue'
-import AuthService from './services/AuthService'
+import AuthService from './api-calls/AuthService'
 
 Vue.use(Router);
 
