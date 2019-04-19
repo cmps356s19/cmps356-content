@@ -39,9 +39,6 @@ app.use(cors());
 const routes = require('./app-routes');
 app.use('/api/', routes);
 
-const authRoutes = require('./auth-routes');
-app.use('/auth/', authRoutes);
-
 const port = 3040;
 app.listen(port, () => {
     const host = "localhost";

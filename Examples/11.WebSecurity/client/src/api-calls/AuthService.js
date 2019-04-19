@@ -1,7 +1,7 @@
 import {decodeJwt} from './Utils'
 
 //region Web API Calls
-const WebApiBaseUrl = `http://${window.location.hostname}:3040/auth`;
+const WebApiBaseUrl = `http://${window.location.hostname}:3040/api/users`;
 
 export async function login(user) {
     const url = `${WebApiBaseUrl}/login`;
@@ -49,7 +49,7 @@ export async function addOpenIdUser(tokenObj) {
             console.log('Decoded id_token from Google', decodeJwt(tokenObj.id_token));
             console.log('access_token from Google', tokenObj.access_token);
 
-            const authResponse = await getUserProfile(tokenObj);
+            const authResponse = await addOpenIdUser(tokenObj);
 
             //Store idToken in the local storage
             localStorage.id_token = authResponse.id_token;
@@ -66,15 +66,21 @@ export async function addOpenIdUser(tokenObj) {
     }
 }
 
-async function getUserProfile(authReply) {
-    const openIdProvider = authReply.idpId; //e.g. google
-    const url = `${WebApiBaseUrl}/openid/${openIdProvider}?access_token=${authReply.access_token}&id_token=${authReply.id_token}`;
-    const response = await fetch(url);
+async function addOpenIdUser(tokenObj) {
+    const openIdProvider = tokenObj.idpId; //e.g. google
+    const url = `${WebApiBaseUrl}/${openIdProvider}`;
+
+    const response = await fetch(url, {
+        method: "post",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(tokenObj)
+    });
+
     return await response.json()
 }
 
 export async function getUsers() {
-    const url = `${WebApiBaseUrl}/users`;
+    const url = WebApiBaseUrl;
 
     const headers = new Headers();
     const idToken = getIdToken();
@@ -100,26 +106,26 @@ export async function getUsers() {
 }
 
 function isGoogleAuth() {
-    const user = getUser();
+    const user = getCurrentUser();
     return (user && user.oidProvider === "google");
 }
 
 function getUserDefaultUrl() {
     let defaultUrl = '/';
-    const user = getUser();
+    const user = getCurrentUser();
     //By default redirect users to contacts if they login using Google
     if (isGoogleAuth()) {
         defaultUrl = "contacts";
     }
     //By default redirect admin users to users route upon login
-    else if (isUserInRole('Admin')) {
+    else if (user.role === 'Admin') {
         defaultUrl = "users";
     }
 
     return defaultUrl;
 }
 
-function getUser() {
+export function getCurrentUser() {
     if (localStorage.id_token) {
         //Decode to idToken to get the user object
         return decodeJwt(localStorage.id_token);

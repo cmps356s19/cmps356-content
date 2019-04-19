@@ -35,6 +35,9 @@ export default function NavBar({isAuthenticated, user, onLogout, history, locati
                     <Link to="/calculator">Calculator</Link>
                 </li>
                 <li>
+                    <Link to="/heroes">Heroes</Link>
+                </li>
+                <li>
                     <Link to="/contacts">Contacts</Link>
                 </li>
                 {user && user.role === 'Admin' &&
@@ -42,7 +45,12 @@ export default function NavBar({isAuthenticated, user, onLogout, history, locati
                         <Link to="/users">Users</Link>
                     </li>
                 }
-                {isAuthenticated && user && <li>Welcome {user.given_name} (<a href="#" onClick={handleLogout}>Logout</a>)</li> }
+                {isAuthenticated && user &&
+                <span>
+                    <i className="fas fa-user"></i>
+                    Welcome {user.given_name}
+                    (<a href="#" onClick={handleLogout}> <i className="fas fa-sign-out-alt"></i>Logout</a>)
+                </span> }
             </ul>
         </nav>
     )

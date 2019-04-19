@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import NavBar from './components/NavBar';
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
 import ProtectedRoute from "./components/ProtectedRoute";
@@ -6,11 +6,23 @@ import LoginForm from "./components/LoginForm";
 import Users from "./components/Users";
 import Calculator from "./components/Calculator";
 import Contacts from "./components/Contacts";
-import {logout} from '../api-calls/AuthService'
+import {getCurrentUser, logout} from './api-calls/AuthService'
+import Heroes from "./components/Heroes";
 
 export default function App() {
-    const [isAuthenticated, setIsAuthenticated] = useState(false);
-    const [user, setUser] = useState();
+    const [user, setUser] = useState(getCurrentUser());
+    const [isAuthenticated, setIsAuthenticated] = useState(user !== null);
+
+/*    //When the component is created then get users
+    useEffect(() => {
+        //Get current user from localstorage
+        const currentUser = getCurrentUser();
+        console.log("App.currentUser: ", currentUser);
+        if (currentUser) {
+            setIsAuthenticated(true);
+            setUser(currentUser);
+        }
+    }, []);*/
 
     const handleLogin = (user) => {
         setIsAuthenticated(true);
@@ -43,6 +55,12 @@ export default function App() {
 
             <Switch>
                 <Route path="/calculator" component={Calculator} />
+
+                <ProtectedRoute path="/heroes" component={Heroes}
+                                isAuthenticated={isAuthenticated}
+                                user={user}
+                />
+
                 <ProtectedRoute path="/users" component={Users}
                                 isAuthenticated={isAuthenticated}
                                 user={user}

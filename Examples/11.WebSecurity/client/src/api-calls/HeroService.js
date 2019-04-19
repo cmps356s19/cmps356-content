@@ -28,7 +28,7 @@ export async function addHero(hero) {
 }
 
 export async function updateHero(hero) {
-    const url = `${WebApiBaseUrl}/${hero.id}`;
+    const url = `${WebApiBaseUrl}/${hero._id}`;
     console.log(url);
     try {
         await fetch(url, {

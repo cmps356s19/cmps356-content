@@ -7,13 +7,11 @@ export default function Users() {
 
     //When the component is created then get users
     useEffect(() => {
-        try {
             setError('');
-            getUsers().then(users => setUsers(users));
-        } catch (e) {
-            console.log(e);
-            setError(`${e}😱`);
-        }
+            getUsers().then(users => setUsers(users)).catch(e => {
+                console.log(e);
+                setError(`${e}😱`);
+            });
     }, []);
 
     return (

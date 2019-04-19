@@ -1,5 +1,6 @@
 import React from 'react';
 import {Route, Redirect} from 'react-router-dom';
+import {getCurrentUser} from "../api-calls/AuthService";
 
 /*
 { component: Component, ...rest } => destruct the Route props into:
@@ -18,6 +19,14 @@ export default function ProtectedRoute({ component: Component, isAuthenticated, 
         <Route
             {...rest}
             render={props => {
+
+                console.log("ProtectedRoute.isAuthenticated: ", isAuthenticated);
+                if (!isAuthenticated) {
+                    user = getCurrentUser();
+                    console.log("ProtectedRoute.currentUser: ", user);
+                    if (user) isAuthenticated = true;
+                }
+
                 if (!isAuthenticated) {
                     // Not logged in so redirect to login page with the from url to redirect to after login
                     return <Redirect to={{pathname: "/login", state: {from: props.location}}}/>
@@ -31,7 +40,8 @@ export default function ProtectedRoute({ component: Component, isAuthenticated, 
                 }
 
                 // authorised so return component
-                return <Component {...props} /> ;
+                console.log("ProtectedRoute.props: ", props);
+                return <Component {...props} user={user} isAuthenticated={isAuthenticated} /> ;
             }}
         />
     );

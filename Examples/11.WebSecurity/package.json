@@ -12,7 +12,6 @@
     "crypto-js": "latest",
     "express": "latest",
     "fs-extra": "latest",
-    "imgs": "0.0.1",
     "jsonwebtoken": "latest",
     "jwt-decode": "latest",
     "mongoose": "latest",
@@ -20,7 +19,8 @@
     "react-dom": "^16.8.6",
     "react-google-login": "^5.0.4",
     "react-router": "latest",
-    "react-router-dom": "latest"
+    "react-router-dom": "latest",
+    "react-modal": "latest"
   },
   "browserslist": [
     "last 1 Chrome version"
