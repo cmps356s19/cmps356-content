@@ -2,8 +2,12 @@
   "name": "WebSecurity",
   "version": "0.0.1",
   "scripts": {
-    "start": "node ./app.js",
-    "dev": "nodemon --watch . ./app.js"
+    "dev": "nodemon --watch . ./app.js",
+    "server": "node ./app.js",
+    "client": "parcel client/src/index.html",
+    "start": "parcel client/src/index.html",
+    "build": "parcel build client/src/index.html --public-url ./",
+    "start": "node ./app.js"
   },
   "dependencies": {
     "axios": "latest",
@@ -17,7 +21,7 @@
     "mongoose": "latest",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-google-login": "^5.0.4",
+    "react-google-login": "lastest",
     "react-router": "latest",
     "react-router-dom": "latest",
     "react-modal": "latest"

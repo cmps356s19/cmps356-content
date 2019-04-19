@@ -43,7 +43,7 @@ class HeroRepository {
     updateHero(hero) {
         const heroId = hero._id;
         delete hero._id;
-        return Hero.update({_id: heroId}, hero);
+        return Hero.updateOne({_id: heroId}, hero);
     }
 
     deleteHero(heroId) {

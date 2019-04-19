@@ -16,15 +16,6 @@ export default function HeroEditor({selectedHero, onSave, onCancel}) {
         setHero({...hero, [name]: value});
     };
 
-    const validateQuotes = (quotes) => {
-        //do logic on password value and return boolean on if meets standards
-        if (!quotes) {
-            return true;
-        }
-        const emptyQuotes = quotes.filter(q => q.text === '');
-        return (emptyQuotes.length === 0);
-    };
-
     const handleSubmit = () => {
         onSave(hero);
     };
@@ -57,7 +48,7 @@ export default function HeroEditor({selectedHero, onSave, onCancel}) {
 
     return (
         <div>
-            <button className="close-button" data-close aria-label="Close modal" type="button"
+            <button className="close-button" aria-label="Close modal" type="button" style={{float: 'right'}}
                     onClick={handleCancel}>
                 <span aria-hidden="true">&times;</span>
             </button>

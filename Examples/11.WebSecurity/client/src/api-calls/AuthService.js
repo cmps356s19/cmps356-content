@@ -1,6 +1,3 @@
-import {decodeJwt} from './Utils'
-
-//region Web API Calls
 const WebApiBaseUrl = `http://${window.location.hostname}:3040/api/users`;
 
 export async function login(user) {
@@ -34,7 +31,7 @@ export async function login(user) {
     }
 }
 
-export function logout() {
+export function clearAuthTokens() {
     delete localStorage.id_token;
     delete localStorage.access_token;
 }
@@ -49,7 +46,7 @@ export async function addOpenIdUser(tokenObj) {
             console.log('Decoded id_token from Google', decodeJwt(tokenObj.id_token));
             console.log('access_token from Google', tokenObj.access_token);
 
-            const authResponse = await addOpenIdUser(tokenObj);
+            const authResponse = await postOpenIdUser(tokenObj);
 
             //Store idToken in the local storage
             localStorage.id_token = authResponse.id_token;
@@ -66,7 +63,7 @@ export async function addOpenIdUser(tokenObj) {
     }
 }
 
-async function addOpenIdUser(tokenObj) {
+async function postOpenIdUser(tokenObj) {
     const openIdProvider = tokenObj.idpId; //e.g. google
     const url = `${WebApiBaseUrl}/${openIdProvider}`;
 
@@ -83,8 +80,8 @@ export async function getUsers() {
     const url = WebApiBaseUrl;
 
     const headers = new Headers();
-    const idToken = getIdToken();
-    headers.append('Authorization', `Bearer ${idToken}`);
+    const id_token = getIdToken();
+    headers.append('Authorization', `Bearer ${id_token}`);
 
     const response = await fetch(url, {
         method: 'GET',
@@ -156,5 +153,15 @@ function getIdToken() {
             error: "Id Token missing 😱",
             status: "UNAUTHENTICATED"
         }
+    }
+}
+
+export function decodeJwt(token) {
+    if (!token) return token;
+    try {
+        const base64Url = token.split('.')[1];
+        const base64 = base64Url.replace('-', '+').replace('_', '/');
+        return JSON.parse(window.atob(base64));
+    } catch (e) {
     }
 }

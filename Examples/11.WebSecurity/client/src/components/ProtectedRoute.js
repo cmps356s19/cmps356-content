@@ -19,14 +19,6 @@ export default function ProtectedRoute({ component: Component, isAuthenticated, 
         <Route
             {...rest}
             render={props => {
-
-                console.log("ProtectedRoute.isAuthenticated: ", isAuthenticated);
-                if (!isAuthenticated) {
-                    user = getCurrentUser();
-                    console.log("ProtectedRoute.currentUser: ", user);
-                    if (user) isAuthenticated = true;
-                }
-
                 if (!isAuthenticated) {
                     // Not logged in so redirect to login page with the from url to redirect to after login
                     return <Redirect to={{pathname: "/login", state: {from: props.location}}}/>

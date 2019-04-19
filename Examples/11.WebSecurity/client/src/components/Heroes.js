@@ -12,12 +12,14 @@ export default function Heroes({user}) {
 
     const customStyles = {
         content : {
-            top                   : '50%',
-            left                  : '50%',
-            right                 : 'auto',
-            bottom                : 'auto',
-            marginRight           : '-50%',
-            transform             : 'translate(-50%, -50%)'
+            top         : '50%',
+            left        : '50%',
+            right       : 'auto',
+            bottom      : 'auto',
+            marginRight : '-50%',
+            transform   : 'translate(-50%, -50%)',
+            maxHeight   : '100vh',
+            overflowY   : 'auto'
         }
     };
 
@@ -35,16 +37,11 @@ export default function Heroes({user}) {
 
     const openModal = () => {
        setModalIsOpen(true);
-    }
-
-    const afterOpenModal = () => {
-        // references are now sync'd and can be accessed.
-        //this.subtitle.style.color = '#f00';
-    }
+    };
 
     const closeModal = () => {
         setModalIsOpen(false);
-    }
+    };
 
     const onDeleteHero = async (heroId) => {
         if (!confirm('Confirm Delete?')) {
@@ -61,29 +58,18 @@ export default function Heroes({user}) {
         e.preventDefault();
         const hero = heroes.find(h => h._id === heroId);
         //Clone the hero to avoid direct edit of the hero displayed in the list
-        //this.selectedHero = Object.assign({}, hero);
-        //console.log("onEditHero.hero: ", hero);
         setSelectedHero({...hero});
         openModal();
-        //this.$modal.show('hero-editor-modal');
-        //console.log(this.selectedHero);
     };
 
     const onAddHero = () => {
         setSelectedHero(null);
         openModal();
-        //this.$modal.show('hero-editor-modal');
-    };
-
-    const closeHeroForm = () => {
-        //this.$modal.hide('hero-editor-modal');
     };
 
     const saveHero = async (hero) => {
-        alert("saveHero.hero: " + JSON.stringify(hero));
         console.log("saveHero.hero: ", hero);
-        //this.$modal.hide('hero-editor-modal');
-        //console.log("Heroes.vue saveHero", hero);
+
         //If the hero has an id then update otherwise add
         if (hero._id) {
             await updateHero(hero);
@@ -157,23 +143,18 @@ export default function Heroes({user}) {
             </table>
             <br/>
 
+            {/* Wrap the form in a model tag to be able to open it as a dialog */}
             { isContributor &&
                 <Modal
                     isOpen={modalIsOpen}
-                    onAfterOpen={afterOpenModal}
                     onRequestClose={closeModal}
-                    style={customStyles}
-                    contentLabel="Hero Modal"
-                >
+                    style={customStyles}>
                     <HeroEditor selectedHero={selectedHero} onSave={saveHero} onCancel={closeModal}/>
                 </Modal>
             }
-            {/*<!-- Wrap the form in a model tag to be able to open it as a dialog -->*/}
-            {/*        <modal name="hero-editor-modal" height="auto" :scrollable='true'>
-        <div v-if='selectedHero'>
-            <hero-editor :hero="selectedHero" @onSave="saveHero" @onCancel="closeHeroForm"/>
-    </div>
-    </modal>*/}
         </div>
     )
 }
+
+//Needed otherwise you get a warning
+Modal.setAppElement('#root');

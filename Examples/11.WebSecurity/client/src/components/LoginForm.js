@@ -9,39 +9,53 @@ function LoginForm ({onLogin, location, history}) {
     const [manageMyGoogleContacts, setManageMyGoogleContacts] = useState(true);
     const [googleAuthScope, setGoogleAuthScope] = useState("profile email");
 
-    // If Google Login does not work then try to clear the browser cash
-    // See more info @ https://github.com/anthonyjgrove/react-google-login/issues/132
-    const handleGoogleResponse = async (authResponse) => {
-        console.log(authResponse);
-        //console.log('id_token from Google', authResponse.tokenId);
-        //console.log('access_token from Google', authResponse.accessToken);
-
-        setError('');
-        try {
-            const user = await addOpenIdUser(authResponse.tokenObj);
-            if (user) {
-                console.log('Google user profile after adding it to local DB: ', user);
-                handleLogin(user);
-            } else {
-                setError("Authentication failed 😱");
-            }
-        } catch (err) {
-            console.log('Login.vue.authenticate.err: ', err);
-            setError(`${err}😱`);
-        }
-    };
-
     const handleChange = e => {
         const {name, value} = e.target;
         setLoginInfo({...loginInfo, [name]: value});
     };
 
-    const handleSubmit = async e => {
+    const handleLocalLogin = async e => {
         e.preventDefault();
-        await localAuthenticate();
+        await authenticate('local');
     };
 
-    const handleLogin = (user) => {
+    // If Google Login does not work then try to clear the browser cash
+    // See more info @ https://github.com/anthonyjgrove/react-google-login/issues/132
+    const handleGoogleResponse = async (authResponse) => {
+        console.log(authResponse);
+        console.log('id_token from Google', authResponse.tokenObj.id_token);
+        console.log('access_token from Google', authResponse.access_token);
+        await authenticate('google', authResponse.tokenObj);
+    };
+
+    const authenticate = async (oidProvider, tokenObj) => {
+        setError('');
+        try {
+           let user;
+           if (oidProvider == 'local') {
+                const userInfo = {name: this.name, password: this.password};
+                user = await login(loginInfo);
+            } else {
+                user = await addOpenIdUser(tokenObj);
+            }
+            console.log('LoginForm.authenticate.user: ', user);
+
+            //Let the App component know (to enable components to rerender after login)
+            // and redirect to requested page
+            if (user) {
+                console.log('User profile after login: ', user);
+                redirectAfterLogin(user);
+            } else {
+                setError("Authentication failed 😱");
+            }
+        } catch (err) {
+            console.log('LoginForm.authenticate: ', err);
+            setError(`${err}😱`);
+        }
+    };
+
+    const redirectAfterLogin = (user) => {
+        //Let the App component know
         onLogin(user);
 
         let redirectTo = "/";
@@ -51,30 +65,6 @@ function LoginForm ({onLogin, location, history}) {
 
         history.push(redirectTo);
     };
-
-    const localAuthenticate = async (oidProvider) => {
-        setError('');
-        try {
-            const user = await login(loginInfo);
-/*            if (oidProvider == 'local') {
-                const userInfo = {name: this.name, password: this.password};
-                user = await AuthService.login(userInfo);
-            } else {
-                user = await AuthService.addOpenIdUser(oidProvider, this.manageMyGoogleContacts);
-            }*/
-            console.log('LoginForm.authenticate.user: ', user);
-
-            //Emit an event so that the MenuBar component can be notified to refresh the menu
-            if (user) {
-                handleLogin(user);
-            } else {
-                setError("Authentication failed 😱");
-            }
-        } catch (err) {
-            console.log('Login.vue.authenticate.err: ', err);
-            setError(`${err}😱`);
-        }
-    }
 
     const handleManageMyGoogleContacts = e => {
         setManageMyGoogleContacts(e.target.checked);
@@ -96,7 +86,7 @@ function LoginForm ({onLogin, location, history}) {
                 <div>Or signup using postman @ http://localhost:3040/auth/signup. Lazy to provide UI 🙄</div>
             </div>
 
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleLocalLogin}>
                 <label htmlFor='email'>Email</label>
                 <input
                     name="email" id="email" placeholder="e-mail"

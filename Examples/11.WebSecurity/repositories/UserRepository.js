@@ -77,7 +77,7 @@ class UserRepository {
     updateUser(user) {
         const userId = user._id;
         delete user._id;
-        return User.update({_id: userId}, user);
+        return User.updateOne({_id: userId}, user);
     }
 
     deleteUser(_id) {
