@@ -2,7 +2,6 @@ const express = require('express');
 const router = express.Router();
 const axios = require('axios');
 const jwt = require('jsonwebtoken');
-const jwtDecode = require('jwt-decode');
 const keys = require('../config/keys');
 const userRepository = require('../repositories/UserRepository');
 
@@ -39,7 +38,7 @@ class AuthService {
     async addOpenIdUser(req, res) {
         try {
             const { id_token, access_token }  = req.body;
-            const oidUser = jwtDecode(id_token);
+            const oidUser = jwt.decode(id_token);
 
             console.log("addOpenIdUser - Decoded oidUser: ", oidUser);
             console.log('addOpenIdUser - access_token', access_token);
@@ -96,24 +95,26 @@ class AuthService {
     //region Helper Functions
 
     //Middleware function to Check if the user is authenticated
-    async isAuthenticated(req, res, next) {
+    isAuthenticated(req, res, next) {
         let id_token = req.headers.authorization;
-        console.log("isAuthenticated.id_token", id_token);
+        console.log("received id_token: ", id_token);
+        if (!id_token) {
+            res.status(401).json({error: "Unauthorized. Missing JWT Token"});
+            return;
+        }
+
         try {
-            if (id_token) {
                 id_token = id_token.split(" ")[1];
                 //Decode and verify jwt token using the secret key
-                const decodedToken = await jwt.verify(id_token, keys.jwt.secret);
+                const decodedToken = jwt.verify(id_token, keys.jwt.secret);
                 //Assign the decoded token to the request to make the user details
                 //available to the request handler
                 req.user = decodedToken;
+                console.log("decodedToken: ", decodedToken);
                 next();
-            }
-            else {
-                res.status(401).json({error: "Unauthorized. Missing JWT Token"});
-            }
-        } catch (error) {
-            res.status(403).json({error});
+        } catch (e) {
+            console.log("isAuthenticated", e);
+            res.status(403).json({error: "Forbidden. Invalid JWT Token"});
         }
     }
     //endregion

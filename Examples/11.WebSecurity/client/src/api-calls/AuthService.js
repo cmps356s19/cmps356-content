@@ -11,7 +11,7 @@ export async function login(user) {
         //If authentication failed
         if (response.status == 401 || response.status == 403) {
             const responseJson = await response.json();
-            throw responseJson.error;
+            throw `${response.status} ${responseJson.error}`;
         }
 
         //If other error occurs
@@ -51,7 +51,7 @@ export async function addOpenIdUser(tokenObj) {
             //Store idToken in the local storage
             localStorage.id_token = authResponse.id_token;
             localStorage.access_token = tokenObj.access_token;
-            console.log('id_token from Hero Web API: ', authResponse.id_token);
+            console.log('id_token from Users Web API: ', authResponse.id_token);
 
             return decodeJwt(authResponse.id_token);
         } else {
@@ -89,9 +89,9 @@ export async function getUsers() {
     });
 
     //If authorization failed
-    if (response.status == 403) {
+    if (response.status == 403 || response.status == 401) {
         const responseJson = await response.json();
-        throw responseJson.error;
+        throw `${response.status} ${responseJson.error}`;
     }
 
     //If other error occurs
@@ -135,11 +135,12 @@ export function getAccessToken() {
     if (accessToken) {
         return accessToken;
     } else {
-        throw {
+        const e = {
             code: 401,
-            error: "Access Token missing 😱",
-            status: "UNAUTHENTICATED"
-        }
+            status: "Unauthorized",
+            error: "Access Token missing 😱"
+        };
+        throw `${e.code} ${e.status} ${e.error}`;
     }
 }
 
@@ -148,11 +149,12 @@ function getIdToken() {
     if (idToken) {
         return idToken;
     } else {
-        throw {
+        const e = {
             code: 401,
-            error: "Id Token missing 😱",
-            status: "UNAUTHENTICATED"
-        }
+            status: "Unauthorized",
+            error: "Id Token missing 😱"
+        };
+        throw `${e.code} ${e.status} ${e.error}`;
     }
 }
 

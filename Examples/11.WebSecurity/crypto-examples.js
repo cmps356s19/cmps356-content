@@ -1,14 +1,13 @@
 const jwt = require('jsonwebtoken');
 const CryptoJS = require("crypto-js");
+const  secretKey = "mySecret";
 
-const mySecretKey = "mySecret";
-const hash256 = CryptoJS.HmacSHA256("secret", mySecretKey);
+const user = {email: 'admin@test.com', given_name: 'Abbas', family_name: 'Ibn Firnas'};
+
+const hash256 = CryptoJS.HmacSHA256(user, secretKey);
 console.log(hash256.toString());
 
-return;
-
-const  secretKey = "mySecret";
-const token = jwt.sign({ name: 'erradi', role: 'admin' }, secretKey);
+const token = jwt.sign(user, secretKey);
 
 console.log('token: ', token);
 

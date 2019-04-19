@@ -3,11 +3,14 @@ import {getAccessToken} from './AuthService'
 const WebApiBaseUrl = `https://people.googleapis.com/v1`;
 
 export async function getContacts() {
+    const accessToken = getAccessToken();
+
+    if (!accessToken) return;
+
     const queryString = 'personFields=names,emailAddresses,phoneNumbers,addresses,photos';
     const url = `${WebApiBaseUrl}/people/me/connections?${queryString}`;
 
     const headers = new Headers();
-    const accessToken = getAccessToken();
     console.log('ContactService.accessToken', accessToken);
     headers.append('Authorization', `Bearer ${accessToken}`);
 
@@ -24,7 +27,7 @@ export async function getContacts() {
 
     //If other error occurs
     if (!response.ok) {
-        throw {status: "", message: response.statusText}
+        throw {status: response.status, message: response.statusText}
     }
 
     let contacts = await response.json();

@@ -19,8 +19,12 @@ export default function Users() {
             <h2>📇 Users</h2>
             {error && <p className="text-danger">{error}</p>}
 
-            <p>Too lazy to provide a UI 🙄</p>
-            <pre> {JSON.stringify(users, null, 2)}</pre>
+            {!error &&
+                <>
+                    <p>Too lazy to provide a UI 🙄</p>
+                    <pre> {JSON.stringify(users, null, 2)}</pre>
+                </>
+            }
         </div>
     );
 }

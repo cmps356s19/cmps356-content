@@ -11,7 +11,7 @@ export default function Contacts() {
         setError('');
         getContacts().then(contacts => setContacts(contacts)).catch(e => {
             console.error(e);
-            setError(`${e.code} ${e.status}. ${e.message}😱`);
+            setError(e);
         })
     }, []);
 
@@ -29,7 +29,7 @@ export default function Contacts() {
             setContacts(contacts.filter(c => c.id != contactId));
         } catch (e) {
             console.error(e);
-            setError(`${e}😱`);
+            setError(e);
         }
     }
 
@@ -61,7 +61,7 @@ export default function Contacts() {
                         <td>
                             <span title="Delete contact" onClick={() => onDeleteContact(contact.id)}>
                                 <i style={{color: "indianred"}} className="fas fa-minus-circle"></i>
-                            </span>}
+                            </span>
                         </td>
                     </tr>)
                 )}

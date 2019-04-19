@@ -17,7 +17,7 @@ class UserRepository {
     }
 
     getUsers() {
-        return User.find({}).select('-__v');
+        return User.find({}).select('-__v, -password');
     }
 
     getUsersCount() {
@@ -63,14 +63,14 @@ class UserRepository {
             // Number of rounds to use when generating a salt
             // Salt = a random value added to the password before hashing
             const saltRounds = 10;
-            //Encrypt the password before storing it in the DB
-            const hash = await bcrypt.hash(user.password, saltRounds);
-            user.password = hash;
+            //Hash and salt the password before storing it in the DB
+            user.password = await bcrypt.hash(user.password, saltRounds);
         }
 
         user = await User.create(user);
         user = user.toObject();
         delete user.__v;
+        delete user.password;
         return user;
     }
 

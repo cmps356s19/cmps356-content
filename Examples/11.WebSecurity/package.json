@@ -5,9 +5,8 @@
     "dev": "nodemon --watch . ./app.js",
     "server": "node ./app.js",
     "client": "parcel client/src/index.html",
-    "start": "parcel client/src/index.html",
-    "build": "parcel build client/src/index.html --public-url ./",
-    "start": "node ./app.js"
+    "start": "node ./app.js",
+    "build": "parcel build client/src/index.html --public-url ./"
   },
   "dependencies": {
     "axios": "latest",
@@ -17,11 +16,10 @@
     "express": "latest",
     "fs-extra": "latest",
     "jsonwebtoken": "latest",
-    "jwt-decode": "latest",
     "mongoose": "latest",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-google-login": "lastest",
+    "react-google-login": "^5.0.4",
     "react-router": "latest",
     "react-router-dom": "latest",
     "react-modal": "latest"
@@ -30,9 +28,6 @@
     "last 1 Chrome version"
   ],
   "devDependencies": {
-    "@babel/core": "^7.4.3",
-    "@vue/babel-preset-app": "^3.6.0",
-    "autoprefixer": "^9.5.1",
     "nodemon": "latest"
   }
 }

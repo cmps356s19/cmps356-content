@@ -4,9 +4,10 @@ import logo from './imgs/logo.png'
 import {login, addOpenIdUser} from '../api-calls/AuthService'
 
 function LoginForm ({onLogin, location, history}) {
+    const googleClientId = "866457396346-piq09ek9kiofq9uspsnjulv1mu1v4s8k.apps.googleusercontent.com";
     const [loginInfo, setLoginInfo] = useState({email: "", password: ""});
     const [error, setError] = useState("");
-    const [manageMyGoogleContacts, setManageMyGoogleContacts] = useState(true);
+    const [allowAccessMyGoogleContacts, setAllowAccessMyGoogleContacts] = useState(false);
     const [googleAuthScope, setGoogleAuthScope] = useState("profile email");
 
     const handleChange = e => {
@@ -33,7 +34,6 @@ function LoginForm ({onLogin, location, history}) {
         try {
            let user;
            if (oidProvider == 'local') {
-                const userInfo = {name: this.name, password: this.password};
                 user = await login(loginInfo);
             } else {
                 user = await addOpenIdUser(tokenObj);
@@ -50,7 +50,7 @@ function LoginForm ({onLogin, location, history}) {
             }
         } catch (err) {
             console.log('LoginForm.authenticate: ', err);
-            setError(`${err}😱`);
+            setError(`${err}`);
         }
     };
 
@@ -67,8 +67,7 @@ function LoginForm ({onLogin, location, history}) {
     };
 
     const handleManageMyGoogleContacts = e => {
-        setManageMyGoogleContacts(e.target.checked);
-        console.log("manageMyGoogleContacts", manageMyGoogleContacts, e.target.checked);
+        setAllowAccessMyGoogleContacts(e.target.checked);
         if (!e.target.checked)
             setGoogleAuthScope("profile email");
         else
@@ -108,16 +107,14 @@ function LoginForm ({onLogin, location, history}) {
             <br />
             <div className="align-center">
                 <GoogleLogin
-                    clientId="866457396346-piq09ek9kiofq9uspsnjulv1mu1v4s8k.apps.googleusercontent.com"
-                    buttonText="Login"
+                    clientId={googleClientId}
                     scope={googleAuthScope}
                     onSuccess={handleGoogleResponse}
                     onFailure={handleGoogleResponse}
-                    cookiePolicy={'single_host_origin'}
                 />
                 <br />
                 <label>
-                    <input type="checkbox"  checked={manageMyGoogleContacts}
+                    <input type="checkbox"  checked={allowAccessMyGoogleContacts}
                              onChange={handleManageMyGoogleContacts} />
                     Manage my Google Contacts
                 </label>
