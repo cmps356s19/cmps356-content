@@ -57,9 +57,10 @@ export default function Contacts() {
                 <p className="text-danger">
                     {error}
                 </p>
+                /*GoogleLogin has a small bug. Need to refresh the page to use the scope value*/
                 <GoogleLogin
                     clientId={googleClientId}
-                    scope="profile email https://www.googleapis.com/auth/contacts"
+                    scope="https://www.googleapis.com/auth/contacts"
                     onSuccess={handleGoogleResponse}
                     onFailure={handleGoogleResponse}
                 />
