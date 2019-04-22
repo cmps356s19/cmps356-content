@@ -132,6 +132,7 @@ export function getCurrentUser() {
 
 export function getAccessToken() {
     const accessToken = localStorage.access_token;
+    console.log("getAccessToken", accessToken);
     if (accessToken) {
         return accessToken;
     } else {

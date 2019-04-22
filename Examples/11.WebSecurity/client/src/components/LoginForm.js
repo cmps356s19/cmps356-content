@@ -7,8 +7,6 @@ function LoginForm ({onLogin, location, history}) {
     const googleClientId = "866457396346-piq09ek9kiofq9uspsnjulv1mu1v4s8k.apps.googleusercontent.com";
     const [loginInfo, setLoginInfo] = useState({email: "", password: ""});
     const [error, setError] = useState("");
-    const [allowAccessMyGoogleContacts, setAllowAccessMyGoogleContacts] = useState(false);
-    const [googleAuthScope, setGoogleAuthScope] = useState("profile email");
 
     const handleChange = e => {
         const {name, value} = e.target;
@@ -23,10 +21,15 @@ function LoginForm ({onLogin, location, history}) {
     // If Google Login does not work then try to clear the browser cash
     // See more info @ https://github.com/anthonyjgrove/react-google-login/issues/132
     const handleGoogleResponse = async (authResponse) => {
-        console.log(authResponse);
-        console.log('id_token from Google', authResponse.tokenObj.id_token);
-        console.log('access_token from Google', authResponse.access_token);
-        await authenticate('google', authResponse.tokenObj);
+        console.log("handleGoogleResponse.authResponse: ", authResponse);
+        if (authResponse.error) {
+            setError(`${authResponse.error}. ${authResponse.details || ""}`);
+        } else {
+            console.log('id_token from Google', authResponse.tokenObj.id_token);
+            console.log('access_token from Google', authResponse.tokenObj.access_token);
+            setError("");
+            await authenticate('google', authResponse.tokenObj);
+        }
     };
 
     const authenticate = async (oidProvider, tokenObj) => {
@@ -66,14 +69,6 @@ function LoginForm ({onLogin, location, history}) {
         history.push(redirectTo);
     };
 
-    const handleManageMyGoogleContacts = e => {
-        setAllowAccessMyGoogleContacts(e.target.checked);
-        if (!e.target.checked)
-            setGoogleAuthScope("profile email");
-        else
-            setGoogleAuthScope("profile email https://www.googleapis.com/auth/contacts");
-    };
-
     return (
         <>
             <div className="align-center">
@@ -108,16 +103,9 @@ function LoginForm ({onLogin, location, history}) {
             <div className="align-center">
                 <GoogleLogin
                     clientId={googleClientId}
-                    scope={googleAuthScope}
                     onSuccess={handleGoogleResponse}
                     onFailure={handleGoogleResponse}
                 />
-                <br />
-                <label>
-                    <input type="checkbox"  checked={allowAccessMyGoogleContacts}
-                             onChange={handleManageMyGoogleContacts} />
-                    Manage my Google Contacts
-                </label>
             </div>
         </>
     );

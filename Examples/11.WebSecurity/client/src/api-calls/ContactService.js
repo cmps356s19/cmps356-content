@@ -22,12 +22,13 @@ export async function getContacts() {
     //If authentication failed
     if (response.status == 401 || response.status == 403) {
         const responseJson = await response.json();
-        throw responseJson.error;
+        console.log("getContacts.responseJson: ", responseJson);
+        throw `${responseJson.error.code} ${responseJson.error.status}. ${responseJson.error.message}`;
     }
 
     //If other error occurs
     if (!response.ok) {
-        throw {status: response.status, message: response.statusText}
+        throw `${response.status}. ${response.statusText}`;
     }
 
     let contacts = await response.json();
@@ -65,13 +66,13 @@ export async function deleteContact(contactId) {
     });
 
     //If authentication failed
-    if (response.status == 401) {
+    if (response.status == 401 || response.status == 403) {
         const responseJson = await response.json();
-        throw responseJson.error;
+        throw `${responseJson.error.code} ${responseJson.error.status}. ${responseJson.error.message}`;
     }
 
     //If other error occurs
     if (!response.ok) {
-        throw response.statusText
+        throw `${response.status}. ${response.statusText}`;
     }
 }

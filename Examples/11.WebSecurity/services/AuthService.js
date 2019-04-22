@@ -49,12 +49,15 @@ class AuthService {
                     //First check if the user already exists in the local users DB
                     let user = await userRepository.getOpenIdUser(oidUser.sub, oidProvider);
                     if (!user) {
-                        console.log("addOpenIdUser.accessToken:", access_token);
+                        //We can optionally get more details about the user using the access_token
+                        // @ UserInfo EndPoint https://openidconnect.googleapis.com/v1/userinfo
+                        //console.log("addOpenIdUser.accessToken:", access_token);
                         user = await this.getGoogleUserProfile(access_token);
 
                         user.oidProvider = oidProvider;
+                        user.role = 'Contributor';
                         user = await userRepository.addUser(user);
-                        console.log("router.user: ", user);
+                        console.log("addOpenIdUser.user: ", user);
                     }
                     console.log(user);
                     const id_token = jwt.sign(user, keys.jwt.secret, { expiresIn: '2h' });
@@ -63,7 +66,7 @@ class AuthService {
             }
         }
         catch (err) {
-            console.log("Login", err);
+            console.log("addOpenIdUser", err);
             res.status(401).json({
                 error: `Authentication failed. ${err}`
             });
@@ -75,7 +78,7 @@ class AuthService {
             headers: {"Authorization": `Bearer ${accessToken}`}
         };
 
-        const openIdUrl = 'https://www.googleapis.com/plus/v1/people/me/openIdConnect';
+        const openIdUrl = 'https://openidconnect.googleapis.com/v1/userinfo';
         const userOpenId = await axios.get(openIdUrl, options);
         return userOpenId.data;
     }
