@@ -23,8 +23,8 @@ class AccountService {
 
     async addAccount(req, res) {
         try {
-            const account = await accountRepo.addAccount(req.body)
-            res.status(201).json(account)
+            const account = await accountRepo.addAccount(req.body);
+            res.status(201).json(account);
         } catch (err) {
             console.log(err);
             res.status(500).send(err)
@@ -66,6 +66,7 @@ class AccountService {
         try {
             const transaction = req.body;
             console.log(req.body);
+
             res.status(200).send(await accountRepo.addTransaction(transaction));
         }
         catch (err) {

@@ -15,7 +15,8 @@ class AccountRepository {
     }
 
     async addAccount(account) {
-        return await Account.create(account);
+        account = await Account.create(account);
+        return account;
     }
 
     async deleteAccount(id) {

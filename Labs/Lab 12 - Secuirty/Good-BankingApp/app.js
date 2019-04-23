@@ -23,7 +23,7 @@ app.use(express.json());
 app.use('/api', routes);
 
 //Or use 'mongodb://127.0.0.1:27017/BankingAppDB'
-const dbConnection = mongoose.connect('mongodb://localhost/BankApp', {useNewUrlParser: true})
+const dbConnection = mongoose.connect('mongodb://localhost/BankingAppDB', {useNewUrlParser: true})
     .then(() => {
         acctRespository.initDb();
 
@@ -33,14 +33,6 @@ const dbConnection = mongoose.connect('mongodb://localhost/BankApp', {useNewUrlP
     }).catch((err) => {
         console.log(`Failed to connect to monogoDb ${err}`);
     });
-
-
-
-
-
-
-
-
 
 
 

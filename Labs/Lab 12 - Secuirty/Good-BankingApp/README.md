@@ -1,5 +1,5 @@
 ### Globally install parcel-bundler once
-sudo npm install -g parcel-bundler
+npm install -g parcel-bundler
 
 ### Install packages
 npm install
