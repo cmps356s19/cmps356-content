@@ -1,0 +1,80 @@
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+html {
+    background-color: #f0f0f0;
+}
+body {
+    color: #273018;
+    font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0;
+    padding: 1rem;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -moz-font-feature-settings: "liga" on;
+}
+
+#main-content{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#book-filters{
+    display: grid;
+    grid-template-columns: 3fr auto;
+    margin: 40px;
+}
+
+#search-options{
+    display: flex;
+    flex-wrap: wrap;
+}
+#search-box{
+   grid-column: 1/2;
+}
+
+#search-btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 900px){
+
+    #search-box{
+        height: 40px;
+    }
+}
+
+/* table styling */
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+tr:hover {background-color: #ddd;}
+th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #9a70c7;
+    color: white;
+}
