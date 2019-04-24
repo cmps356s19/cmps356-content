@@ -13,6 +13,7 @@ const bookSchema = new mongoose.Schema({
     authors: [ String ],
     publisher: {name: String, country: String},
     category: String,
+    price: Number,
     pages: Number,
     available: {type: Boolean, default:true, required: true},
     createdOn : { type : Date, default : Date.now },

@@ -46,9 +46,11 @@ class BookService {
             }
             else if (req.query.author) {
                 books = await bookRespository.getBooksByAuthor(req.query.author);
+            } else if (req.query.increaseValue) {
+                books = await bookRespository.increaseBookPrices(req.query);
             }
             else {
-                books = await bookRespository.getBooks(req.query.category);
+                books = await bookRespository.getBooks(req.query);
             }
 
             if (books) {

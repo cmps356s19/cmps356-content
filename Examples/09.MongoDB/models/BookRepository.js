@@ -21,7 +21,7 @@ class BookRepository {
         return await Book.distinct('category');
     }
 
-    getBooks(category) {
+    getBooks({category, publisherCountry}) {
         const query = Book.find({});
         //Can be const query = Book.find() or you can specify the properties to return
         //const query = Book.find({}, "_id isbn title authors publisher category pages reviews store");
@@ -31,13 +31,18 @@ class BookRepository {
             query.where({category: category});
         }
 
+        //If publisherCountry is NOT undefined then addBook a where clause to the query
+        if (publisherCountry) {
+            query.where({ "publisher.country" : publisherCountry});
+        }
+
         //populate('store') will replace the store Id with the corresponding store object. (add , 'name'  to only get the store name)
         query.populate('store');
         return query;
     }
 
     async getBooksCount() {
-        return await Book.count({});
+        return await Book.countDocuments({});
     }
 
     getBook(bookId) {
@@ -50,14 +55,14 @@ class BookRepository {
         return Book.findOne({isbn: isbn}).select('-reviews -__v');
     }
 
-    addBook(newBook) {
-        return Book.create(newBook);
-    }
-
     //More details about query operators @ https://docs.mongodb.org/manual/reference/operator/query/
     getBooksByAuthor(author) {
         //console.log("getBooksByAuthor.author", author);
         return Book.find({authors: {$in: [author]}});
+    }
+
+    addBook(newBook) {
+        return Book.create(newBook);
     }
 
     updateBook(updatedBook) {
@@ -73,7 +78,7 @@ class BookRepository {
     }
 
     deleteBook(bookId) {
-        return Book.remove({_id : bookId});
+        return Book.deleteOne({_id : bookId});
         //return Book.findByIdAndRemove(bookId);
         //return getBook(bookId).then(book => book.remove())
     }
@@ -90,6 +95,11 @@ class BookRepository {
         review.rating = updatedReview.rating;
         review.reviewText = updatedReview.reviewText;
         return book.save();
+    }
+
+    async increaseBookPrices({category, increaseValue}) {
+        await Book.find({category: category}).updateMany({$inc: {price: increaseValue}});
+        return await this.getBooks({category});
     }
 
     async getBooksSummary() {
@@ -110,14 +120,14 @@ class BookRepository {
     }
 
     async emptyDB() { //in case needed during testing
-        await Book.remove({});
-        await Store.remove({});
+        await Book.deleteMany({});
+        await Store.deleteMany({});
     }
 
     async initDb() {
         try {
             //Uncomment to empty the database
-            //await this.emptyDB();
+            await this.emptyDB();
             //If the db is empty then init the db with data in json files
             const booksCount = await this.getBooksCount();
             console.log(`Books Count: ${booksCount}. Comment out emptyDB() to stop re-initializing the database`);

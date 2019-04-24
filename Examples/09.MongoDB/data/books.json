@@ -5,6 +5,7 @@
     "authors": ["Mr Bean", "Juha Dahak"],
     "publisher": {"name": "MrBeanCo", "country": "UK"},
     "category": "Fun",
+    "price": 50,
     "pages": 250
   },
   {
@@ -13,6 +14,7 @@
     "authors": ["Mr Samir", "Ms Samira"],
     "publisher": {"name": "SamirCo", "country": "Qatar"},
     "category": "Fun",
+    "price": 70,
     "pages": 150
   },
   {
@@ -21,6 +23,7 @@
     "authors": ["Mr Java", "Ms Java"],
     "publisher": {"name": "JavaCo", "country": "USA"},
     "category": "Programming",
+    "price": 100,
     "pages": 350
   },
   {
@@ -29,6 +32,7 @@
     "authors": ["Mr Node.js", "Ms Node.js"],
     "publisher": {"name": "NodejsCo", "country": "UK"},
     "category": "Programming",
+    "price": 200,
     "pages": 450
   },
   {
@@ -37,6 +41,7 @@
     "authors": ["Mongoose", "Mr Dummy"],
     "publisher": {"name": "MongooseCo", "country": "Burkina Faso"},
     "category": "Programming",
+    "price": 150,
     "pages": 155
   }
 ]
