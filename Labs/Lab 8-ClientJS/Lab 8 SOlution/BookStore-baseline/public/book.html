@@ -1,0 +1,14 @@
+<li class="cards__item" id="card-${book.isbn}">
+    <div class="card">
+        <img class="card__image" src="${book.thumbnailUrl}" alt="">
+        <div class="card__content">
+            <div id="book-title" class="card__title">${book.title}</div>
+            <p id="book-desc" class="card__text">${book.shortDescription ? book.shortDescription.trim() : 'Not Available'}</p>
+            <div class="btn--options">
+                <button class="btn btn--details">Details</button>
+                <button class="btn btn--update" onclick="handleUpdateBook(${book.isbn}>Update</button>
+    <button class="btn btn--delete" onclick="handleDeleteBook(${book.isbn})">Delete</button>
+            </div>
+        </div>
+    </div>
+</li>
