@@ -1,0 +1,32 @@
+{
+  "name": "bankingapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon",
+    "client": "parcel client/src/index.html",
+    "start": "parcel client/src/index.html",
+    "build": "parcel build client/src/index.html --public-url ./"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "latest",
+    "express": "latest",
+    "fs-extra": "latest",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-google-login": "latest",
+    "react-router": "latest",
+    "react-router-dom": "latest"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
