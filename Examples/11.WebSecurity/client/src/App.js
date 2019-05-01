@@ -32,17 +32,21 @@ export default function App() {
         <Router>
             <Route path="/login"
                    render={(props) => {
-                       return <LoginForm onLogin={handleLogin} {...props} />
+                       return <LoginForm onLogin={handleLogin}
+                                         {...props} />
                    }}
             />
             <Route path="/"
                    render={(props) => {
-                       return <NavBar user={user} isAuthenticated={isAuthenticated}
-                                      onLogout={handleLogout} {...props} />
+                       return <NavBar user={user}
+                                      isAuthenticated={isAuthenticated}
+                                      onLogout={handleLogout}
+                                      {...props} />
                    }}
             />
 
             <Switch>
+
                 <Route path="/calculator" component={Calculator} />
 
                 <ProtectedRoute path="/heroes" component={Heroes}
@@ -57,7 +61,9 @@ export default function App() {
                 <ProtectedRoute path="/contacts" component={Contacts}
                                 isAuthenticated={isAuthenticated}
                                 user={user} />
+
             </Switch>
+
         </Router>
     )
 }

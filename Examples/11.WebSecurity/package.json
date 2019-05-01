@@ -4,8 +4,7 @@
   "scripts": {
     "dev": "nodemon --watch . ./app.js",
     "server": "node ./app.js",
-    "client": "parcel client/src/index.html",
-    "start": "node ./app.js",
+    "start": "parcel client/src/index.html",
     "build": "parcel build client/src/index.html --public-url ./"
   },
   "dependencies": {

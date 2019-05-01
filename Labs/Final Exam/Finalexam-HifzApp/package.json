@@ -1,0 +1,29 @@
+{
+  "name": "HifzApp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "nodemon",
+    "client": "parcel client/src/index.html",
+    "start": "parcel client/src/index.html",
+    "build": "parcel build client/src/index.html --public-url ./"
+  },
+  "dependencies": {
+    "cors": "latest",
+    "express": "latest",
+    "fs-extra": "latest",
+    "mongoose": "latest",
+    "morgan": "latest",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-router": "latest",
+    "react-router-dom": "latest"
+  },
+  "browserslist": [
+    "last 1 Chrome version"
+  ],
+  "devDependencies": {
+    "cssnano": "^4.1.10"
+  }
+}
