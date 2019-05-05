@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Hifz</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+
+        document.addEventListener("DOMContentLoaded", async () => {
+            await fillSurahDropddown();
+        });
+
+        async function getSurahs() {
+            const response = await fetch('http://localhost:8090/api/surahs');
+            return response.json();
+        }
+
+        async function fillSurahDropddown() {
+            const surahs = await getSurahs();
+            console.log("fillSurahDropddown", surahs);
+            let list = document.getElementById('surah');
+            list.innerHTML = '';
+            surahs.forEach(s => {
+                let option = document.createElement('option');
+                option.value = option.text = s.englishName;
+                list.appendChild(option);
+            });
+
+        }
+
+        async function handleAddHifz(event) {
+            try {
+                const form = event.target.form;
+                const isFormValid = form.checkValidity();
+                if (!isFormValid) return;
+
+                event.preventDefault();
+
+                const hifz = formToObject(form);
+                await fetch('http://localhost:8090/api/hifz',
+                    {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': "application/json",
+                        },
+                        body: JSON.stringify(hifz)
+                    });
+                window.location.href = 'index.html'
+            } catch (e) {
+                console.log(e);
+            }
+        }
+
+        function formToObject(form) {
+            const formData = new FormData(form);
+            let formObject = {};
+
+            // Convert key/value pairs to an object
+            formData.forEach( (value, key) => {
+                formObject[key] = value;
+            });
+
+            return formObject;
+        }
+    </script>
+</head>
+<body>
+<h3>Add Hifz</h3>
+<form>
+    <label for="surah">Surah</label>
+    <select id="surah" name="surah" required>
+        <option></option>
+        <option value="Al-Fatiha">Al-Fatiha</option>
+        <option value="Al-Baqara">Al-Baqara</option>
+        <option value="Aal-e-Imran">Aal-e-Imran</option>
+    </select>
+
+    <label for="fromAya">From Aya</label>
+    <input type="text" id="fromAya" name="fromAya" required>
+
+    <label for="toAya">From Aya</label>
+    <input type="text" id="toAya" name="toAya" required>
+
+    <label for="masteryLevel">Mastery Level</label>
+    <select id="masteryLevel" name="masteryLevel" required>
+        <option></option>
+        <option value="5">Excellent</option>
+        <option value="4">Very Good</option>
+        <option value="3">Good</option>
+        <option value="2">Fair</option>
+        <option value="1">Poor</option>
+    </select>
+
+    <button type="Submit" onclick="handleAddHifz(event)">Submit</button>
+</form>
+
+</body>
+</html>

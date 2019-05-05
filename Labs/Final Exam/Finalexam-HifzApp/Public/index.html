@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hifz App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        async function getSurahs(surahType){
+            let url = 'http://localhost:8090/api/surahs';
+            if (surahType) {
+                url = `${url}?surahType=${surahType}`;
+            }
+            const response = await fetch(url);
+            return response.json();
+        }
+
+        async function handleLoadSurahs(surahType) {
+            try {
+                const surahs = await getSurahs(surahType);
+
+                document.querySelector('#surahs-table').innerHTML =
+                    `<table id="surahs">
+                <tr>
+                    <th>Surah Id</th>
+                    <th>Name</th>
+                     <th>English Name</th>
+                    <th>Aya Count</th>
+                    <th>Type</th>
+                </tr>
+                ${surahs.map(s=>surahToHtml(s)).join('')}
+            </table>`;
+            } catch (e) {
+                console.log(e);
+            }
+        }
+
+        function surahToHtml(surah) {
+            return `
+        <tr id="row-${surah.id}">
+        <td>${surah.id}</td>
+        <td>${surah.name}</td>
+        <td>${surah.englishName}</td>
+        <td>${surah.ayaCount}</td>
+        <td>${surah.type}</td>
+        </tr>
+    `
+        }
+    </script>
+</head>
+<body>
+<nav>
+    <ul class="nav navbar-nav">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/hifz.html" >Hifz List</a></li>
+        <li><a href="/hifz-form.html">Add Hifz</a></li>
+    </ul>
+</nav>
+
+<caption for="surahType">Surah Type</caption>
+<select id="surahType" onchange="handleLoadSurahs(this.value)">
+    <option></option>
+    <option>All</option>
+    <option value="Meccan">Meccan</option>
+    <option value="Medinan">Medinan</option>
+</select>
+
+<div id="surahs-table"></div>
+
+</body>
+</html>

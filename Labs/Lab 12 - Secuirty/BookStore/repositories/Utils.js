@@ -115,30 +115,3 @@ class Utils {
 }
 
 module.exports = new Utils();
-
-//jobs 1,u1 job2 //u1
-
-//fuction that can return an array of the jobs of this user
-
-//read the file of users into an array of users
-
-
-for(user of users){
-    const userObj= USERMODEL.create(user[0])
-
-    _id
-
-    const jobs = getUserJobs(user.id) //array of jobs for this user
-    for(job of jobs){
-        job.customerId = userObj._id
-        add(job);
-    }
-//open the jobs
-    custommmerId === user[o]._id
-
-//customeId= userObj._id;
-
-
-=> id /
-}
-/Add the user to the database

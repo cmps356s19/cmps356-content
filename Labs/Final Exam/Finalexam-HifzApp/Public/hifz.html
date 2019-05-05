@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hifz List</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", async () => {
+            await loadHifz();
+        });
+
+        async function getHifz(){
+            let url = 'http://localhost:8090/api/hifz';
+            const response = await fetch(url);
+            return response.json();
+        }
+
+        async function loadHifz() {
+            try {
+                const hifzs = await getHifz();
+
+                document.querySelector('#hifzs-table').innerHTML =
+                    `<table id="hifzs">
+                <tr>
+                <th>Surah</th>
+                <th>From Aya</th>
+                <th>To Aya</th>
+                <th>Mastery Level</th>
+                </tr>
+                ${hifzs.map(h=>hifzToHtml(h)).join('')}
+            </table>`;
+            } catch (e) {
+                console.log(e);
+            }
+        }
+        function hifzToHtml(hifz) {
+            return `
+        <tr>
+           <td>${hifz.surah}</td>
+           <td>${hifz.fromAya}</td>
+           <td>${hifz.toAya}</td>
+           <td>${hifz.masteryLevel}</td>
+        </tr>
+    `;
+        }
+    </script>
+</head>
+<body>
+    <div id="hifzs-table"></div>
+</body>
+</html>

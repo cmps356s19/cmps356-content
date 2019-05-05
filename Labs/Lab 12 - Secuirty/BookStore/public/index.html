@@ -1,0 +1,81 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>BookStore App</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/cards.css">
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+           Book Store
+        </li>
+        <li>
+            <a href="#">Books</a>
+        </li>
+        <li>
+            <a href="#">Add Book</a>
+        </li>
+
+        <li>
+            <a href="#">Books Summary</a>
+        </li>
+    </ul>
+</nav>
+
+<main>
+    <form>
+        <h4>Select Search Criteria</h4>
+        <div id="search-options">
+            <div>
+                <input type="radio" id="category"
+                       name="search"
+                       value="category">
+
+                <label for="category">Category</label>
+            </div>
+            <div>
+                <input type="radio" id="name"
+                       name="search"
+                       value="name">
+                <label for="name">Book Name</label>
+            </div>
+            <div>
+                <input type="radio" id="author"
+                       name="search"
+                       value="author">
+                <label for="author">Author Name</label>
+            </div>
+            <div>
+                <input type="radio" id="isbn"
+                       name="search"
+                       value="isbn">
+                <label for="isbn">ISBN</label>
+            </div>
+            <div>
+                <input type="radio" id="pageCount"
+                       name="search"
+                       value="pageCount">
+                <label for="pageCount">Page Count</label>
+            </div>
+        </div>
+
+        <div id="search-param">
+            <input name="searchParam"
+                   placeholder="Search parameter"
+                   id="searchParam">
+            <input type="button"
+                   value="Search"
+                   id="search-btn">
+        </div>
+    </form>
+
+    <div id="contentDiv"></div>
+
+</main>
+<script src="js/index.js"></script>
+</body>
+</html>

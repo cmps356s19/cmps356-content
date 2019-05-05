@@ -1,32 +1,33 @@
 {
-  "name": "WebSecurity",
-  "version": "0.0.1",
+  "name": "bankingapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
   "scripts": {
-    "dev": "nodemon --watch . ./app.js",
-    "server": "node ./app.js",
+    "server": "nodemon",
+    "client": "parcel client/src/index.html",
     "start": "parcel client/src/index.html",
     "build": "parcel build client/src/index.html --public-url ./"
   },
   "dependencies": {
-    "axios": "latest",
-    "bcryptjs": "latest",
-    "cors": "latest",
-    "crypto-js": "latest",
+    "axios": "^0.18.0",
+    "chance": "^1.0.18",
+    "cors": "^2.8.5",
     "express": "latest",
     "fs-extra": "latest",
-    "jsonwebtoken": "latest",
     "mongoose": "latest",
+    "morgan": "latest",
+    "path": "^0.12.7",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-google-login": "^5.0.4",
     "react-router": "latest",
     "react-router-dom": "latest",
-    "react-modal": "latest"
+    "uuid": "^3.3.2"
   },
   "browserslist": [
     "last 1 Chrome version"
   ],
   "devDependencies": {
-    "nodemon": "latest"
+    "cssnano": "^4.1.10"
   }
 }
